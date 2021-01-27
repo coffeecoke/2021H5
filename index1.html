@@ -52,6 +52,16 @@
           <p>远程沟通……
           </p>
         </div>
+        <div class="line-6">
+          <div class="mark mark-6"></div>
+          <p>我们在无限延长的假期中
+          </p>
+        </div>
+        <div class="line-7">
+            <div class="mark mark-7"></div>
+            <p>等待回归
+            </p>
+        </div>
       </div>
       <div class="p3">
         <div class="p3-inner">
@@ -81,12 +91,16 @@
         tl.to("#p1 .line-1", 0, {
           opacity: 1, 
           ease: Linear.easeOut
-        })
+                  })
         tl.to("#p1 .mark-1", 5, {
           left: '100%', 
           ease: Linear.easeOut,
           onStart:function () {
-            $('.audioAll .audio')[0].play()
+            alert(111)
+            // var vdo = $('.audioAll .audio')[0]; //jquery
+            // vdo.play()
+            // vdo.muted = false;
+            // $('.audioAll .audio')[0].play()
           }
         })
         tl.to("#p1 .line-2", .1, {
@@ -95,7 +109,14 @@
         })
         tl.to("#p1 .mark-2", 5, {
           left: '100%',  
-          ease: Linear.easeOut
+          ease: Linear.easeOut,
+          onStart:function () {
+            alert(111)
+            var vdo = $('.audioAll .audio')[0]; //jquery
+            vdo.play()
+            vdo.muted = false;
+            // $('.audioAll .audio')[0].play()
+          }
         })
         tl.to(".line-3", .1, {
           opacity: 1, 
@@ -121,7 +142,22 @@
           left: '100%', 
           ease: Linear.easeOut
         })
-
+        tl.to("#p1 .line-6", .1, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-6", 5, {
+          left: '100%', 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .line-7", .1, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-7", 5, {
+          left: '100%', 
+          ease: Linear.easeOut
+        })
         tl.to("#p1",12, {
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,

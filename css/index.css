@@ -21,7 +21,7 @@ img {
 .p1 .rain {
   width:750px;
   height:1200px;
-  background: url(../h5imgs/rain1.png) no-repeat center;
+  background: url(../h5imgs/rain2.png) no-repeat center;
   opacity: 0.1;
   left:0px;
   top:-100px;
@@ -43,7 +43,7 @@ img {
 .p1 .rain1 {
   width:750px;
   height:1000px;
-  background: url(../h5imgs/snow.png) no-repeat center;
+  background: url(../h5imgs/snow2.png) no-repeat center;
   opacity: 0.5;
   left:0px;
   top:0;
@@ -64,12 +64,12 @@ img {
  .p1 .rain2 {
   width:750px;
   height:1000px;
-  background: url(../h5imgs/rain1.png) no-repeat center;
-  opacity: 0.1;
+  background: url(../h5imgs/rain2.png) no-repeat center;
+  opacity: 0.3;
   left:0px;
   top:0;
   position: absolute;
-  transform:rotate(-10deg);
+  /* transform:rotate(-10deg); */
   animation:rain2 2.5s linear infinite;
   -webkit-animation:rain2 2.5s linear infinite;
 }
@@ -89,7 +89,7 @@ img {
   left:10px;
   top:0;
   position: absolute;
-  background: url(../h5imgs/snow.png) no-repeat center;
+  background: url(../h5imgs/snow3.png) no-repeat center;
   animation:snow 3s linear infinite;
   -webkit-animation:snow 3s linear infinite;
 }
@@ -109,7 +109,7 @@ img {
   left:10px;
   top:0;
   position: absolute;
-  background: url(../h5imgs/snow.png) no-repeat center;
+  background: url(../h5imgs/snow2.png) no-repeat center;
   animation:snow1 6s linear infinite;
   -webkit-animation:snow1 6s linear infinite;
 }
