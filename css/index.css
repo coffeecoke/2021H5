@@ -1,0 +1,276 @@
+
+body {
+  width:100%;
+  overflow-x: hidden;
+}
+.wrap { 
+  min-height:100%;
+  background-color:#000;
+  
+}
+img {
+  display: block;
+}
+.p1 {
+  height:100vh;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  background:url(../h5imgs/p1-bg.jpg) 0 0 no-repeat;
+}
+.p1 .rain {
+  width:750px;
+  height:1200px;
+  background: url(../h5imgs/rain1.png) no-repeat center;
+  opacity: 0.1;
+  left:0px;
+  top:-100px;
+  position: absolute;
+  transform:rotate(-10deg);
+  animation:rain 1s linear infinite;
+  -webkit-animation:rain 1s linear infinite;
+}
+@keyframes rain{
+  from {
+    left:0px;
+    top:-100px;
+  }
+  to {
+    left:0px;
+    top:1000px;
+  }
+}
+.p1 .rain1 {
+  width:750px;
+  height:1000px;
+  background: url(../h5imgs/snow.png) no-repeat center;
+  opacity: 0.5;
+  left:0px;
+  top:0;
+  position: absolute;
+  animation:rain1 5s linear infinite;
+  -webkit-animation:rain1 5s linear infinite;
+}
+@keyframes rain1{
+  from {
+    left:-100px;
+    top:10px;
+  }
+  to {
+    left:800px;
+    top:600px;
+  }
+}
+ .p1 .rain2 {
+  width:750px;
+  height:1000px;
+  background: url(../h5imgs/rain1.png) no-repeat center;
+  opacity: 0.1;
+  left:0px;
+  top:0;
+  position: absolute;
+  transform:rotate(-10deg);
+  animation:rain2 2.5s linear infinite;
+  -webkit-animation:rain2 2.5s linear infinite;
+}
+@keyframes rain2{
+  from {
+    left:0px;
+    top:200px;
+  }
+  to {
+    left:0px;
+    top:1000px;
+  }
+}
+.p1 .snow {
+  width:750px;
+  height:1000px;
+  left:10px;
+  top:0;
+  position: absolute;
+  background: url(../h5imgs/snow.png) no-repeat center;
+  animation:snow 3s linear infinite;
+  -webkit-animation:snow 3s linear infinite;
+}
+@keyframes snow{
+  from {
+    left:-300px;
+    top:10px;
+  }
+  to {
+    left:800px;
+    top:1000px;
+  }
+}
+.p1 .snow1 {
+  width:750px;
+  height:1000px;
+  left:10px;
+  top:0;
+  position: absolute;
+  background: url(../h5imgs/snow.png) no-repeat center;
+  animation:snow1 6s linear infinite;
+  -webkit-animation:snow1 6s linear infinite;
+}
+@keyframes snow1{
+  from {
+    left:-100px;
+    top:0px;
+  }
+  to {
+    left:800px;
+    top:200px;
+  }
+}
+ .p1 .snow2 {
+  width:750px;
+  height:1000px;
+  left:10px;
+  top:0;
+  position: absolute;
+  background: url(../h5imgs/snow.png) no-repeat center;
+  animation:snow1 4s linear infinite;
+  -webkit-animation:snow1 4s linear infinite;
+}
+@keyframes snow2{
+  from {
+    left:-100px;
+    top:0px;
+  }
+  to {
+    left:800px;
+    top:200px;
+  }
+}
+.p1 .bird {
+  width:300px;
+  height:200px;
+  right:-200px;
+  top:0;
+  position: absolute;
+}
+.p1 .bird-1 {
+  position: absolute;
+  top:0;
+  right:0;
+  opacity: 0;
+}
+.p1 .bird-2 {
+  position: absolute;
+  top:150px;
+  right:200px;
+  opacity: 0;
+}
+.p1 .bird-3 {
+  position: absolute;
+  top:260px;
+  right:330px;
+  opacity: 0;
+}
+.p1 .bird-4 {
+  position: absolute;
+  top:460px;
+  right:466px;
+  opacity: 0;
+}
+.p1 .bird-5 {
+  position: absolute;
+  top:770px;
+  right:490px;
+  opacity: 0;
+}
+.p1 .bird-6 {
+  position: absolute;
+  top:1030px;
+  right:290px;
+  opacity: 0;
+}
+.begin2020 {
+  position: absolute;
+  width:450px;
+  top:50%;
+  left:50%;
+  font-size:36px;
+  color:#fff;
+  z-index:100;
+  transform: translate(-50%, -50%);
+}
+.begin2020 > div {
+  opacity: 0;
+  position: relative;
+}
+.begin2020 p {
+  margin:0;
+  margin-bottom:40px;
+}
+.begin2020 .mark {
+  position: absolute;
+  left:0;
+  right:0;
+  height:100%;
+  background-color: #fff;
+}
+.p3 {
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  display: flex;
+}
+.p3-inner {
+  height:100vh;
+  display: flex;
+  position: relative;
+  left:0;
+}
+.trees {
+  float:left;
+  width:100vw;
+  height:100vh;
+  position: relative;
+  /* background: url(../h5imgs/trees.png) 0 0 no-repeat; */
+}
+.tree-front {
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:20;
+}
+.tree-back {
+  position: absolute;
+  left:0;
+  top:0;
+}
+.trees img {
+  display: block;
+  height:100%;
+}
+.Building {
+  float:left;
+  width:100vw;
+  height:100vh;
+  position: relative;
+}
+.Building img {
+  height:100%;
+  position: absolute;
+  left:0px;
+  top:0;
+  z-index:10;
+}
+.Building .on{
+  position: absolute;
+  z-index:10;
+  opacity: 0;
+  z-index:15;
+}
+
+.p4 {
+  height:100%;
+  background-color: red;
+}

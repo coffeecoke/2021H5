@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=750, user-scalable=no">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- js -->
+  <script type="text/javascript" src="./js/util.js"></script>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="./js/gsap.min.js"></script> -->
+  <script src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="./js/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="./js/animation.gsap.js"></script>
+  <script type="text/javascript" src="./js/debug.addIndicators.js"></script>
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+    <div class="p1" id="p1">
+      <div class="rain" id="rain"></div>
+      <div class="rain1" id="rain1"></div>
+      <div class="rain2" id="rain2"></div>
+      <div class="snow" id="snow"></div>
+      <div class="snow1" id="snow1"></div>
+      <div class="snow2" id="snow2"></div>
+      <div class="bird" id="bird"></div>
+      <div class="begin2020">
+        <div class="line-1">
+          <div class="mark mark-1"></div>
+          <p>2020年的开头并不顺利……</p>
+        </div>
+        <div class="line-2">
+          <div class="mark mark-2"></div>
+          <p>突如其来的意外</p>
+        </div>
+        <div class="line-3">
+          <div class="mark mark-3"></div>
+          <p>打乱了我们的生活</p>
+        </div>
+        <div class="line-4">
+          <div class="mark mark-4"></div>
+          <p>隔离在家、视频会议
+          </p>
+        </div>
+        <div class="line-5">
+          <div class="mark mark-5"></div>
+          <p>远程沟通……
+          </p>
+        </div>
+      </div>
+      <div class="p3">
+        <div class="p3-inner">
+          <div class="trees">
+            <img class="tree-front" src="h5imgs/tree-front.png" alt="">
+            <img class="tree-back" src="h5imgs/tree-back.jpg" alt="">
+          </div>
+          <div class="Building">
+            <img src="h5imgs/building-off.png" alt="">
+            <img src="h5imgs/building-on.png" class="on" alt="">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <section>
+    <div class="audioAll">
+      <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
+    </div>
+  <script>
+    window.onload = function () {
+      var controller = new ScrollMagic.Controller();
+        var tl = new TimelineMax()
+        //文字
+        tl.add("begin");
+        tl.to("#p1 .line-1", 0, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-1", 5, {
+          left: '100%', 
+          ease: Linear.easeOut,
+          onStart:function () {
+            $('.audioAll .audio')[0].play()
+          }
+        })
+        tl.to("#p1 .line-2", .1, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-2", 5, {
+          left: '100%',  
+          ease: Linear.easeOut
+        })
+        tl.to(".line-3", .1, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-3", 5, {
+          left: '100%',  
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .line-4", .1, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-4", 5, {
+          left: '100%', 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .line-5", .1, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p1 .mark-5", 5, {
+          left: '100%', 
+          ease: Linear.easeOut
+        })
+
+        tl.to("#p1",12, {
+          backgroundPosition: "0 100%", 
+          ease: Linear.easeOut,
+        },0)
+        // 树木和楼宇
+        tl.to("#p1 .p3", 0, {opacity: 1},12);
+        tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
+        tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
+
+        tl.to("#p1 .p3-inner", 5, {xPercent: -60},20);
+        tl.from("#p1 .on", 6, {opacity: 1},'-=3');
+        tl.to("#p1 #bird", 2, {
+          css: {
+            top:0,
+            right:0,
+            background: 'url(h5imgs/bird-1.png) center no-repeat'
+          },
+          ease: Linear.easeOut,
+         
+        },1)
+        tl.to("#p1 #bird", 2, {
+          css: {
+            top:150,
+            right:200,
+            background: 'url(h5imgs/bird-2.png) center no-repeat'
+          },
+          ease: Linear.easeOut,
+         
+        },2)
+        tl.to("#p1 #bird", 1, {
+          css: {
+            top:260,
+            right:330,
+            background: 'url(h5imgs/bird-3.png) center no-repeat'
+          },
+          ease: Linear.easeOut,
+         
+        },3)
+        tl.to("#p1 #bird", 1, {
+          css: {
+            top:460,
+            right:466,
+            background: 'url(h5imgs/bird-4.png) center no-repeat'
+          },
+          ease: Linear.easeOut,
+         
+        },4)
+        tl.to("#p1 #bird", 1, {
+          css: {
+            top:770,
+            right:490,
+            background: 'url(h5imgs/bird-5.png) center no-repeat'
+          },
+          ease: Linear.easeOut,
+         
+        },5)
+        tl.to("#p1 #bird", 1, {
+          css: {
+            top:1030,
+            right:290,
+            background: 'url(h5imgs/bird-6.png) center no-repeat'
+          },
+          ease: Linear.easeOut,
+         
+        },6)
+        tl.to("#p1 #bird", 1, {
+          css: {
+            top:1200,
+            right:-300,
+          },
+          ease: Linear.easeOut,
+         
+        },7)
+
+        var scene = new ScrollMagic.Scene({duration: 5000})
+        .triggerHook(0)
+        .setPin("#p1")
+        .setTween(tl)
+        .addTo(controller);
+    }
+  </script>
+</body>
+
+</html>
