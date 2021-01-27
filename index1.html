@@ -66,8 +66,14 @@
       <div class="p3">
         <div class="p3-inner">
           <div class="trees">
-            <img class="tree-front" src="h5imgs/tree-front.png" alt="">
-            <img class="tree-back" src="h5imgs/tree-back.jpg" alt="">
+            <img class="tree1" src="h5imgs/tree1.png" alt="">
+            <img class="tree2" src="h5imgs/tree2.png" alt="">
+            <img class="tree3" src="h5imgs/tree3.png" alt="">
+            <img class="tree4" src="h5imgs/tree4.png" alt="">
+            <img class="tree5" src="h5imgs/tree5.png" alt="">
+            <img class="tree6" src="h5imgs/tree6.png" alt="">
+            <!-- <img class="tree-front" src="h5imgs/tree-front.png" alt=""> -->
+            <!-- <img class="tree-back" src="h5imgs/tree-back.jpg" alt=""> -->
           </div>
           <div class="Building">
             <img src="h5imgs/building-off.png" alt="">
@@ -79,11 +85,16 @@
     </div>
   </div>
   <section>
-    <div class="audioAll">
-      <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
+    <div id="audioAll">
+      <audio muted class="audio" src="./audios/typing.mp3" style="display:none"></audio>
     </div>
   <script>
     window.onload = function () {
+      // $(document).click(function(){
+      //   var vdo = $('.audioAll .audio')[0]; //jquery
+      //       vdo.play()
+      //       vdo.muted = false;
+      // })
       var controller = new ScrollMagic.Controller();
         var tl = new TimelineMax()
         //文字
@@ -91,32 +102,25 @@
         tl.to("#p1 .line-1", 0, {
           opacity: 1, 
           ease: Linear.easeOut
-                  })
+        })
         tl.to("#p1 .mark-1", 5, {
           left: '100%', 
           ease: Linear.easeOut,
-          onStart:function () {
-            alert(111)
-            // var vdo = $('.audioAll .audio')[0]; //jquery
-            // vdo.play()
-            // vdo.muted = false;
-            // $('.audioAll .audio')[0].play()
-          }
+          // onStart:function () {
+          //   $('#audioAll .audio')[0].play(); //jquery
+          // }
         })
         tl.to("#p1 .line-2", .1, {
           opacity: 1, 
           ease: Linear.easeOut
         })
         tl.to("#p1 .mark-2", 5, {
-          left: '100%',  
+          left: '100%',
           ease: Linear.easeOut,
-          onStart:function () {
-            alert(111)
-            var vdo = $('.audioAll .audio')[0]; //jquery
-            vdo.play()
-            vdo.muted = false;
-            // $('.audioAll .audio')[0].play()
-          }
+          // onStart:function () {
+          //  $('#audioAll .audio')[0].play(); //jquery
+          //   // $('.audioAll .audio')[0].play()
+          // }
         })
         tl.to(".line-3", .1, {
           opacity: 1, 
@@ -164,8 +168,14 @@
         },0)
         // 树木和楼宇
         tl.to("#p1 .p3", 0, {opacity: 1},12);
-        tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
-        tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
+        tl.to("#p1 .tree1", 6, {left:-$('#p1 .tree1').width()-10},12);
+        tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
+        tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
+        tl.to("#p1 .tree4", 6, {left: -$('#p1 .tree4').width()+150},12);
+        tl.to("#p1 .tree5", 5, {left: -$('#p1 .tree5').width()+750},12);
+        tl.to("#p1 .tree6", 6, {left: -$('#p1 .tree6').width()+1150},12);
+        // tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
+        // tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
 
         tl.to("#p1 .p3-inner", 5, {xPercent: -60},20);
         tl.from("#p1 .on", 6, {opacity: 1},'-=3');
