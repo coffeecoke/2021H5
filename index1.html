@@ -16,9 +16,11 @@
   <script type="text/javascript" src="./js/ScrollMagic.min.js"></script>
   <script type="text/javascript" src="./js/animation.gsap.js"></script>
   <script type="text/javascript" src="./js/debug.addIndicators.js"></script>
+  <script type="text/javascript" src="./js/howler.js"></script>
 </head>
 
 <body>
+  <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
   <!-- wrap -->
   <div class="wrap">
     <div class="p1" id="p1">
@@ -84,19 +86,27 @@
       
     </div>
   </div>
-  <section>
-    <div id="audioAll">
-      <audio muted class="audio" src="./audios/typing.mp3" style="display:none"></audio>
-    </div>
   <script>
     window.onload = function () {
-      // $(document).click(function(){
-      //   var vdo = $('.audioAll .audio')[0]; //jquery
-      //       vdo.play()
-      //       vdo.muted = false;
-      // })
-      var controller = new ScrollMagic.Controller();
-        var tl = new TimelineMax()
+      var soundP1_1 = new Howl({
+        src:['audios/typing.mp3']
+      })
+      soundP1_1.playStatus = true
+      
+       var controller = new ScrollMagic.Controller();
+        var tl = new TimelineMax({
+          onUpdate:function () {
+            if(soundP1_1.playStatus) {
+              soundP1_1.play()
+              soundP1_1.playStatus = false
+              var timer = setTimeout(function() {
+                soundP1_1.playStatus = true
+              },1000)
+            }
+            
+            
+          }
+        })
         //文字
         tl.add("begin");
         tl.to("#p1 .line-1", 0, {
@@ -106,9 +116,12 @@
         tl.to("#p1 .mark-1", 5, {
           left: '100%', 
           ease: Linear.easeOut,
-          // onStart:function () {
-          //   $('#audioAll .audio')[0].play(); //jquery
-          // }
+          onStart:function () {
+            // var vdo = $('.audioAll .audio')[0]; //jquery
+            // vdo.play()
+            // vdo.muted = false;
+            // $('.audioAll .audio')[0].play()
+          }
         })
         tl.to("#p1 .line-2", .1, {
           opacity: 1, 
@@ -117,10 +130,9 @@
         tl.to("#p1 .mark-2", 5, {
           left: '100%',
           ease: Linear.easeOut,
-          // onStart:function () {
-          //  $('#audioAll .audio')[0].play(); //jquery
-          //   // $('.audioAll .audio')[0].play()
-          // }
+          onStart:function () {
+            // vdo.muted = false;
+          }
         })
         tl.to(".line-3", .1, {
           opacity: 1, 
