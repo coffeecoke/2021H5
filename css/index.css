@@ -21,6 +21,7 @@ img {
 .p2 {
   height:340vh;
   min-height: 100%;
+  margin-top:-1620px;
   position: relative;
   top:0;
   overflow: hidden;
@@ -243,18 +244,21 @@ img {
   left:1000px;
   bottom:0;
   z-index:0;
+  height:100%;
 }
 .tree5{
   position: absolute;
   left:800px;
   bottom:0;
   z-index:0;
+  height:100%;
 }
 .tree6{
   position: absolute;
   left:1500px;
   bottom:0;
   z-index:50;
+  height:100%;
 }
 .tree-front {
   position: absolute;
@@ -269,7 +273,6 @@ img {
 }
 .trees img {
   display: block;
-  /* height:100%; */
 }
 .Building {
   float:left;
