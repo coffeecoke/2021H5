@@ -34,154 +34,96 @@ img {
   opacity: 1;
 }
 .p1 .rain {
-  width:750px;
-  height:1200px;
-  background: url(../h5imgs/rain2.png) no-repeat center;
-  opacity: 0.3;
+  /* display: none; */
+  left:-1736px;
+  top:-1090px;
+  opacity: 0;
   position: absolute;
   /* transform:rotate(-10deg); */
-  animation:rain 1s linear infinite;
-  -webkit-animation:rain 1s linear infinite;
+  animation:rain 3s linear infinite;
+  -webkit-animation:rain 3s linear infinite;
+}
+
+ .p1 .rain1 {
+   /* display: none; */
+  left:-1736px;
+  top:-1090px;
+  opacity: 0;
+  position: absolute;
+  animation:rain 3s linear .5s infinite;
+  -webkit-animation:rain 3s linear .5s  infinite;
+}
+ .p1 .rain2 {
+   /* display: none; */
+  left:-1736px;
+  top:-1090px;
+  opacity: 0;
+  position: absolute;
+  animation:rain 3s linear 1s infinite;
+  -webkit-animation:rain 3s linear 1s  infinite;
+}
+ .p1 .rain3 {
+   /* display: none; */
+  left:-1736px;
+  top:-1090px;
+  opacity: 0;
+  position: absolute;
+  animation:rain 3s linear 1.5s infinite;
+  -webkit-animation:rain 3s linear 1.5s  infinite;
+}
+.p1 .rain4 {
+  /* display: none; */
+ left:-1736px;
+ top:-1090px;
+ opacity: 0;
+ position: absolute;
+ animation:rain 3s linear 2s infinite;
+ -webkit-animation:rain 3s linear 2s  infinite;
 }
 @keyframes rain{
   0% {
-    left:-100px;
-    top:-100px;
+    opacity: 1;
+    left:-1736px;
+    top:-1090px;
   }
-  50% {
-    left:100px;
-    top:500px;
-  }
+  
   100% {
-    left:400px;
-    top:1000px;
+    top:1200px;
+    left:750px;
   }
 }
- .p1 .rain1 {
-  width:750px;
-  height:1000px;
-  background: url(../h5imgs/snow2.png) no-repeat center;
-  opacity: 0.5;
+
+ .p1 .snow {
+  opacity: 0;
   left:0px;
   top:0;
   position: absolute;
-  animation:rain1 5s linear infinite;
-  -webkit-animation:rain1 5s linear infinite;
+  animation:rain 5s linear  infinite;
+  -webkit-animation:rain 5s linear   infinite;
 }
-@keyframes rain1{
-  0% {
-    left:-100px;
-    top:-100px;
-  }
-  50% {
-    left:100px;
-    top:300px;
-  }
-  100% {
-    left:300px;
-    top:500px;
-  }
-} 
- .p1 .rain2 {
-  width:750px;
-  height:1000px;
-  background: url(../h5imgs/rain2.png) no-repeat center;
-  opacity: 0.2;
+ .p1 .snow1 {
+  opacity: 0;
   left:0px;
   top:0;
   position: absolute;
-  /* transform:rotate(-10deg); */
-  /* animation:rain2 2.5s linear infinite; */
-  /* -webkit-animation:rain2 2.5s linear infinite; */
-}
-@keyframes rain2{
-  0% {
-    left:0px;
-    top:200px;
-  }
-  50% {
-    left:120px;
-    top:600px;
-  }
-  100% {
-    left:400px;
-    top:800px;
-  }
-}
-.p1 .snow {
-  width:750px;
-  height:1000px;
-  left:10px;
-  top:0;
-  position: absolute;
-  background: url(../h5imgs/snow3.png) no-repeat center;
-  animation:snow 3s linear infinite;
-  -webkit-animation:snow 3s linear infinite;
-  display:none;
-}
-@keyframes snow{
-  0% {
-    left:-300px;
-    top:10px;
-  }
-  50% {
-    left:100px;
-    top:600px;
-  }
-  100% {
-    left:300px;
-    top:1400px;
-  }
-}
-.p1 .snow1 {
-  width:750px;
-  height:1000px;
-  left:10px;
-  top:0;
-  position: absolute;
-  background: url(../h5imgs/snow2.png) no-repeat center;
-  animation:snow1 6s linear infinite;
-  -webkit-animation:snow1 6s linear infinite;
-  display:none;
-}
-@keyframes snow1{
-  0% {
-    left:-300px;
-    top:10px;
-  }
-  50% {
-    left:100px;
-    top:600px;
-  }
-  100% {
-    left:300px;
-    top:1400px;
-  }
+  animation:rain 5s linear 1s infinite;
+  -webkit-animation:rain 5s linear 1s infinite;
 }
  .p1 .snow2 {
-  width:750px;
-  height:1000px;
-  left:10px;
+  opacity: 0;
+  left:0px;
   top:0;
   position: absolute;
-  background: url(../h5imgs/snow.png) no-repeat center;
-  animation:snow1 4s linear infinite;
-  -webkit-animation:snow1 4s linear infinite;
-  display:none;
+  animation:rain 5s linear 2s infinite;
+  -webkit-animation:rain 5s linear 2s infinite;
 }
-@keyframes snow2{
-  0% {
-    left:-100px;
-    top:0px;
-  }
-  50% {
-    left:100px;
-    top:200px;
-  }
-  100% {
-    left:800px;
-    top:400px;
-  }
+.p1 .snow3 {
+  opacity: 0;
+  left:0px;
+  top:0;
+  position: absolute;
+  animation:rain 5s linear 3s infinite;
+  -webkit-animation:rain 5s linear 3s infinite;
 }
 .p1 .bird {
   width:300px;
