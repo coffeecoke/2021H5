@@ -22,7 +22,7 @@ img {
   width:750px;
   height:1200px;
   background: url(../h5imgs/rain2.png) no-repeat center;
-  opacity: 1;
+  opacity: 0.3;
   left:0px;
   top:-100px;
   position: absolute;
@@ -73,7 +73,7 @@ img {
   width:750px;
   height:1000px;
   background: url(../h5imgs/rain2.png) no-repeat center;
-  opacity: 0.3;
+  opacity: 0.2;
   left:0px;
   top:0;
   position: absolute;
