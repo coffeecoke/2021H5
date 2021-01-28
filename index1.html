@@ -84,6 +84,7 @@
         </div>
       </div>
     </div>
+    <div class="mask"></div>
     <div class="p2" id="p2">
     </div>
   </div>
@@ -173,10 +174,21 @@
           left: '100%', 
           ease: Linear.easeOut
         })
+        tl.to('.mask',1,{
+          opacity:1,
+          ease: Linear.easeOut,
+        },40)
+        tl.to('.mask',1,{
+          opacity:0,
+          ease: Linear.easeOut,
+        },44)
         tl.to("#p1",12, {
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,
         },0)
+        tl.to("#p2",1, {
+          ease: Linear.easeOut,
+        },12)
         // 树木和楼宇
         tl.to("#p1 .p3", .2, {opacity: 1},12);
         tl.to("#p1 .tree1", 6, {left:-$('#p1 .tree1').width()-10},12);
@@ -250,13 +262,7 @@
             right:-300,
           },
           ease: Linear.easeOut,
-         
         },7)
-        tl.to("#p2 .mask", 0, {
-          opacity: 0, 
-          left: '100%',
-          ease: Linear.easeOut
-        })
         var scene = new ScrollMagic.Scene({duration: 5000})
         .triggerHook(0)
         .setPin("#p1")
