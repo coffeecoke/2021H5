@@ -16,31 +16,35 @@ img {
   min-height: 100%;
   position: relative;
   overflow: hidden;
-  background:url(../h5imgs/p1-bg.jpg) 0 0 no-repeat;
+  background:url(../h5imgs/p1-bg1.jpg) 0 0 no-repeat;
 }
 .p1 .rain {
   width:750px;
   height:1200px;
   background: url(../h5imgs/rain2.png) no-repeat center;
-  opacity: 0.1;
+  opacity: 0.3;
   left:0px;
   top:-100px;
   position: absolute;
-  transform:rotate(-10deg);
+  /* transform:rotate(-10deg); */
   animation:rain 1s linear infinite;
   -webkit-animation:rain 1s linear infinite;
 }
 @keyframes rain{
-  from {
+  0% {
     left:0px;
     top:-100px;
   }
-  to {
-    left:0px;
+  50% {
+    left:100px;
+    top:500px;
+  }
+  100% {
+    left:300px;
     top:1000px;
   }
 }
-.p1 .rain1 {
+ .p1 .rain1 {
   width:750px;
   height:1000px;
   background: url(../h5imgs/snow2.png) no-repeat center;
@@ -52,20 +56,24 @@ img {
   -webkit-animation:rain1 5s linear infinite;
 }
 @keyframes rain1{
-  from {
+  0% {
     left:-100px;
     top:10px;
   }
-  to {
-    left:800px;
-    top:600px;
+  50% {
+    left:100px;
+    top:500px;
   }
-}
+  100% {
+    left:300px;
+    top:1000px;
+  }
+} 
  .p1 .rain2 {
   width:750px;
   height:1000px;
   background: url(../h5imgs/rain2.png) no-repeat center;
-  opacity: 0.3;
+  opacity: 0.2;
   left:0px;
   top:0;
   position: absolute;
@@ -74,13 +82,17 @@ img {
   -webkit-animation:rain2 2.5s linear infinite;
 }
 @keyframes rain2{
-  from {
+  0% {
     left:0px;
     top:200px;
   }
-  to {
-    left:0px;
-    top:1000px;
+  50% {
+    left:120px;
+    top:600px;
+  }
+  100% {
+    left:400px;
+    top:800px;
   }
 }
 .p1 .snow {
@@ -94,13 +106,17 @@ img {
   -webkit-animation:snow 3s linear infinite;
 }
 @keyframes snow{
-  from {
+  0% {
     left:-300px;
     top:10px;
   }
-  to {
-    left:800px;
-    top:1000px;
+  50% {
+    left:100px;
+    top:600px;
+  }
+  100% {
+    left:300px;
+    top:1400px;
   }
 }
 .p1 .snow1 {
@@ -114,13 +130,17 @@ img {
   -webkit-animation:snow1 6s linear infinite;
 }
 @keyframes snow1{
-  from {
-    left:-100px;
-    top:0px;
+  0% {
+    left:-300px;
+    top:10px;
   }
-  to {
-    left:800px;
-    top:200px;
+  50% {
+    left:100px;
+    top:600px;
+  }
+  100% {
+    left:300px;
+    top:1400px;
   }
 }
  .p1 .snow2 {
@@ -134,13 +154,17 @@ img {
   -webkit-animation:snow1 4s linear infinite;
 }
 @keyframes snow2{
-  from {
+  0% {
     left:-100px;
     top:0px;
   }
-  to {
-    left:800px;
+  50% {
+    left:100px;
     top:200px;
+  }
+  100% {
+    left:800px;
+    top:400px;
   }
 }
 .p1 .bird {
@@ -233,7 +257,44 @@ img {
   width:100vw;
   height:100vh;
   position: relative;
+  background-image: linear-gradient(to right,#595959,#9e9e9c);
   /* background: url(../h5imgs/trees.png) 0 0 no-repeat; */
+}
+.tree1{
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:1;
+}
+.tree2{
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:2;
+}
+.tree3{
+  position: absolute;
+  left:220px;
+  top:0;
+  z-index:3;
+}
+.tree4{
+  position: absolute;
+  left:1000px;
+  top:0;
+  z-index:0;
+}
+.tree5{
+  position: absolute;
+  left:800px;
+  top:0;
+  z-index:0;
+}
+.tree6{
+  position: absolute;
+  left:1500px;
+  top:0;
+  z-index:50;
 }
 .tree-front {
   position: absolute;
