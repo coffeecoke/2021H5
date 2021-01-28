@@ -274,7 +274,7 @@
         },7)
 
         // 天黑
-        tl.to('.mask1',4,{
+        tl.to('.mask1',1,{
           opacity:1,
           ease: Linear.easeOut,
         })
@@ -297,12 +297,12 @@
         })
         // tl2.to('.zhanwei1', 1, {yPercent: -100, ease: Linear.easeOut})
         // tl2.to('.zhanwei1', 4, {top: -1334, ease: Linear.easeOut})
-        tl2.to('.mask1',1,{
+        tl2.to('.mask1',.5,{
           opacity:0,
           ease: Linear.easeOut,
         },0)
 
-        var scene2 = new ScrollMagic.Scene({duration: 500})
+        var scene2 = new ScrollMagic.Scene({duration: 200})
         
         .triggerHook(-1)
         .triggerElement('#p2')
