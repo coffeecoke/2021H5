@@ -1,7 +1,7 @@
 
 body {
   width:100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .wrap { 
   min-height:100%;
@@ -17,25 +17,6 @@ img {
   position: relative;
   overflow: hidden;
   background:url(../h5imgs/p1-bg1.jpg) 0 0 no-repeat;
-}
-.p2 {
-  height:340vh;
-  min-height: 100%;
-  margin-top:-1620px;
-  position: relative;
-  top:0;
-  overflow: hidden;
-  z-index:110;
-  background:url(../h5imgs/page2/p1-bg2.jpg) 0 0 no-repeat;
-}
-.mask{
-  position: fixed;
-  top:0;
-  width:100%;
-  height:100%;
-  background: #000;
-  opacity: 0;
-  z-index:100;
 }
 .p1 .rain {
   /* display: none; */
@@ -197,7 +178,7 @@ img {
   height:100%;
   background-color: #fff;
 }
-.p3 {
+.ph {
   width:100%;
   height:100vh;
   overflow: hidden;
@@ -208,7 +189,7 @@ img {
   bottom:0;
   display: flex;
 }
-.p3-inner {
+.ph-inner {
   height:100vh;
   display: flex;
   position: relative;
@@ -295,7 +276,13 @@ img {
   z-index:15;
 }
 
-.p4 {
+.mask1{
+  position: fixed;
+  top:0;
+  width:100%;
   height:100%;
-  background-color: red;
+  background: #000;
+  opacity: 0;
+  z-index:100;
 }
+
