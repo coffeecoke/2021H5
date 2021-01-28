@@ -131,16 +131,16 @@ img {
 }
 @keyframes snow1{
   0% {
-    left:-100px;
-    top:0px;
+    left:-300px;
+    top:10px;
   }
   50% {
     left:100px;
-    top:200px;
+    top:600px;
   }
   100% {
-    left:800px;
-    top:400px;
+    left:300px;
+    top:1400px;
   }
 }
  .p1 .snow2 {
@@ -154,13 +154,17 @@ img {
   -webkit-animation:snow1 4s linear infinite;
 }
 @keyframes snow2{
-  from {
+  0% {
     left:-100px;
     top:0px;
   }
-  to {
-    left:800px;
+  50% {
+    left:100px;
     top:200px;
+  }
+  100% {
+    left:800px;
+    top:400px;
   }
 }
 .p1 .bird {
@@ -253,7 +257,7 @@ img {
   width:100vw;
   height:100vh;
   position: relative;
-  background: #595959;
+  background-image: linear-gradient(to right,#595959,#9e9e9c);
   /* background: url(../h5imgs/trees.png) 0 0 no-repeat; */
 }
 .tree1{
