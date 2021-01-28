@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/p2.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -86,8 +87,8 @@
             </p>
         </div>
       </div>
-      <div class="p3">
-        <div class="p3-inner">
+      <div class="ph">
+        <div class="ph-inner">
           <div class="trees">
             <img class="tree1" src="h5imgs/tree1.png" alt="">
             <img class="tree2" src="h5imgs/tree2.png" alt="">
@@ -104,8 +105,10 @@
           </div>
         </div>
       </div>
+      
     </div>
-    <div class="mask"></div>
+    <!-- 天黑遮罩 -->
+    <div class="mask1"></div>
     <div class="p2" id="p2">
     </div>
   </div>
@@ -116,7 +119,7 @@
       })
       soundP1_1.playStatus = true
       
-       var controller = new ScrollMagic.Controller();
+       var controller1 = new ScrollMagic.Controller();
         var tl = new TimelineMax({
           onUpdate:function () {
             if(soundP1_1.playStatus) {
@@ -127,6 +130,7 @@
               },1000)
             }
           }
+          
         })
         //文字
         tl.add("begin");
@@ -137,12 +141,7 @@
         tl.to("#p1 .mark-1", 5, {
           left: '100%', 
           ease: Linear.easeOut,
-          onStart:function () {
-            // var vdo = $('.audioAll .audio')[0]; //jquery
-            // vdo.play()
-            // vdo.muted = false;
-            // $('.audioAll .audio')[0].play()
-          }
+          
         })
         tl.to("#p1 .line-2", .1, {
           opacity: 1, 
@@ -195,23 +194,12 @@
           left: '100%', 
           ease: Linear.easeOut
         })
-        tl.to('.mask',1,{
-          opacity:1,
-          ease: Linear.easeOut,
-        },40)
-        tl.to('.mask',1,{
-          opacity:0,
-          ease: Linear.easeOut,
-        },44)
         tl.to("#p1",12, {
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,
         },0)
-        tl.to("#p2",1, {
-          ease: Linear.easeOut,
-        },12)
         // 树木和楼宇
-        tl.to("#p1 .p3", .2, {opacity: 1},12);
+        tl.to("#p1 .ph", .2, {opacity: 1},12);
         tl.to("#p1 .tree1", 6, {left:-$('#p1 .tree1').width()-10},12);
         tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
         tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
@@ -220,8 +208,8 @@
         tl.to("#p1 .tree6", 6, {left: -$('#p1 .tree6').width()+1150},12);
         // tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
         // tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
-
-        tl.to("#p1 .p3-inner", 5, {xPercent: -60},18);
+        
+        tl.to("#p1 .ph-inner", 5, {xPercent: -60},18);
         tl.from("#p1 .on", 8, {opacity: 1},'-=8');
         tl.to("#p1 #bird", 2, {
           css: {
@@ -284,11 +272,46 @@
           },
           ease: Linear.easeOut,
         },7)
+
+        // 天黑
+        tl.to('.mask1',4,{
+          opacity:1,
+          ease: Linear.easeOut,
+        })
         var scene = new ScrollMagic.Scene({duration: 5000})
         .triggerHook(0)
+        .triggerElement('#p1')
         .setPin("#p1")
         .setTween(tl)
-        .addTo(controller);
+        // .addIndicators({
+        //     name: "p1"
+        // }) 
+        .addTo(controller1);
+
+
+        // 场景2
+        var controller2 = new ScrollMagic.Controller();
+        var tl2 = new TimelineMax({
+          
+          
+        })
+        // tl2.to('.zhanwei1', 1, {yPercent: -100, ease: Linear.easeOut})
+        // tl2.to('.zhanwei1', 4, {top: -1334, ease: Linear.easeOut})
+        tl2.to('.mask1',1,{
+          opacity:0,
+          ease: Linear.easeOut,
+        },0)
+
+        var scene2 = new ScrollMagic.Scene({duration: 500})
+        
+        .triggerHook(-1)
+        .triggerElement('#p2')
+        .setPin("#p2")
+        .setTween(tl2)
+        .addIndicators({
+            name: "p2"
+        }) 
+        .addTo(controller2);
     }
   </script>
 </body>

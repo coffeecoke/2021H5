@@ -1,0 +1,14 @@
+.p2 {
+  /* display: none; */
+  width:100%;
+  height:100vh;
+  min-height: 100%;
+  position: relative;
+  background:url(../h5imgs/page2/p1-bg2.jpg) 0 0 no-repeat;
+}
+/* .zhanwei1 {
+  position: absolute;
+  width:100%;
+  height:200px;
+  background-color: red;
+} */
