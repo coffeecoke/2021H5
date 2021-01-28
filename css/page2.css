@@ -1,0 +1,11 @@
+#p2 .star1{
+  opacity: 0;
+}
+#p2 .star2{
+  opacity: 0;
+}
+#p2 .line{
+  position: absolute;
+  top:0;
+  left:0;
+}

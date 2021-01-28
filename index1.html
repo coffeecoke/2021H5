@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/page2.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -107,6 +108,15 @@
     </div>
     <div class="mask"></div>
     <div class="p2" id="p2">
+      <div class="line">
+        <img src="./h5imgs/page2/line.png" alt="">
+      </div>
+      <div class="star1" id="star1">
+        <img src="./h5imgs/page2/star.png" alt="">
+      </div>
+      <div class="star2" id="star2">
+        <img src="./h5imgs/page2/bigStar.png" alt="">
+      </div>
     </div>
   </div>
   <script>
@@ -285,6 +295,22 @@
           },
           ease: Linear.easeOut,
         },7)
+        tl.to("#p2 .star1", 5, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p2 .star2", 10, {
+          opacity: 1, 
+          ease: Linear.easeOut
+        })
+        tl.to("#p2 .line", 50, {
+          css: {
+            top:1220,
+            left:50,
+            repeat:-1,
+          },
+          ease: Linear.easeOut,
+        })
         var scene = new ScrollMagic.Scene({duration: 5000})
         .triggerHook(0)
         .setPin("#p1")

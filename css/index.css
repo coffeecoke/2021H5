@@ -25,6 +25,7 @@ img {
   position: relative;
   top:0;
   overflow: hidden;
+  z-index:110;
   background:url(../h5imgs/page2/p1-bg2.jpg) 0 0 no-repeat;
 }
 .mask{
