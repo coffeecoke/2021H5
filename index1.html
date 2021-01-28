@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/p2.css">
+  <link rel="stylesheet" href="css/page2.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -110,6 +111,26 @@
     <!-- 天黑遮罩 -->
     <div class="mask1"></div>
     <div class="p2" id="p2">
+      <div class="line">
+        <img src="./h5imgs/page2/line.png" alt="">
+      </div>
+      <div class="star1" id="star1">
+        <img src="./h5imgs/page2/star.png" alt="">
+      </div>
+      <div class="star2" id="star2">
+        <img src="./h5imgs/page2/bigStar.png" alt="">
+      </div>
+      <div class="hand">
+        <img class="hand1" src="./h5imgs/page2/hand1.png" alt="">
+        <img class="hand2" src="./h5imgs/page2/hand2.png" alt="">
+        <img class="hand3" src="./h5imgs/page2/hand3.png" alt="">
+        <img class="hand4" src="./h5imgs/page2/hand4.png" alt="">
+        <img class="hand5" src="./h5imgs/page2/hand5.png" alt="">
+        <img class="hand6" src="./h5imgs/page2/hand6.png" alt="">
+        <img class="hand7" src="./h5imgs/page2/hand7.png" alt="">
+        <img class="hand8" src="./h5imgs/page2/hand8.png" alt="">
+        <img class="hand9" src="./h5imgs/page2/hand9.png" alt="">
+      </div>
     </div>
   </div>
   <script>
@@ -293,16 +314,81 @@
         var controller2 = new ScrollMagic.Controller();
         var tl2 = new TimelineMax({
           
-          
         })
-        // tl2.to('.zhanwei1', 1, {yPercent: -100, ease: Linear.easeOut})
-        // tl2.to('.zhanwei1', 4, {top: -1334, ease: Linear.easeOut})
         tl2.to('.mask1',.5,{
           opacity:0,
           ease: Linear.easeOut,
+        })
+        tl2.to('#p2 .star1',1,{
+          opacity:1,
+          ease: Linear.easeOut,
         },0)
-
-        var scene2 = new ScrollMagic.Scene({duration: 200})
+        tl2.to('#p2 .star2',1,{
+          opacity:1,
+          ease: Linear.easeOut,
+        })
+        tl2.to("#p2",20, {
+          backgroundPosition: "0 100%", 
+          ease: Linear.easeOut,
+        }, 'p2Label')
+        tl2.to('#p2 .star1',2,{
+          top:-2000,
+          ease: Linear.easeOut,
+        },'p2Label')
+        tl2.to('#p2 .star2',2,{
+          top:-2000,
+          ease: Linear.easeOut
+        },'p2Label')
+        tl2.to('#p2 .line',2,{
+          css:{
+            top:-2500,
+          },
+          ease: Linear.easeOut,
+        })
+        tl2.to('#p2 .hand',9,{
+          left:0,
+          top:-800,
+          ease: Linear.easeOut
+        },9)
+        tl2.to('#p2 .hand1',1,{
+          left:0,
+          ease: Linear.easeOut
+        },9)
+        tl2.to('#p2 .hand2',1,{
+          right:0,
+          ease: Linear.easeOut
+        },10)
+        tl2.to('#p2 .hand3',1,{
+          left:0,
+          ease: Linear.easeOut
+        },11)
+        tl2.to('#p2 .hand4',1,{
+          left:0,
+          ease: Linear.easeOut
+        },12)
+        tl2.to('#p2 .hand5',1,{
+          left:0,
+          ease: Linear.easeOut
+        },13)
+        tl2.to('#p2 .hand6',1,{
+          left:0,
+          ease: Linear.easeOut
+        },14)
+        tl2.to('#p2 .hand7',1,{
+          left:0,
+          ease: Linear.easeOut
+        },15)
+        tl2.to('#p2 .hand8',1,{
+          left:0,
+          ease: Linear.easeOut
+        },16)
+        tl2.to('#p2 .hand9',1,{
+          left:0,
+          ease: Linear.easeOut
+        },17)
+        // tl2.to('.zhanwei1', 1, {yPercent: -100, ease: Linear.easeOut})
+        // tl2.to('.zhanwei1', 4, {top: -1334, ease: Linear.easeOut})
+        var scene2 = new ScrollMagic.Scene({duration: 2000})
         
         .triggerHook(-1)
         .triggerElement('#p2')
