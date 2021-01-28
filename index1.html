@@ -83,8 +83,7 @@
         </div>
         <div class="line-7">
             <div class="mark mark-7"></div>
-            <p>等待回归
-            </p>
+            <p>……</p>
         </div>
       </div>
       <div class="ph">
@@ -108,7 +107,9 @@
       
     </div>
     <!-- 天黑遮罩 -->
-    <div class="mask1"></div>
+    <div class="mask1">
+      <div class="mask1-text">等待回归......</div>
+    </div>
     <div class="p2" id="p2">
     </div>
   </div>
@@ -301,8 +302,12 @@
           opacity:0,
           ease: Linear.easeOut,
         },0)
+        tl2.to("#p2",4, {
+          backgroundPosition: "0 100%", 
+          ease: Linear.easeOut,
+        })
 
-        var scene2 = new ScrollMagic.Scene({duration: 200})
+        var scene2 = new ScrollMagic.Scene({duration: 2000})
         
         .triggerHook(-1)
         .triggerElement('#p2')

@@ -166,10 +166,12 @@ img {
 .begin2020 > div {
   opacity: 0;
   position: relative;
+  margin-bottom:40px;
+  display: inline-block;
 }
 .begin2020 p {
   margin:0;
-  margin-bottom:40px;
+  /* margin-bottom:40px; */
 }
 .begin2020 .mark {
   position: absolute;
@@ -284,5 +286,14 @@ img {
   background: #000;
   opacity: 0;
   z-index:100;
+}
+.mask1-text {
+  color:#fff;
+  font-size:40px;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 
