@@ -23,7 +23,6 @@
   <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
   <!-- wrap -->
   <div class="wrap">
-    <!-- 场景1 -->
     <div class="p1" id="p1">
       <div class="rain" id="rain"></div>
       <div class="rain1" id="rain1"></div>
@@ -69,9 +68,9 @@
       <div class="p3">
         <div class="p3-inner">
           <div class="trees">
-            <img class="tree1" src="h5imgs/tree1-1.png" alt="">
-            <!-- <img class="tree2" src="h5imgs/tree2.png" alt=""> -->
-            <!-- <img class="tree3" src="h5imgs/tree3.png" alt=""> -->
+            <img class="tree1" src="h5imgs/tree1.png" alt="">
+            <img class="tree2" src="h5imgs/tree2.png" alt="">
+            <img class="tree3" src="h5imgs/tree3.png" alt="">
             <img class="tree4" src="h5imgs/tree4.png" alt="">
             <img class="tree5" src="h5imgs/tree5.png" alt="">
             <img class="tree6" src="h5imgs/tree6.png" alt="">
@@ -84,10 +83,8 @@
           </div>
         </div>
       </div>
-      
     </div>
     <div class="p2" id="p2">
-      
     </div>
   </div>
   <script>
@@ -181,18 +178,18 @@
           ease: Linear.easeOut,
         },0)
         // 树木和楼宇
-        tl.to("#p1 .p3", 0, {opacity: 1},12);
+        tl.to("#p1 .p3", .2, {opacity: 1},12);
         tl.to("#p1 .tree1", 6, {left:-$('#p1 .tree1').width()-10},12);
-        // tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
-        // tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
+        tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
+        tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
         tl.to("#p1 .tree4", 6, {left: -$('#p1 .tree4').width()+150},12);
         tl.to("#p1 .tree5", 5, {left: -$('#p1 .tree5').width()+750},12);
         tl.to("#p1 .tree6", 6, {left: -$('#p1 .tree6').width()+1150},12);
         // tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
         // tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
 
-        tl.to("#p1 .p3-inner", 5, {xPercent: -60},20);
-        tl.from("#p1 .on", 6, {opacity: 1},'-=3');
+        tl.to("#p1 .p3-inner", 5, {xPercent: -60},18);
+        tl.from("#p1 .on", 8, {opacity: 1},'-=8');
         tl.to("#p1 #bird", 2, {
           css: {
             top:0,
@@ -255,7 +252,11 @@
           ease: Linear.easeOut,
          
         },7)
-
+        tl.to("#p2 .mask", 0, {
+          opacity: 0, 
+          left: '100%',
+          ease: Linear.easeOut
+        })
         var scene = new ScrollMagic.Scene({duration: 5000})
         .triggerHook(0)
         .setPin("#p1")

@@ -18,13 +18,26 @@ img {
   overflow: hidden;
   background:url(../h5imgs/p1-bg1.jpg) 0 0 no-repeat;
 }
+.p2 {
+  height:340vh;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  background:url(../h5imgs/page2/p1-bg2.jpg) 0 0 no-repeat;
+}
+.mask{
+  position: absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  background: #000;
+  opacity: 1;
+}
 .p1 .rain {
   width:750px;
   height:1200px;
   background: url(../h5imgs/rain2.png) no-repeat center;
   opacity: 0.3;
-  left:0px;
-  top:-100px;
   position: absolute;
   /* transform:rotate(-10deg); */
   animation:rain 1s linear infinite;
@@ -32,7 +45,7 @@ img {
 }
 @keyframes rain{
   0% {
-    left:0px;
+    left:-100px;
     top:-100px;
   }
   50% {
@@ -40,7 +53,7 @@ img {
     top:500px;
   }
   100% {
-    left:300px;
+    left:400px;
     top:1000px;
   }
 }
@@ -58,15 +71,15 @@ img {
 @keyframes rain1{
   0% {
     left:-100px;
-    top:10px;
+    top:-100px;
   }
   50% {
     left:100px;
-    top:500px;
+    top:300px;
   }
   100% {
     left:300px;
-    top:1000px;
+    top:500px;
   }
 } 
  .p1 .rain2 {
@@ -78,8 +91,8 @@ img {
   top:0;
   position: absolute;
   /* transform:rotate(-10deg); */
-  animation:rain2 2.5s linear infinite;
-  -webkit-animation:rain2 2.5s linear infinite;
+  /* animation:rain2 2.5s linear infinite; */
+  /* -webkit-animation:rain2 2.5s linear infinite; */
 }
 @keyframes rain2{
   0% {
@@ -104,6 +117,7 @@ img {
   background: url(../h5imgs/snow3.png) no-repeat center;
   animation:snow 3s linear infinite;
   -webkit-animation:snow 3s linear infinite;
+  display:none;
 }
 @keyframes snow{
   0% {
@@ -128,6 +142,7 @@ img {
   background: url(../h5imgs/snow2.png) no-repeat center;
   animation:snow1 6s linear infinite;
   -webkit-animation:snow1 6s linear infinite;
+  display:none;
 }
 @keyframes snow1{
   0% {
@@ -152,6 +167,7 @@ img {
   background: url(../h5imgs/snow.png) no-repeat center;
   animation:snow1 4s linear infinite;
   -webkit-animation:snow1 4s linear infinite;
+  display:none;
 }
 @keyframes snow2{
   0% {
@@ -263,37 +279,37 @@ img {
 .tree1{
   position: absolute;
   left:0;
-  top:0;
+  bottom:0;
   z-index:1;
 }
 .tree2{
   position: absolute;
   left:0;
-  top:0;
+  bottom:0;
   z-index:2;
 }
 .tree3{
   position: absolute;
-  left:220px;
-  top:0;
+  left:105px;
+  bottom:0;
   z-index:3;
 }
 .tree4{
   position: absolute;
   left:1000px;
-  top:0;
+  bottom:0;
   z-index:0;
 }
 .tree5{
   position: absolute;
   left:800px;
-  top:0;
+  bottom:0;
   z-index:0;
 }
 .tree6{
   position: absolute;
   left:1500px;
-  top:0;
+  bottom:0;
   z-index:50;
 }
 .tree-front {
@@ -309,7 +325,7 @@ img {
 }
 .trees img {
   display: block;
-  height:100%;
+  /* height:100%; */
 }
 .Building {
   float:left;
