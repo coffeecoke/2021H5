@@ -68,9 +68,9 @@
       <div class="p3">
         <div class="p3-inner">
           <div class="trees">
-            <img class="tree1" src="h5imgs/tree1-1.png" alt="">
-            <!-- <img class="tree2" src="h5imgs/tree2.png" alt=""> -->
-            <!-- <img class="tree3" src="h5imgs/tree3.png" alt=""> -->
+            <img class="tree1" src="h5imgs/tree1.png" alt="">
+            <img class="tree2" src="h5imgs/tree2.png" alt="">
+            <img class="tree3" src="h5imgs/tree3.png" alt="">
             <img class="tree4" src="h5imgs/tree4.png" alt="">
             <img class="tree5" src="h5imgs/tree5.png" alt="">
             <img class="tree6" src="h5imgs/tree6.png" alt="">
@@ -83,7 +83,8 @@
           </div>
         </div>
       </div>
-      
+    </div>
+    <div class="p2" id="p2">
     </div>
   </div>
   <script>
@@ -179,8 +180,8 @@
         // 树木和楼宇
         tl.to("#p1 .p3", 0, {opacity: 1},12);
         tl.to("#p1 .tree1", 6, {left:-$('#p1 .tree1').width()-10},12);
-        // tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
-        // tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
+        tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
+        tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
         tl.to("#p1 .tree4", 6, {left: -$('#p1 .tree4').width()+150},12);
         tl.to("#p1 .tree5", 5, {left: -$('#p1 .tree5').width()+750},12);
         tl.to("#p1 .tree6", 6, {left: -$('#p1 .tree6').width()+1150},12);
@@ -251,7 +252,11 @@
           ease: Linear.easeOut,
          
         },7)
-
+        tl.to("#p2 .mask", 0, {
+          opacity: 0, 
+          left: '100%',
+          ease: Linear.easeOut
+        })
         var scene = new ScrollMagic.Scene({duration: 5000})
         .triggerHook(0)
         .setPin("#p1")

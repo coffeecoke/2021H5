@@ -18,6 +18,21 @@ img {
   overflow: hidden;
   background:url(../h5imgs/p1-bg1.jpg) 0 0 no-repeat;
 }
+.p2 {
+  height:340vh;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  background:url(../h5imgs/page2/p1-bg2.jpg) 0 0 no-repeat;
+}
+.mask{
+  position: absolute;
+  top:0;
+  width:100%;
+  height:100%;
+  background: #000;
+  opacity: 1;
+}
 .p1 .rain {
   width:750px;
   height:1200px;
