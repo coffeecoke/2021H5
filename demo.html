@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=750, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .three-dee {
+      display: block;
+      width: 100%;;
+      height: 1334px;
+      -webkit-filter: saturate(0.75);
+      filter: saturate(0.75);
+      z-index: 2;
+      /* background:url("bg.jpg"); */
+      /* background-blend-mode: multiply; */
+      background-size: cover;
+    }
+
+    .three-dee:after {
+      content: '';
+      position: absolute;
+      top:0;
+      display: block;
+      width: 100%;
+      height: 1334px;
+      z-index: 3;
+      margin-left: 5px;
+      background-size: cover;
+      mix-blend-mode: color; 
+      background: url(1.png) 0 0 no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+<div class="three-dee">
+
+  <img src="bg.jpg" alt="" style="width:100%;">
+</div>
+</body>
+
+</html>

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/p2.css">
   <link rel="stylesheet" href="css/page2.css">
+  <link rel="stylesheet" href="css/p3.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -132,13 +133,8 @@
         <img class="hand8" src="./h5imgs/page2/hand8.png" alt="">
         <img class="hand9" src="./h5imgs/page2/hand9.png" alt="">
       </div>
-      <div class="light">
-        <img class="light1" src="./h5imgs/page2/light.png" alt="">
-        <img class="light2" src="./h5imgs/page2/light2.png" alt="">
-        <img class="light3" src="./h5imgs/page2/light3.png" alt="">
-      </div>
-      <div class="yeLight"></div>
     </div>
+    <div class="p3" id="p3"></div>
   </div>
   <script>
     window.onload = function () {
@@ -328,15 +324,13 @@
         },0)
         tl2.to('#p2 .star1',1,{
           opacity:1,
-          top:10,
           ease: Linear.easeOut,
         },0)
         tl2.to('#p2 .star2',1,{
           opacity:1,
-          top:20,
           ease: Linear.easeOut,
-        },1)
-        tl2.to("#p2",18, {
+        },0)
+        tl2.to("#p2",15, {
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,
         }, 'p2Label')
@@ -348,12 +342,12 @@
           top:-2000,
           ease: Linear.easeOut
         },'p2Label')
-        tl2.to('#p2 .line',4,{
+        tl2.to('#p2 .line',2,{
           css:{
-            top:-2000,
+            top:-2500,
           },
           ease: Linear.easeOut,
-        },'p2Label')
+        })
         tl2.addLabel("handLabel",6)
         tl2.to('#p2 .hand',9,{
           left:0,
@@ -396,25 +390,6 @@
           left:0,
           ease: Linear.easeOut
         },'handLabel+=8')
-        tl2.to('#p2 .light1',1,{
-          left:0,
-          opacity:.5,
-          ease: Linear.easeOut
-        },'handLabel+=11')
-        tl2.to('#p2 .light2',1,{
-          left:0,
-          opacity:.5,
-          ease: Linear.easeOut
-        },'handLabel+=12')
-        tl2.to('#p2 .light3',1,{
-          left:0,
-          opacity:.5,
-          ease: Linear.easeOut
-        },'handLabel+=13')
-        tl2.to('#p2 .yeLight',1,{
-          opacity:1,
-          ease: Linear.easeOut
-        },'-=1')
         var scene2 = new ScrollMagic.Scene({duration: 2000})
         
         .triggerHook(-1)
@@ -425,6 +400,23 @@
             name: "p2"
         }) 
         .addTo(controller2);
+
+        // 场景3
+        var controller3 = new ScrollMagic.Controller();
+        var tl3 = new TimelineMax({
+          
+        })
+
+        var scene3 = new ScrollMagic.Scene({duration: 2000})
+        
+        .triggerHook(-1)
+        .triggerElement('#p3')
+        .setPin("#p3")
+        .setTween(tl3)
+        .addIndicators({
+            name: "p3"
+        }) 
+        .addTo(controller3);
     }
   </script>
 </body>
