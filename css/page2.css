@@ -14,7 +14,7 @@
   position: absolute;
   top:0;
   left:0;
-  z-index:100;
+  z-index:1;
   animation:line 2s linear infinite;
   -webkit-animation:line 2s linear infinite;
   animation-direction:alternate;

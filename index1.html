@@ -319,7 +319,7 @@
         tl2.to('.mask1',.5,{
           opacity:0,
           ease: Linear.easeOut,
-        })
+        },0)
         tl2.to('#p2 .star1',1,{
           opacity:1,
           ease: Linear.easeOut,
@@ -327,16 +327,16 @@
         tl2.to('#p2 .star2',1,{
           opacity:1,
           ease: Linear.easeOut,
-        })
-        tl2.to("#p2",20, {
+        },0)
+        tl2.to("#p2",15, {
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,
         }, 'p2Label')
-        tl2.to('#p2 .star1',2,{
-          top:-2000,
+        tl2.to('#p2 .star1',3,{
+          top:-1500,
           ease: Linear.easeOut,
         },'p2Label')
-        tl2.to('#p2 .star2',2,{
+        tl2.to('#p2 .star2',4,{
           top:-2000,
           ease: Linear.easeOut
         },'p2Label')
@@ -346,47 +346,48 @@
           },
           ease: Linear.easeOut,
         })
+        tl2.addLabel("handLabel",6)
         tl2.to('#p2 .hand',9,{
           left:0,
           top:-800,
           ease: Linear.easeOut
-        },9)
+        },'handLabel')
         tl2.to('#p2 .hand1',1,{
           left:0,
           ease: Linear.easeOut
-        },9)
+        },'handLabel')
         tl2.to('#p2 .hand2',1,{
           right:0,
           ease: Linear.easeOut
-        },10)
+        },'handLabel+=1')
         tl2.to('#p2 .hand3',1,{
           left:0,
           ease: Linear.easeOut
-        },11)
+        },'handLabel+=2')
         tl2.to('#p2 .hand4',1,{
           left:0,
           ease: Linear.easeOut
-        },12)
+        },'handLabel+=3')
         tl2.to('#p2 .hand5',1,{
           left:0,
           ease: Linear.easeOut
-        },13)
+        },'handLabel+=4')
         tl2.to('#p2 .hand6',1,{
           left:0,
           ease: Linear.easeOut
-        },14)
+        },'handLabel+=5')
         tl2.to('#p2 .hand7',1,{
           left:0,
           ease: Linear.easeOut
-        },15)
+        },'handLabel+=6')
         tl2.to('#p2 .hand8',1,{
           left:0,
           ease: Linear.easeOut
-        },16)
+        },'handLabel+=7')
         tl2.to('#p2 .hand9',1,{
           left:0,
           ease: Linear.easeOut
-        },17)
+        },'handLabel+=8')
         var scene2 = new ScrollMagic.Scene({duration: 2000})
         
         .triggerHook(-1)
