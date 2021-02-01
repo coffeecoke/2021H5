@@ -10,24 +10,7 @@
   top:0px;
   left:0;
 }
-#p2 .line{
-  position: absolute;
-  top:0;
-  left:0;
-  z-index:1;
-  animation:line 2s linear infinite;
-  -webkit-animation:line 2s linear infinite;
-  animation-direction:alternate;
-  -webkit-animation-direction:alternate;
-}
-@keyframes line{
-  0% {
-    left:-60px;
-  }
-  100% {
-    left:0px;
-  }
-}
+
 #p2 .hand img{
   display: block;
 }
