@@ -6,7 +6,7 @@ body {
 .wrap { 
   min-height:100%;
   background-color:#000;
-  
+  overflow: hidden;
 }
 img {
   display: block;
