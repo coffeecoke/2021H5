@@ -1,13 +1,13 @@
 #p2 .star1{
   opacity: 0;
   position: relative;
-  top:0px;
+  top:-100px;
   left:0;
 }
 #p2 .star2{
   opacity: 0;
   position: relative;
-  top:0px;
+  top:-120px;
   left:0;
 }
 
