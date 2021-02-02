@@ -148,9 +148,9 @@
         <div class="line">
           <img src="./h5imgs/page3/line.png" alt="">
         </div>
-        <div class="light">
-          
-        </div>
+        <div class="light step1"></div>
+        <div class="light step2"></div>
+        <div class="light step3"></div>
         <div class='branch1'>
           <img src="./h5imgs/page3/branch1.png" alt="">
         </div>
@@ -209,9 +209,17 @@
         </div>
       </div>
     </div>
+<<<<<<< HEAD
     <!-- <div class="p5" id="p5">
 
     </div> -->
+=======
+    <div class="p5" id="p5">
+      <div class="p5-scroll">
+        <span>hello</span>
+      </div>
+    </div>
+>>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
   </div>
   <script>
     window.onload = function () {
@@ -395,7 +403,7 @@
         var tl2 = new TimelineMax({
           
         })
-        tl2.to('.mask1',.5,{
+        tl2.to('.mask1',2,{
           opacity:0,
           ease: Linear.easeOut,
         },0)
@@ -407,13 +415,18 @@
           opacity:1,
           top:0,
           ease: Linear.easeOut,
-        },0)
+        })
         tl2.to('#p2 .star2',1,{
           opacity:1,
           top:-100,
           ease: Linear.easeOut,
+<<<<<<< HEAD
         },2)
         tl2.to("#p2",26, {
+=======
+        })
+        tl2.to("#p2",12, {
+>>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,
         }, 'p2Label')
@@ -487,12 +500,17 @@
           left:0,
           opacity:.5,
           ease: Linear.easeOut
+<<<<<<< HEAD
         },'handLabel+=21')
         tl2.to('#p2 .yeLight',1,{
+=======
+        },'handLabel+=13')
+        tl2.to('#p2 .yeLight',.5,{
+>>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
           opacity:1,
           ease: Linear.easeOut
         })
-        tl2.to('#p2 .line',1,{
+        tl2.to('#p2 .line',0.1,{
           opacity:0,
           ease: Linear.easeOut
         })
@@ -519,35 +537,21 @@
           opacity:0,
           ease: Linear.easeOut
         })
-        tl2.to('#p2 .yeLight',0,{
+        tl3.to('#p2 .yeLight',0,{
           left:-10000,
           ease: Linear.easeOut,
         })
-        tl3.to("#p3 .light", 2, {
-          css: {
-            'background-image': 'url(h5imgs/page3/light-1.png)'
-          },
-          ease: Linear.easeOut,
-         
-        })
-        tl3.to("#p3 .light", 1, {
-          css: {
-            'background-image': 'url(h5imgs/page3/light-2.png)'
-          },
-          ease: Linear.easeOut,
-         
-        })
-        tl3.to("#p3 .light", 1, {
-          css: {
-            'background-image': 'url(h5imgs/page3/light-3.png)'
-          },
-          ease: Linear.easeOut,
-         
-        })
-        tl3.to("#p3 .light", 0, {
+        tl3.to("#p3 .step3", 1, {
           opacity:0,
           ease: Linear.easeOut,
-         
+        })
+        tl3.to("#p3 .step2", 1, {
+          opacity:0,
+          ease: Linear.easeOut,
+        })
+        tl3.to("#p3 .step1", 1, {
+          opacity:0,
+          ease: Linear.easeOut,
         })
         tl3.to(".p3-scroll",24, {
           backgroundPosition: "0 100%", 
@@ -576,6 +580,7 @@
           transform:'rotate(0)',
           top:500,
           ease: Linear.easeOut,
+         
         },'p3Label1+=5')
        
         tl3.to("#p3 .leaf-move",1, {
@@ -583,52 +588,77 @@
             width:241,
             height:125,
             top:550,
-            'background-image': 'url(h5imgs/page3/leaf2.png)'
+            'background': 'url(h5imgs/page3/leaf2.png) no-repeat'
           },
           ease: Linear.easeOut,
         },'p3Label1+=6')
-        tl3.to("#p3 .leaf-move",1, {
+        tl3.to("#p3 .leaf-move",0, {
           css: {
             width:220,
             height:180,
-            top:600,
             'background-image': 'url(h5imgs/page3/leaf3.png)'
           },
           ease: Linear.easeOut,
         },'p3Label1+=7')
         tl3.to("#p3 .leaf-move",1, {
           css: {
+            top:600,
+          },
+          ease: Linear.easeOut,
+        },'p3Label1+=7')
+        tl3.to("#p3 .leaf-move",0, {
+          css: {
             width:193,
             height:240,
-            top:750,
             'background-image': 'url(h5imgs/page3/leaf4.png)'
           },
           ease: Linear.easeOut,
         },'p3Label1+=8')
         tl3.to("#p3 .leaf-move",1, {
           css: {
+            top:750,
+          },
+          ease: Linear.easeOut,
+        },'p3Label1+=8')
+        tl3.to("#p3 .leaf-move",0, {
+          css: {
             width:246,
             height:340,
-            top:800,
             'background-image': 'url(h5imgs/page3/leaf5.png)'
           },
           ease: Linear.easeOut,
         },'p3Label1+=9')
         tl3.to("#p3 .leaf-move",1, {
           css: {
+            top:800,
+          },
+          ease: Linear.easeOut,
+        },'p3Label1+=9')
+        tl3.to("#p3 .leaf-move",0, {
+          css: {
             width:305,
             height:229,
-            top:850,
             'background-image': 'url(h5imgs/page3/leaf6.png)'
           },
           ease: Linear.easeOut,
         },'p3Label1+=10')
         tl3.to("#p3 .leaf-move",1, {
           css: {
+            top:850,
+          },
+          ease: Linear.easeOut,
+        },'p3Label1+=10')
+        tl3.to("#p3 .leaf-move",0, {
+          css: {
             width:470,
             height:385,
-            top:900,
             'background-image': 'url(h5imgs/page3/leaf7.png)'
+          },
+          ease: Linear.easeOut,
+        },'p3Label1+=11')
+        tl3.to("#p3 .leaf-move",1, {
+          css: {
+            top:900
           },
           ease: Linear.easeOut,
         },'p3Label1+=11')
@@ -783,6 +813,27 @@
             name: "p4"
         }) 
         .addTo(controller4);
+
+        // 场景5
+        var controller5 = new ScrollMagic.Controller();
+        var tl5 = new TimelineMax({
+          
+        })
+        tl5.to("#p5 span",3, {
+          css: {
+            color:'#fff'
+          },
+          ease: Linear.easeOut,
+        })
+        var scene5 = new ScrollMagic.Scene({duration: 2000})
+        .triggerHook(1)
+        .triggerElement('#p5')
+        .setPin("#p5")
+        .setTween(tl5)
+        .addIndicators({
+            name: "p5"
+        }) 
+        .addTo(controller5);
 
     }
   </script>
