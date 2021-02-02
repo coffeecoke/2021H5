@@ -10,6 +10,7 @@
   height: 100vh;
   transform: translateY(-100%);
   background-color: #ffeec2;
+  position: relative;
 }
 .yun1 {
   position: absolute;

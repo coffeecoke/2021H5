@@ -17,6 +17,17 @@
   position: absolute;
   left:0;
   top:0;
+  background:none;
+  /* opacity: 0; */
+}
+.light.step1 {
+  background:url(../h5imgs/page3/light-1.png) 0 0 no-repeat;
+}
+.light.step2 {
+  background:url(../h5imgs/page3/light-2.png) 0 0 no-repeat;
+}
+.light.step3 {
+  background:url(../h5imgs/page3/light-3.png) 0 0 no-repeat;
 }
 .branch1 {
   position: absolute;
@@ -31,7 +42,7 @@
   width:215px;
   height:118px;
   background:url(../h5imgs/page3/leaf1.png) no-repeat;
-  background-size:contain !important;
+  background-size:100% auto !important;
   top: 400px;
   left: 267px;
   transform-origin: 0 50%;
