@@ -87,8 +87,8 @@
           </p>
         </div>
         <div class="line-7">
-            <div class="mark mark-7"></div>
-            <p>……</p>
+          <div class="mark mark-7"></div>
+          <p>……</p>
         </div>
       </div>
       <div class="ph">
@@ -109,7 +109,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
     <!-- 天黑遮罩 -->
     <div class="mask1">
@@ -160,7 +160,7 @@
           <div class="leaf-8"></div>
           <div class="leaf-9"></div>
         </div>
-        
+
       </div>
     </div>
     <div class="p4" id="p4">
@@ -180,6 +180,7 @@
         <!-- <div class="airplane">
           <img class="airplane1" src="./h5imgs/page4/airplane.png" alt="">
         </div> -->
+        <div class="airplane"></div>
         <div class="building">
           <div class="build-hr">
             <img class="building1" src="./h5imgs/page4/floor.png" alt="">
@@ -189,17 +190,14 @@
         <div class="people">
           <img src="./h5imgs/page4/people.png" alt="">
         </div>
-        <div>
-        <div class="scene">
-          <div class="long">
-            <img src="./h5imgs/page4/long.png" alt="">
-          </div>
-          <div class="long-left">
-            <img src="./h5imgs/page4/long-left.png" alt="">
-          </div>
-          <div class="long-right">
-            <img src="./h5imgs/page4/long-right.png" alt="">
-          </div>
+        <div class="long">
+          <img src="./h5imgs/page4/long.png" alt="">
+        </div>
+        <div class="long-left">
+          <img src="./h5imgs/page4/long-left.png" alt="">
+        </div>
+        <div class="long-right">
+          <img src="./h5imgs/page4/long-right.png" alt="">
         </div>
         <div class="floor">
           <img src="./h5imgs/page4/floor-board.png" alt="">
@@ -209,185 +207,199 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    <!-- <div class="p5" id="p5">
-
-    </div> -->
-=======
     <div class="p5" id="p5">
       <div class="p5-scroll">
         <span>hello</span>
       </div>
     </div>
->>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
   </div>
   <script>
     window.onload = function () {
       var soundP1_1 = new Howl({
-        src:['audios/typing.mp3']
+        src: ['audios/typing.mp3']
       })
       soundP1_1.playStatus = true
-      
-       var controller1 = new ScrollMagic.Controller();
-        var tl = new TimelineMax({
-          onUpdate:function () {
-            if(soundP1_1.playStatus) {
-              soundP1_1.play()
-              soundP1_1.playStatus = false
-              var timer = setTimeout(function() {
-                soundP1_1.playStatus = true
-              },1000)
-            }
-          }
-          
-        })
-        //文字
-        tl.add("begin");
-        tl.to("#p1 .line-1", 0, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-1", 5, {
-          left: '100%', 
-          ease: Linear.easeOut,
-          
-        })
-        tl.to("#p1 .line-2", .1, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-2", 5, {
-          left: '100%',
-          ease: Linear.easeOut,
-          onStart:function () {
-            // vdo.muted = false;
-          }
-        })
-        tl.to(".line-3", .1, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-3", 5, {
-          left: '100%',  
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .line-4", .1, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-4", 5, {
-          left: '100%', 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .line-5", .1, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-5", 5, {
-          left: '100%', 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .line-6", .1, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-6", 5, {
-          left: '100%', 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .line-7", .1, {
-          opacity: 1, 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1 .mark-7", 5, {
-          left: '100%', 
-          ease: Linear.easeOut
-        })
-        tl.to("#p1",12, {
-          backgroundPosition: "0 100%", 
-          ease: Linear.easeOut,
-        },0)
-        // 树木和楼宇
-        tl.to("#p1 .ph", .2, {opacity: 1},12);
-        tl.to("#p1 .tree1", 6, {left:-$('#p1 .tree1').width()-10},12);
-        tl.to("#p1 .tree2", 5, {left: -$('#p1 .tree2').width()-50},12);
-        tl.to("#p1 .tree3", 5, {left:-$('#p1 .tree3').width()-100},12);
-        tl.to("#p1 .tree4", 6, {left: -$('#p1 .tree4').width()+150},12);
-        tl.to("#p1 .tree5", 5, {left: -$('#p1 .tree5').width()+750},12);
-        tl.to("#p1 .tree6", 6, {left: -$('#p1 .tree6').width()+1150},12);
-        // tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
-        // tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
-        
-        tl.to("#p1 .ph-inner", 5, {xPercent: -60},18);
-        tl.from("#p1 .on", 8, {opacity: 1},'-=8');
-        tl.to("#p1 #bird", 2, {
-          css: {
-            top:0,
-            right:0,
-            background: 'url(h5imgs/bird-1.png) center no-repeat'
-          },
-          ease: Linear.easeOut,
-         
-        },1)
-        tl.to("#p1 #bird", 2, {
-          css: {
-            top:150,
-            right:200,
-            background: 'url(h5imgs/bird-2.png) center no-repeat'
-          },
-          ease: Linear.easeOut,
-         
-        },2)
-        tl.to("#p1 #bird", 1, {
-          css: {
-            top:260,
-            right:330,
-            background: 'url(h5imgs/bird-3.png) center no-repeat'
-          },
-          ease: Linear.easeOut,
-         
-        },3)
-        tl.to("#p1 #bird", 1, {
-          css: {
-            top:460,
-            right:466,
-            background: 'url(h5imgs/bird-4.png) center no-repeat'
-          },
-          ease: Linear.easeOut,
-         
-        },4)
-        tl.to("#p1 #bird", 1, {
-          css: {
-            top:770,
-            right:490,
-            background: 'url(h5imgs/bird-5.png) center no-repeat'
-          },
-          ease: Linear.easeOut,
-         
-        },5)
-        tl.to("#p1 #bird", 1, {
-          css: {
-            top:1030,
-            right:290,
-            background: 'url(h5imgs/bird-6.png) center no-repeat'
-          },
-          ease: Linear.easeOut,
-         
-        },6)
-        tl.to("#p1 #bird", 1, {
-          css: {
-            top:1200,
-            right:-300,
-          },
-          ease: Linear.easeOut,
-        },7)
 
-        // 天黑
-        tl.to('.mask1',1,{
-          opacity:1,
-          ease: Linear.easeOut,
+      var controller1 = new ScrollMagic.Controller();
+      var tl = new TimelineMax({
+        onUpdate: function () {
+          if (soundP1_1.playStatus) {
+            soundP1_1.play()
+            soundP1_1.playStatus = false
+            var timer = setTimeout(function () {
+              soundP1_1.playStatus = true
+            }, 1000)
+          }
+        }
+
+      })
+      //文字
+      tl.add("begin");
+      tl.to("#p1 .line-1", 0, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-1", 5, {
+        left: '100%',
+        ease: Linear.easeOut,
+
+      })
+      tl.to("#p1 .line-2", .1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-2", 5, {
+        left: '100%',
+        ease: Linear.easeOut,
+        onStart: function () {
+          // vdo.muted = false;
+        }
+      })
+      tl.to(".line-3", .1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-3", 5, {
+        left: '100%',
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .line-4", .1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-4", 5, {
+        left: '100%',
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .line-5", .1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-5", 5, {
+        left: '100%',
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .line-6", .1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-6", 5, {
+        left: '100%',
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .line-7", .1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .mark-7", 5, {
+        left: '100%',
+        ease: Linear.easeOut
+      })
+      tl.to("#p1", 12, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      }, 0)
+      // 树木和楼宇
+      tl.to("#p1 .ph", .2, {
+        opacity: 1
+      }, 12);
+      tl.to("#p1 .tree1", 6, {
+        left: -$('#p1 .tree1').width() - 10
+      }, 12);
+      tl.to("#p1 .tree2", 5, {
+        left: -$('#p1 .tree2').width() - 50
+      }, 12);
+      tl.to("#p1 .tree3", 5, {
+        left: -$('#p1 .tree3').width() - 100
+      }, 12);
+      tl.to("#p1 .tree4", 6, {
+        left: -$('#p1 .tree4').width() + 150
+      }, 12);
+      tl.to("#p1 .tree5", 5, {
+        left: -$('#p1 .tree5').width() + 750
+      }, 12);
+      tl.to("#p1 .tree6", 6, {
+        left: -$('#p1 .tree6').width() + 1150
+      }, 12);
+      // tl.to("#p1 .tree-front", 12, {left: -$('#p1 .tree-front').width()+1150},12,'label');
+      // tl.to("#p1 .tree-back", 8, {left: -$('#p1 .tree-back').width()+750},12);
+
+      tl.to("#p1 .ph-inner", 5, {
+        xPercent: -60
+      }, 18);
+      tl.from("#p1 .on", 8, {
+        opacity: 1
+      }, '-=8');
+      tl.to("#p1 #bird", 2, {
+        css: {
+          top: 0,
+          right: 0,
+          background: 'url(h5imgs/bird-1.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+
+      }, 1)
+      tl.to("#p1 #bird", 2, {
+        css: {
+          top: 150,
+          right: 200,
+          background: 'url(h5imgs/bird-2.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+
+      }, 2)
+      tl.to("#p1 #bird", 1, {
+        css: {
+          top: 260,
+          right: 330,
+          background: 'url(h5imgs/bird-3.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+
+      }, 3)
+      tl.to("#p1 #bird", 1, {
+        css: {
+          top: 460,
+          right: 466,
+          background: 'url(h5imgs/bird-4.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+
+      }, 4)
+      tl.to("#p1 #bird", 1, {
+        css: {
+          top: 770,
+          right: 490,
+          background: 'url(h5imgs/bird-5.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+
+      }, 5)
+      tl.to("#p1 #bird", 1, {
+        css: {
+          top: 1030,
+          right: 290,
+          background: 'url(h5imgs/bird-6.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+
+      }, 6)
+      tl.to("#p1 #bird", 1, {
+        css: {
+          top: 1200,
+          right: -300,
+        },
+        ease: Linear.easeOut,
+      }, 7)
+
+      // 天黑
+      tl.to('.mask1', 1, {
+        opacity: 1,
+        ease: Linear.easeOut,
+      })
+      var scene = new ScrollMagic.Scene({
+          duration: 5000
         })
-        var scene = new ScrollMagic.Scene({duration: 5000})
         .triggerHook(0)
         .triggerElement('#p1')
         .setPin("#p1")
@@ -398,431 +410,460 @@
         .addTo(controller1);
 
 
-        // 场景2
-        var controller2 = new ScrollMagic.Controller();
-        var tl2 = new TimelineMax({
-          
+      // 场景2
+      var controller2 = new ScrollMagic.Controller();
+      var tl2 = new TimelineMax({
+
+      })
+      tl2.to('.mask1', 2, {
+        opacity: 0,
+        ease: Linear.easeOut,
+      }, 0)
+      tl2.to('.mask1', .1, {
+        left: -10000,
+        ease: Linear.easeOut,
+      })
+      tl2.to('#p2 .star1', 1, {
+        opacity: 1,
+        top: 0,
+        ease: Linear.easeOut,
+      })
+      tl2.to('#p2 .star2', 1, {
+        opacity: 1,
+        top: -100,
+        ease: Linear.easeOut,
+      }, 2)
+      tl2.to("#p2", 26, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      }, 'p2Label')
+      tl2.to('#p2 .star1', 3, {
+        top: -1500,
+        ease: Linear.easeOut,
+      }, 'p2Label')
+      tl2.to('#p2 .star2', 4, {
+        top: -2000,
+        ease: Linear.easeOut
+      }, 'p2Label')
+      tl2.to('#p2 .line', 4, {
+        css: {
+          top: -2000,
+        },
+        ease: Linear.easeOut,
+      }, 'p2Label')
+      tl2.addLabel("handLabel", 8)
+      tl2.to('#p2 .hand', 18, {
+        left: 0,
+        top: -800,
+        ease: Linear.easeOut
+      }, 'handLabel')
+      tl2.to('#p2 .hand1', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel')
+      tl2.to('#p2 .hand2', 2, {
+        right: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=3')
+      tl2.to('#p2 .hand3', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=5')
+      tl2.to('#p2 .hand4', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=7')
+      tl2.to('#p2 .hand5', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=9')
+      tl2.to('#p2 .hand6', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=11')
+      tl2.to('#p2 .hand7', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=13')
+      tl2.to('#p2 .hand8', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=15')
+      tl2.to('#p2 .hand9', 2, {
+        left: 0,
+        ease: Linear.easeOut
+      }, 'handLabel+=17')
+      tl2.to('#p2 .light1', 1, {
+        left: 0,
+        opacity: .5,
+        ease: Linear.easeOut
+      }, 'handLabel+=19')
+      tl2.to('#p2 .light2', 1, {
+        left: 0,
+        opacity: .5,
+        ease: Linear.easeOut
+      }, 'handLabel+=20')
+      tl2.to('#p2 .light3', 1, {
+        left: 0,
+        opacity: .5,
+        ease: Linear.easeOut
+      }, 'handLabel+=21')
+      tl2.to('#p2 .yeLight', 1, {
+        opacity: 1,
+        ease: Linear.easeOut
+      })
+      tl2.to('#p2 .line', 0.1, {
+        opacity: 0,
+        ease: Linear.easeOut
+      })
+      var scene2 = new ScrollMagic.Scene({
+          duration: 2000
         })
-        tl2.to('.mask1',2,{
-          opacity:0,
-          ease: Linear.easeOut,
-        },0)
-        tl2.to('.mask1',.1,{
-          left:-10000,
-          ease: Linear.easeOut,
-        })
-        tl2.to('#p2 .star1',1,{
-          opacity:1,
-          top:0,
-          ease: Linear.easeOut,
-        })
-        tl2.to('#p2 .star2',1,{
-          opacity:1,
-          top:-100,
-          ease: Linear.easeOut,
-        },2)
-        tl2.to("#p2",26, {
-          backgroundPosition: "0 100%", 
-          ease: Linear.easeOut,
-        }, 'p2Label')
-        tl2.to('#p2 .star1',3,{
-          top:-1500,
-          ease: Linear.easeOut,
-        },'p2Label')
-        tl2.to('#p2 .star2',4,{
-          top:-2000,
-          ease: Linear.easeOut
-        },'p2Label')
-        tl2.to('#p2 .line',4,{
-          css:{
-            top:-2000,
-          },
-          ease: Linear.easeOut,
-        },'p2Label')
-        tl2.addLabel("handLabel",8)
-        tl2.to('#p2 .hand',18,{
-          left:0,
-          top:-800,
-          ease: Linear.easeOut
-        },'handLabel')
-        tl2.to('#p2 .hand1',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel')
-        tl2.to('#p2 .hand2',2,{
-          right:0,
-          ease: Linear.easeOut
-        },'handLabel+=3')
-        tl2.to('#p2 .hand3',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=5')
-        tl2.to('#p2 .hand4',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=7')
-        tl2.to('#p2 .hand5',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=9')
-        tl2.to('#p2 .hand6',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=11')
-        tl2.to('#p2 .hand7',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=13')
-        tl2.to('#p2 .hand8',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=15')
-        tl2.to('#p2 .hand9',2,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=17')
-        tl2.to('#p2 .light1',1,{
-          left:0,
-          opacity:.5,
-          ease: Linear.easeOut
-        },'handLabel+=19')
-        tl2.to('#p2 .light2',1,{
-          left:0,
-          opacity:.5,
-          ease: Linear.easeOut
-        },'handLabel+=20')
-        tl2.to('#p2 .light3',1,{
-          left:0,
-          opacity:.5,
-          ease: Linear.easeOut
-        },'handLabel+=21')
-        tl2.to('#p2 .yeLight',1,{
-          opacity:1,
-          ease: Linear.easeOut
-        })
-        tl2.to('#p2 .line',0.1,{
-          opacity:0,
-          ease: Linear.easeOut
-        })
-        var scene2 = new ScrollMagic.Scene({duration: 2000})
         .triggerHook(-1)
         .triggerElement('#p2')
         .setPin("#p2")
         .setTween(tl2)
         .addIndicators({
-            name: "p2"
-        }) 
+          name: "p2"
+        })
         .addTo(controller2);
 
-        // 场景3
-        var controller3 = new ScrollMagic.Controller();
-        var tl3 = new TimelineMax({
-          
+      // 场景3
+      var controller3 = new ScrollMagic.Controller();
+      var tl3 = new TimelineMax({
+
+      })
+      tl3.to("#p3 .p3-scroll", 0.1, {
+        transform: "translateY(-100%)",
+        ease: Linear.easeOut,
+      })
+      tl3.to('#p2 .yeLight', .5, {
+        opacity: 0,
+        ease: Linear.easeOut
+      })
+      tl3.to('#p2 .yeLight', 0, {
+        left: -10000,
+        ease: Linear.easeOut,
+      })
+      tl3.to("#p3 .step3", 1, {
+        opacity: 0,
+        ease: Linear.easeOut,
+      })
+      tl3.to("#p3 .step2", 1, {
+        opacity: 0,
+        ease: Linear.easeOut,
+      })
+      tl3.to("#p3 .step1", 1, {
+        opacity: 0,
+        ease: Linear.easeOut,
+      })
+      tl3.to(".p3-scroll", 24, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      }, 'p3Label1')
+      tl3.to("#p3 .line", 20, {
+        top: -4666,
+        ease: Linear.easeOut,
+      }, 'p3Label1')
+      tl3.to("#p3 .branch1", 3, {
+        top: -800,
+        ease: Linear.easeOut,
+      }, 'p3Label1')
+      tl3.to("#p3 .branch2", 3, {
+        top: -290,
+        ease: Linear.easeOut,
+      }, 'p3Label1')
+      tl3.to("#p3 .leaf-move", 1, {
+        transform: 'rotate(45deg)',
+        ease: Linear.easeOut,
+        repeat: 2,
+        yoyo: true,
+      }, 'p3Label1+=2')
+
+      tl3.to("#p3 .leaf-move", 1, {
+        transform: 'rotate(0)',
+        top: 500,
+        ease: Linear.easeOut,
+
+      }, 'p3Label1+=5')
+
+      tl3.to("#p3 .leaf-move", 1, {
+        css: {
+          width: 241,
+          height: 125,
+          top: 550,
+          'background': 'url(h5imgs/page3/leaf2.png) no-repeat'
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=6')
+      tl3.to("#p3 .leaf-move", 0, {
+        css: {
+          width: 220,
+          height: 180,
+          'background-image': 'url(h5imgs/page3/leaf3.png)'
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=7')
+      tl3.to("#p3 .leaf-move", 1, {
+        css: {
+          top: 600,
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=7')
+      tl3.to("#p3 .leaf-move", 0, {
+        css: {
+          width: 193,
+          height: 240,
+          'background-image': 'url(h5imgs/page3/leaf4.png)'
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=8')
+      tl3.to("#p3 .leaf-move", 1, {
+        css: {
+          top: 750,
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=8')
+      tl3.to("#p3 .leaf-move", 0, {
+        css: {
+          width: 246,
+          height: 340,
+          'background-image': 'url(h5imgs/page3/leaf5.png)'
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=9')
+      tl3.to("#p3 .leaf-move", 1, {
+        css: {
+          top: 800,
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=9')
+      tl3.to("#p3 .leaf-move", 0, {
+        css: {
+          width: 305,
+          height: 229,
+          'background-image': 'url(h5imgs/page3/leaf6.png)'
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=10')
+      tl3.to("#p3 .leaf-move", 1, {
+        css: {
+          top: 850,
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=10')
+      tl3.to("#p3 .leaf-move", 0, {
+        css: {
+          width: 470,
+          height: 385,
+          'background-image': 'url(h5imgs/page3/leaf7.png)'
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=11')
+      tl3.to("#p3 .leaf-move", 1, {
+        css: {
+          top: 900
+        },
+        ease: Linear.easeOut,
+      }, 'p3Label1+=11')
+      tl3.to("#p3 .leaf-move", 2, {
+        transform: 'scale(1.5)',
+        left: 100,
+        ease: Linear.easeOut,
+      }, 'p3Label1+=12')
+      tl3.to("#p3 .leaf-8", 5, {
+        top: 800,
+        left: 86,
+        ease: Linear.easeOut,
+      }, 'p3Label1+=14')
+      tl3.to("#p3 .leaf-9", 5, {
+        top: 840,
+        right: -24,
+        ease: Linear.easeOut,
+      }, 'p3Label1+=20')
+      var scene3 = new ScrollMagic.Scene({
+          duration: 4000
         })
-        tl3.to("#p3 .p3-scroll",0.1, {
-          transform: "translateY(-100%)",
-          ease: Linear.easeOut,
-        })
-        tl3.to('#p2 .yeLight',.5,{
-          opacity:0,
-          ease: Linear.easeOut
-        })
-        tl3.to('#p2 .yeLight',0,{
-          left:-10000,
-          ease: Linear.easeOut,
-        })
-        tl3.to("#p3 .step3", 1, {
-          opacity:0,
-          ease: Linear.easeOut,
-        })
-        tl3.to("#p3 .step2", 1, {
-          opacity:0,
-          ease: Linear.easeOut,
-        })
-        tl3.to("#p3 .step1", 1, {
-          opacity:0,
-          ease: Linear.easeOut,
-        })
-        tl3.to(".p3-scroll",24, {
-          backgroundPosition: "0 100%", 
-          ease: Linear.easeOut,
-        }, 'p3Label1')
-        tl3.to("#p3 .line",20, {
-          top:-4666,
-          ease: Linear.easeOut,
-        }, 'p3Label1')
-        tl3.to("#p3 .branch1",3, {
-          top: -800,
-          ease: Linear.easeOut,
-        }, 'p3Label1')
-        tl3.to("#p3 .branch2",3, {
-          top: -290,
-          ease: Linear.easeOut,
-        }, 'p3Label1')
-        tl3.to("#p3 .leaf-move",1, {
-          transform:'rotate(45deg)',
-          ease: Linear.easeOut,
-          repeat:2,
-          yoyo:true,
-        },'p3Label1+=2')
-        
-        tl3.to("#p3 .leaf-move",1, {
-          transform:'rotate(0)',
-          top:500,
-          ease: Linear.easeOut,
-         
-        },'p3Label1+=5')
-       
-        tl3.to("#p3 .leaf-move",1, {
-          css: {
-            width:241,
-            height:125,
-            top:550,
-            'background': 'url(h5imgs/page3/leaf2.png) no-repeat'
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=6')
-        tl3.to("#p3 .leaf-move",0, {
-          css: {
-            width:220,
-            height:180,
-            'background-image': 'url(h5imgs/page3/leaf3.png)'
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=7')
-        tl3.to("#p3 .leaf-move",1, {
-          css: {
-            top:600,
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=7')
-        tl3.to("#p3 .leaf-move",0, {
-          css: {
-            width:193,
-            height:240,
-            'background-image': 'url(h5imgs/page3/leaf4.png)'
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=8')
-        tl3.to("#p3 .leaf-move",1, {
-          css: {
-            top:750,
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=8')
-        tl3.to("#p3 .leaf-move",0, {
-          css: {
-            width:246,
-            height:340,
-            'background-image': 'url(h5imgs/page3/leaf5.png)'
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=9')
-        tl3.to("#p3 .leaf-move",1, {
-          css: {
-            top:800,
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=9')
-        tl3.to("#p3 .leaf-move",0, {
-          css: {
-            width:305,
-            height:229,
-            'background-image': 'url(h5imgs/page3/leaf6.png)'
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=10')
-        tl3.to("#p3 .leaf-move",1, {
-          css: {
-            top:850,
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=10')
-        tl3.to("#p3 .leaf-move",0, {
-          css: {
-            width:470,
-            height:385,
-            'background-image': 'url(h5imgs/page3/leaf7.png)'
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=11')
-        tl3.to("#p3 .leaf-move",1, {
-          css: {
-            top:900
-          },
-          ease: Linear.easeOut,
-        },'p3Label1+=11')
-        tl3.to("#p3 .leaf-move",2, {
-          transform:'scale(1.5)',
-          left:100,
-          ease: Linear.easeOut,
-        },'p3Label1+=12')
-        tl3.to("#p3 .leaf-8",5, {
-          top:800,
-          left:86,
-          ease: Linear.easeOut,
-        },'p3Label1+=14')
-        tl3.to("#p3 .leaf-9",5, {
-          top:840,
-          right:-24,
-          ease: Linear.easeOut,
-        },'p3Label1+=20')
-        var scene3 = new ScrollMagic.Scene({duration: 4000})
         .triggerHook(1)
         .triggerElement('#p3')
         .setPin("#p3")
         .setTween(tl3)
         .addIndicators({
-            name: "p3"
-        }) 
+          name: "p3"
+        })
         .addTo(controller3);
 
 
-        // 场景4
-        var controller4 = new ScrollMagic.Controller();
-        var tl4 = new TimelineMax({
-          
+      // 场景4
+      var controller4 = new ScrollMagic.Controller();
+      var tl4 = new TimelineMax({
+
+      })
+      tl4.to("#p4 .yun1", 2, {
+        css: {
+          transform: 'translateY(-500px)'
+        },
+        ease: Linear.easeOut,
+      }, 0)
+      tl4.to("#p4 .yun2", 2, {
+        css: {
+          transform: 'translateY(-300px)'
+        },
+        ease: Linear.easeOut,
+      }, 0)
+      tl4.to("#p4 .shan", 2, {
+        css: {
+          transform: 'translateY(-400px)'
+        },
+        ease: Linear.easeOut,
+      }, 0)
+      tl4.to("#p4 .building", 2, {
+        css: {
+          bottom: 0
+        },
+        ease: Linear.easeOut,
+      }, 0)
+      tl4.to("#p4 .people", 1, {
+        opacity: 1,
+        ease: Linear.easeOut,
+      })
+  
+      tl4.from("#p4 .long", 1, {
+        bottom: -1000,
+        ease: Linear.easeOut,
+      })
+      tl4.from("#p4 .long-left", 1, {
+        left: -800,
+        ease: Linear.easeOut,
+      }, 'p4Label1')
+      tl4.from("#p4 .long-right", 1, {
+        right: -800,
+        ease: Linear.easeOut,
+      }, 'p4Label1')
+      // tl.to("#p4 .build-hr", 5, {xPercent: -60},18);
+
+      tl4.to("#p4 .building1", 6, {
+        css: {
+          right: -1050
+        },
+        ease: Linear.easeOut,
+      }, 'p4Label2')
+      tl4.to("#p4 .people", 1, {
+        left: 1800,
+        ease: Linear.easeOut,
+      }, 'p4Label2')
+      tl4.to("#p4 .long", 1, {
+        left: 1800,
+        ease: Linear.easeOut,
+      }, 'p4Label2')
+      tl4.to("#p4 .long-left", 1, {
+        left: 1800,
+        ease: Linear.easeOut,
+      }, 'p4Label2')
+      tl4.to("#p4 .long-right", 1, {
+        right: -1800,
+        ease: Linear.easeOut,
+      }, 'p4Label2')
+      // tl.from("#p4 .airplane", 1, {
+      //   css: {
+      //     top:180,
+      //     left:-1100,
+      //   },
+      //   ease: Linear.easeOut,
+      // },'p4Label1')
+      // tl.from("#p4 .airplane", 1, {
+      //   css: {
+      //     top:160,
+      //     left:-900,
+      //   },
+      //   ease: Linear.easeOut,
+      // },'p4Label1')
+      // tl.from("#p4 .airplane", 1, {
+      //   css: {
+      //     top:140,
+      //     left:-700,
+      //   },
+      //   ease: Linear.easeOut,
+      // },'p4Label1')
+      // tl.from("#p4 .airplane", 1, {
+      //   css: {
+      //     top:100,
+      //     left:-500,
+      //   },
+      //   ease: Linear.easeOut,
+      // },'p4Label1')
+
+      tl4.to("#p4 .window", 1, {
+        left: 0,
+        ease: Linear.easeOut,
+      })
+      tl4.to("#p4 .airplane", 2, {
+        css: {
+          top:-580,
+          left:1030,
+          background: 'url(h5imgs/page4/airplane.png) center no-repeat'
+        },
+        ease: Linear.easeOut,
+      })
+
+      tl4.to("#p4 .building", 2, {
+        transform: 'translateY(-400px)',
+        ease: Linear.easeOut,
+      },'p4Label3')
+      
+      tl4.to("#p4 .floor", 2, {
+        transform: 'translateY(-400px)',
+        ease: Linear.easeOut,
+      },'p4Label3')
+     
+      tl4.to("#p4 .travel", 2, {
+        right: 50,
+        opacity: 1,
+        ease: Linear.easeOut,
+      })
+      var scene4 = new ScrollMagic.Scene({
+          duration: 2000
         })
-        tl4.to("#p4 .yun1",2, {
-          css:{
-            transform:'translateY(-500px)'
-          },
-          ease: Linear.easeOut,
-        },0)
-        tl4.to("#p4 .yun2",2, {
-          css:{
-            transform:'translateY(-300px)'
-          },
-          ease: Linear.easeOut,
-        },0)
-        tl4.to("#p4 .shan",2, {
-          css:{
-            transform:'translateY(-400px)'
-          },
-          ease: Linear.easeOut,
-        },0)
-        tl4.to("#p4 .people",1, {
-          opacity:1,
-          ease: Linear.easeOut,
-        })
-        // tl4.to(".p4",24, {
-        //   backgroundPosition: "0 100%", 
-        //   ease: Linear.easeOut,
-        // }, 'p4Label1')
-        tl4.from("#p4 .long",1, {
-          bottom:-1000,
-          ease: Linear.easeOut,
-        })
-        tl4.from("#p4 .long-left",1, {
-          left:-800,
-          ease: Linear.easeOut,
-        },'p4Label1')
-        tl4.from("#p4 .long-right",1, {
-          right:-800,
-          ease: Linear.easeOut,
-        },'p4Label1')
-        // tl.to("#p4 .build-hr", 5, {xPercent: -60},18);
-        tl4.to("#p4 .building1",6, {
-          css:{
-            right:-2126
-          },
-          ease: Linear.easeOut,
-        },'p4Label2')
-        tl4.to("#p4 .people",1, {
-          left:1800,
-          ease: Linear.easeOut,
-        },'p4Label2+=2')
-        tl4.to("#p4 .long",1, {
-          left:1800,
-          ease: Linear.easeOut,
-        },'p4Label2+=2')
-        tl4.to("#p4 .long-left",1, {
-          left:1800,
-          ease: Linear.easeOut,
-        },'p4Label2+=2')
-        tl4.to("#p4 .long-right",1, {
-          right:-1800,
-          ease: Linear.easeOut,
-        },'p4Label2+=2')
-        // tl.from("#p4 .airplane", 1, {
-        //   css: {
-        //     top:180,
-        //     left:-1100,
-        //   },
-        //   ease: Linear.easeOut,
-        // },'p4Label1')
-        // tl.from("#p4 .airplane", 1, {
-        //   css: {
-        //     top:160,
-        //     left:-900,
-        //   },
-        //   ease: Linear.easeOut,
-        // },'p4Label1')
-        // tl.from("#p4 .airplane", 1, {
-        //   css: {
-        //     top:140,
-        //     left:-700,
-        //   },
-        //   ease: Linear.easeOut,
-        // },'p4Label1')
-        // tl.from("#p4 .airplane", 1, {
-        //   css: {
-        //     top:100,
-        //     left:-500,
-        //   },
-        //   ease: Linear.easeOut,
-        // },'p4Label1')
-        tl4.to("#p4 .yun",6, {
-          left:300,
-          ease: Linear.easeOut,
-        },'p4Label2')
-        tl4.to("#p4 .window",6, {
-          left:300,
-          ease: Linear.easeOut,
-        },'p4Label2')
-        tl.to("#p4 .floor", 1, {
-          // top:1284,
-          opacity:1,
-          ease: Linear.easeOut,
-        },20)
-        tl.to("#p4 .people", 1, {
-          top:100,
-          ease: Linear.easeOut,
-        },'p4Label1')
-        tl.to("#p4 .travel", 1, {
-          right:50,
-          opacity:1,
-          ease: Linear.easeOut,
-        })
-        var scene4 = new ScrollMagic.Scene({duration: 2000})
         .triggerHook(1)
         .triggerElement('#p4')
         .setPin("#p4")
         .setTween(tl4)
         .addIndicators({
-            name: "p4"
-        }) 
+          name: "p4"
+        })
         .addTo(controller4);
 
-        // 场景5
-        var controller5 = new ScrollMagic.Controller();
-        var tl5 = new TimelineMax({
-          
+      // 场景5
+      var controller5 = new ScrollMagic.Controller();
+      var tl5 = new TimelineMax({
+
+      })
+      // tl5.to("#p5 .p5-scroll", 0.1, {
+      //   css: {
+      //     transform: 'translateY(-200%)'
+      //   },
+      //   ease: Linear.easeOut,
+      // })
+      tl5.to("#p5 .p5-scroll", 0.1, {
+        opacity:1,
+        ease: Linear.easeOut,
+      })
+      tl5.to("#p5 span", 30, {
+        css: {
+          color: '#fff'
+        },
+        ease: Linear.easeOut,
+      })
+      var scene5 = new ScrollMagic.Scene({
+          duration: 2000
         })
-        tl5.to("#p5 span",3, {
-          css: {
-            color:'#fff'
-          },
-          ease: Linear.easeOut,
-        })
-        var scene5 = new ScrollMagic.Scene({duration: 2000})
         .triggerHook(1)
         .triggerElement('#p5')
         .setPin("#p5")
         .setTween(tl5)
         .addIndicators({
-            name: "p5"
-        }) 
+          name: "p5"
+        })
         .addTo(controller5);
 
     }
