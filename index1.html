@@ -177,28 +177,49 @@
         <div class="shan">
           <img src="./h5imgs/page4/shan.png" alt="">
         </div>
+        <!-- <div class="airplane">
+          <img class="airplane1" src="./h5imgs/page4/airplane.png" alt="">
+        </div> -->
         <div class="building">
-          <img src="./h5imgs/page4/building.png" alt="">
+          <div class="build-hr">
+            <img class="building1" src="./h5imgs/page4/floor.png" alt="">
+            <img class="window" src="./h5imgs/page4/window.png" alt="">
+          </div>
         </div>
         <div class="people">
           <img src="./h5imgs/page4/people.png" alt="">
         </div>
-        <div class="long">
-          <img src="./h5imgs/page4/long.png" alt="">
+        <div>
+        <div class="scene">
+          <div class="long">
+            <img src="./h5imgs/page4/long.png" alt="">
+          </div>
+          <div class="long-left">
+            <img src="./h5imgs/page4/long-left.png" alt="">
+          </div>
+          <div class="long-right">
+            <img src="./h5imgs/page4/long-right.png" alt="">
+          </div>
         </div>
-        <div class="long-left">
-          <img src="./h5imgs/page4/long-left.png" alt="">
+        <div class="floor">
+          <img src="./h5imgs/page4/floor-board.png" alt="">
         </div>
-        <div class="long-right">
-          <img src="./h5imgs/page4/long-right.png" alt="">
+        <div class="travel">
+          <img src="./h5imgs/page4/travel.png" alt="">
         </div>
       </div>
     </div>
+<<<<<<< HEAD
+    <!-- <div class="p5" id="p5">
+
+    </div> -->
+=======
     <div class="p5" id="p5">
       <div class="p5-scroll">
         <span>hello</span>
       </div>
     </div>
+>>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
   </div>
   <script>
     window.onload = function () {
@@ -392,15 +413,20 @@
         })
         tl2.to('#p2 .star1',1,{
           opacity:1,
-          top:10,
+          top:0,
           ease: Linear.easeOut,
         })
         tl2.to('#p2 .star2',1,{
           opacity:1,
-          top:20,
+          top:-100,
           ease: Linear.easeOut,
+<<<<<<< HEAD
+        },2)
+        tl2.to("#p2",26, {
+=======
         })
         tl2.to("#p2",12, {
+>>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
           backgroundPosition: "0 100%", 
           ease: Linear.easeOut,
         }, 'p2Label')
@@ -418,64 +444,69 @@
           },
           ease: Linear.easeOut,
         },'p2Label')
-        tl2.addLabel("handLabel",6)
-        tl2.to('#p2 .hand',9,{
+        tl2.addLabel("handLabel",8)
+        tl2.to('#p2 .hand',18,{
           left:0,
           top:-800,
           ease: Linear.easeOut
         },'handLabel')
-        tl2.to('#p2 .hand1',1,{
+        tl2.to('#p2 .hand1',2,{
           left:0,
           ease: Linear.easeOut
         },'handLabel')
-        tl2.to('#p2 .hand2',1,{
+        tl2.to('#p2 .hand2',2,{
           right:0,
           ease: Linear.easeOut
-        },'handLabel+=1')
-        tl2.to('#p2 .hand3',1,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=2')
-        tl2.to('#p2 .hand4',1,{
-          left:0,
-          ease: Linear.easeOut
         },'handLabel+=3')
-        tl2.to('#p2 .hand5',1,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=4')
-        tl2.to('#p2 .hand6',1,{
+        tl2.to('#p2 .hand3',2,{
           left:0,
           ease: Linear.easeOut
         },'handLabel+=5')
-        tl2.to('#p2 .hand7',1,{
-          left:0,
-          ease: Linear.easeOut
-        },'handLabel+=6')
-        tl2.to('#p2 .hand8',1,{
+        tl2.to('#p2 .hand4',2,{
           left:0,
           ease: Linear.easeOut
         },'handLabel+=7')
-        tl2.to('#p2 .hand9',1,{
+        tl2.to('#p2 .hand5',2,{
           left:0,
           ease: Linear.easeOut
-        },'handLabel+=8')
+        },'handLabel+=9')
+        tl2.to('#p2 .hand6',2,{
+          left:0,
+          ease: Linear.easeOut
+        },'handLabel+=11')
+        tl2.to('#p2 .hand7',2,{
+          left:0,
+          ease: Linear.easeOut
+        },'handLabel+=13')
+        tl2.to('#p2 .hand8',2,{
+          left:0,
+          ease: Linear.easeOut
+        },'handLabel+=15')
+        tl2.to('#p2 .hand9',2,{
+          left:0,
+          ease: Linear.easeOut
+        },'handLabel+=17')
         tl2.to('#p2 .light1',1,{
           left:0,
           opacity:.5,
           ease: Linear.easeOut
-        },'handLabel+=11')
+        },'handLabel+=19')
         tl2.to('#p2 .light2',1,{
           left:0,
           opacity:.5,
           ease: Linear.easeOut
-        },'handLabel+=12')
+        },'handLabel+=20')
         tl2.to('#p2 .light3',1,{
           left:0,
           opacity:.5,
           ease: Linear.easeOut
+<<<<<<< HEAD
+        },'handLabel+=21')
+        tl2.to('#p2 .yeLight',1,{
+=======
         },'handLabel+=13')
         tl2.to('#p2 .yeLight',.5,{
+>>>>>>> 648c37571691a30162edf968a573167c1b6d57a1
           opacity:1,
           ease: Linear.easeOut
         })
@@ -680,16 +711,14 @@
           },
           ease: Linear.easeOut,
         },0)
-        tl4.to("#p4 .building",2, {
-          css:{
-            bottom:200
-          },
-          ease: Linear.easeOut,
-        },0)
         tl4.to("#p4 .people",1, {
           opacity:1,
           ease: Linear.easeOut,
         })
+        // tl4.to(".p4",24, {
+        //   backgroundPosition: "0 100%", 
+        //   ease: Linear.easeOut,
+        // }, 'p4Label1')
         tl4.from("#p4 .long",1, {
           bottom:-1000,
           ease: Linear.easeOut,
@@ -702,6 +731,79 @@
           right:-800,
           ease: Linear.easeOut,
         },'p4Label1')
+        // tl.to("#p4 .build-hr", 5, {xPercent: -60},18);
+        tl4.to("#p4 .building1",6, {
+          css:{
+            right:-2126
+          },
+          ease: Linear.easeOut,
+        },'p4Label2')
+        tl4.to("#p4 .people",1, {
+          left:1800,
+          ease: Linear.easeOut,
+        },'p4Label2+=2')
+        tl4.to("#p4 .long",1, {
+          left:1800,
+          ease: Linear.easeOut,
+        },'p4Label2+=2')
+        tl4.to("#p4 .long-left",1, {
+          left:1800,
+          ease: Linear.easeOut,
+        },'p4Label2+=2')
+        tl4.to("#p4 .long-right",1, {
+          right:-1800,
+          ease: Linear.easeOut,
+        },'p4Label2+=2')
+        // tl.from("#p4 .airplane", 1, {
+        //   css: {
+        //     top:180,
+        //     left:-1100,
+        //   },
+        //   ease: Linear.easeOut,
+        // },'p4Label1')
+        // tl.from("#p4 .airplane", 1, {
+        //   css: {
+        //     top:160,
+        //     left:-900,
+        //   },
+        //   ease: Linear.easeOut,
+        // },'p4Label1')
+        // tl.from("#p4 .airplane", 1, {
+        //   css: {
+        //     top:140,
+        //     left:-700,
+        //   },
+        //   ease: Linear.easeOut,
+        // },'p4Label1')
+        // tl.from("#p4 .airplane", 1, {
+        //   css: {
+        //     top:100,
+        //     left:-500,
+        //   },
+        //   ease: Linear.easeOut,
+        // },'p4Label1')
+        tl4.to("#p4 .yun",6, {
+          left:300,
+          ease: Linear.easeOut,
+        },'p4Label2')
+        tl4.to("#p4 .window",6, {
+          left:300,
+          ease: Linear.easeOut,
+        },'p4Label2')
+        tl.to("#p4 .floor", 1, {
+          // top:1284,
+          opacity:1,
+          ease: Linear.easeOut,
+        },20)
+        tl.to("#p4 .people", 1, {
+          top:100,
+          ease: Linear.easeOut,
+        },'p4Label1')
+        tl.to("#p4 .travel", 1, {
+          right:50,
+          opacity:1,
+          ease: Linear.easeOut,
+        })
         var scene4 = new ScrollMagic.Scene({duration: 2000})
         .triggerHook(1)
         .triggerElement('#p4')
