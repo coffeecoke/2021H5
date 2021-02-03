@@ -1,23 +1,27 @@
 .p5 {
   width:100%;
-  height: 1px;
+  height: 1vh;
   position: relative;
+  background-color:#ffeec2;
 }
 .p5-scroll {
   width:100%;
   height: 100vh;
   transform: translateY(-100%);
-  background-color: red;
+  background-color:#ffeec2;
   position: relative;
   opacity: 0;
 }
 .scenes {
   display: flex;
   width:200%;
+  height:100%;
+  transform:translateX(-50%)
 }
 .scenes .scene {
   width:100%;
-  height:100%;
+  height:100vh;
+  position: relative;
 }
 .liuyan {
   height:100%;
@@ -38,4 +42,14 @@
   height:auto;
   top:0;
   opacity: 0;
+}
+.stairs {
+  position: absolute;
+  right:150px;
+  bottom:-160px;
+}
+.man {
+  position: absolute;
+  left:-460px;
+  bottom:0px;
 }
