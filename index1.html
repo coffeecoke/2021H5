@@ -919,40 +919,40 @@
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p6Label')
+      tl6.to("#p6 .shan", 10, {
+        bottom:100,
+        ease: Linear.easeOut,
+      },2)
       tl6.to("#p6 .shan1", 2, {
         css: {
-          left:0
+          bottom:700
         },
         ease: Linear.easeOut,
       }, 'p6Label+=1')
       tl6.to("#p6 .shan2", 2, {
         css: {
-          right:0
+          bottom:600
         },
         ease: Linear.easeOut,
       }, 'p6Label+=2')
       tl6.to("#p6 .shan3", 2, {
         css: {
-          right:0
+          bottom:350
         },
         ease: Linear.easeOut,
       }, 'p6Label+=3')
       tl6.to("#p6 .shan4", 2, {
         css: {
-          right:0
+          bottom:-219
         },
         ease: Linear.easeOut,
       }, 'p6Label+=4')
-      tl6.to("#p6 .shan", 10, {
-        top:-300,
-        ease: Linear.easeOut,
-      },2)
-      tl6.to("#p6 .zhai", 2, {
+      tl6.to("#p6 .zhai", 1, {
         css: {
           left:0
         },
         ease: Linear.easeOut,
-      },  'p6Label+=5')
+      })
       // tl6.to("#p6 .shan", 2, {
       //   css: {
       //     top:-1000

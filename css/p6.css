@@ -10,7 +10,7 @@
 }
 .shan{
   position: absolute;
-  top:0;
+  bottom:-1200px;
   left:0;
 }
 .shan img{
@@ -18,31 +18,31 @@
 }
 .shan1{
   position: absolute;
-  top:0;
-  left:-750px;
+  bottom:600px;
+  left:0px;
   z-index: 1;
 }
 .shan2{
   position: absolute;
-  top:600px;
-  right:-750px;
+  bottom:500px;
+  right:0px;
   z-index: 2;
 }
 .shan3{
   position: absolute;
-  top:1000px;
-  right:-750px;
+  bottom:250px;
+  right:0px;
   z-index: 3;
 }
 .shan4{
   position: absolute;
-  top:1200px;
-  right:-750px;
+  bottom:-100px;
+  right:0px;
   z-index: 4;
 }
 .zhai{
   position: absolute;
-  top:400px;
+  bottom:300px;
   left:-750px;
   z-index:5;
 }
