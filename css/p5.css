@@ -17,3 +17,17 @@
   transform-origin: 544px 378px;
   transform: scale(6);
 }
+.lamp {
+  position: absolute;
+  width:100%;
+  top:0;
+  z-index:1;
+  transform: translateY(-100%);
+}
+.lamp .light {
+  position: absolute;
+  width:100%;
+  height:auto;
+  top:0;
+  opacity: 0;
+}

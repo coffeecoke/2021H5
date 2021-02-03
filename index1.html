@@ -210,6 +210,10 @@
     </div>
     <div class="p5" id="p5">
       <div class="p5-scroll">
+        <div class="lamp">
+          <img src="./h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
+          <img class="light" src="./h5imgs/page5/liuyan-light.png" alt="">
+        </div>
         <div class="liuyan scene">
           <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
         </div>
@@ -889,6 +893,14 @@
       })
       tl5.to("#p5 .liuyan", 10, {
         transform: 'scale(1)',
+        ease: Linear.easeOut,
+      })
+      tl5.to("#p5 .lamp", 1, {
+        transform: 'translateY(0)',
+        ease: Linear.easeOut,
+      })
+      tl5.to("#p5 .light", 1, {
+        opacity:1,
         ease: Linear.easeOut,
       })
       var scene5 = new ScrollMagic.Scene({
