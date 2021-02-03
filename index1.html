@@ -1043,13 +1043,29 @@
       },'p8Label+=1')  
       tl8.to(".liang", 2, {
         opacity:1,
-        top:-1000,
+        top:-300,
         ease: Linear.easeOut,
       },'p8Label+=1') 
-      tl8.to(".liang", 10, {
+      tl8.to(".liang", 3, {
         left:-1000,
         ease: Linear.easeOut,
-      },'p8Label+=2') 
+      },'p8Label+=3') 
+      tl8.to(".crowd1", 2, {
+        left:0,
+        ease: Linear.easeOut,
+      },'p8Label+=5') 
+      tl8.to(".crowd2", 2, {
+        right:-750,
+        ease: Linear.easeOut,
+      },'p8Label+=6') 
+      tl8.to(".crowd2", 2, {
+        right:0,
+        ease: Linear.easeOut,
+      },'p8Label+=8') 
+      tl8.to(".crowd", 2, {
+        bottom:300,
+        ease: Linear.easeOut,
+      },'p8Label+=9') 
       var scene8 = new ScrollMagic.Scene({
         duration: 2000
       })
