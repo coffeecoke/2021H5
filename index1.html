@@ -217,9 +217,15 @@
           <img src="./h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
           <img class="light" src="./h5imgs/page5/liuyan-light.png" alt="">
         </div>
-        <div class="liuyan scene">
-          <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
+        <div class="scenes">
+          <div class="scene liuyan">
+            <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
+          </div>
+          <div class="scene lixiguo">
+          </div>
         </div>
+        
+
       </div>
     </div>
     <div class="p6" id="p6">
@@ -789,34 +795,7 @@
         right: -1800,
         ease: Linear.easeOut,
       }, 'p4Label2')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:180,
-      //     left:-1100,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:160,
-      //     left:-900,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:140,
-      //     left:-700,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:100,
-      //     left:-500,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
+      
 
       tl4.to("#p4 .window", 1, {
         left: -190,
@@ -883,7 +862,7 @@
       },'p4Label4+=2')
 
       var scene4 = new ScrollMagic.Scene({
-          duration: 2000
+          duration: 4000
         })
         .triggerHook(1)
         .triggerElement('#p4')
