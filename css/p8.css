@@ -23,19 +23,19 @@
 .graph1{
   position: absolute;
   right:-400px;
-  top:100px;
+  top:10px;
   z-index:2;
 }
 .graph2{
   position: absolute;
   left:-200px;
-  top:250px;
+  top:150px;
   z-index:2;
 }
 .graph3{
   position: absolute;
   right:-400px;
-  top:350px;
+  top:250px;
   z-index:2;
 }
 .liang{
@@ -48,15 +48,17 @@
 .crowd{
   position: absolute;
   bottom:0;
-  left:0;
+  right:0;
 }
 .crowd1{
   position: absolute;
-  left:-750px;
+  right:0px;
   bottom:0;
+  opacity: 0;
 }
 .crowd2{
   position: absolute;
   right:0px;
   bottom:0;
+  opacity: 0;
 }

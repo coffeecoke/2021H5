@@ -1045,27 +1045,27 @@
         opacity:1,
         top:-300,
         ease: Linear.easeOut,
-      },'p8Label+=1') 
-      tl8.to(".liang", 3, {
+      },'0') 
+      tl8.to(".liang", 1, {
         left:-1000,
         ease: Linear.easeOut,
       },'p8Label+=3') 
       tl8.to(".crowd1", 2, {
-        left:0,
+        opacity:1,
         ease: Linear.easeOut,
       },'p8Label+=5') 
       tl8.to(".crowd2", 2, {
-        right:-750,
+        opacity:1,
         ease: Linear.easeOut,
       },'p8Label+=6') 
+      tl8.to(".crowd1", 2, {
+        bottom:200,
+        ease: Linear.easeOut,
+      },'p8Label+=7') 
       tl8.to(".crowd2", 2, {
-        right:0,
+        right:-750,
         ease: Linear.easeOut,
-      },'p8Label+=8') 
-      tl8.to(".crowd", 2, {
-        bottom:300,
-        ease: Linear.easeOut,
-      },'p8Label+=9') 
+      },'p8Label+=11') 
       var scene8 = new ScrollMagic.Scene({
         duration: 2000
       })
