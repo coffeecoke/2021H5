@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/p3.css">
   <link rel="stylesheet" href="css/p4.css">
   <link rel="stylesheet" href="css/p5.css">
+  <link rel="stylesheet" href="css/p6.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -217,6 +218,11 @@
         <div class="liuyan scene">
           <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
         </div>
+      </div>
+    </div>
+    <div class="p6" id="p6">
+      <div class="p6-scroll">
+        <h2>第6个场景</h2>
       </div>
     </div>
   </div>
@@ -531,7 +537,7 @@
         .setPin("#p2")
         .setTween(tl2)
         .addIndicators({
-          name: "p2"
+          // name: "p2"
         })
         .addTo(controller2);
 
@@ -696,7 +702,7 @@
         .setPin("#p3")
         .setTween(tl3)
         .addIndicators({
-          name: "p3"
+          // name: "p3"
         })
         .addTo(controller3);
 
@@ -801,7 +807,7 @@
       // },'p4Label1')
 
       tl4.to("#p4 .window", 1, {
-        left: 0,
+        left: -190,
         ease: Linear.easeOut,
       })
       tl4.to("#p4 .airplane", 2, {
@@ -872,7 +878,7 @@
         .setPin("#p4")
         .setTween(tl4)
         .addIndicators({
-          name: "p4"
+          // name: "p4"
         })
         .addTo(controller4);
 
@@ -904,17 +910,37 @@
         ease: Linear.easeOut,
       })
       var scene5 = new ScrollMagic.Scene({
-          duration: 2000
-        })
-        .triggerHook(1)
-        .triggerElement('#p5')
-        .setPin("#p5")
-        .setTween(tl5)
-        .addIndicators({
-          name: "p5"
-        })
-        .addTo(controller5);
+        duration: 2000
+      })
+      .triggerHook(1)
+      .triggerElement('#p5')
+      .setPin("#p5")
+      .setTween(tl5)
+      .addIndicators({
+        // name: "p5"
+      })
+      .addTo(controller5);
 
+      // 场景6
+      var controller6 = new ScrollMagic.Controller();
+      var tl6 = new TimelineMax({
+
+      })  
+      // tl6.to("#p6 .p6-scroll", .1, {
+      //   opacity:1,
+      //   ease: Linear.easeOut,
+      // })
+      var scene6 = new ScrollMagic.Scene({
+        duration: 2000
+      })
+      .triggerHook(0)
+      .triggerElement('#p6')
+      .setPin("#p6")
+      .setTween(tl6)
+      .addIndicators({
+        name: "p6"
+      })
+      .addTo(controller6);
     }
   </script>
 </body>
