@@ -52,12 +52,13 @@
   position: absolute;
   bottom:0px;
   right:-200px;
+  transform-origin: 654px 740px;
 }
 .window{
   position: absolute;
   bottom:-30px;
   left:-1100px;
-  z-index: 100;
+  /* z-index: 100; */
   opacity: .8;
   /* display: none; */
 }
@@ -99,5 +100,10 @@
   bottom:30px;
   right:-750px;
   opacity: 0;
-  z-index:101;
+  z-index:1;
+}
+.window-mini {
+  position: absolute;
+  left: 640px;
+  top: 709px;
 }

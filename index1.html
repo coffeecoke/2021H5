@@ -182,10 +182,11 @@
         </div> -->
         <div class="airplane"></div>
         <div class="building">
-          <div class="build-hr">
-            <img class="building1" src="./h5imgs/page4/floor.png" alt="">
-            <img class="window" src="./h5imgs/page4/window.png" alt="">
+          <div class="building1">
+            <img src="./h5imgs/page4/floor.png" alt="">
+            <img src="./h5imgs/page4/window-mini.png" class="window-mini" alt="">
           </div>
+          <img class="window" src="./h5imgs/page4/window.png" alt="">
         </div>
         <div class="people">
           <img src="./h5imgs/page4/people.png" alt="">
@@ -209,7 +210,9 @@
     </div>
     <div class="p5" id="p5">
       <div class="p5-scroll">
-        <span>hello</span>
+        <div class="liuyan scene">
+          <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
+        </div>
       </div>
     </div>
   </div>
@@ -821,6 +824,42 @@
         opacity: 1,
         ease: Linear.easeOut,
       })
+      // 人物停留
+      tl4.to("#p4 .travel", 4, {
+        
+        ease: Linear.easeOut,
+      })
+      // 移除
+      tl4.to("#p4 .window", 2, {
+        left: 750,
+        opacity: 1,
+        ease: Linear.easeOut,
+      },'p4Label4')
+      tl4.to("#p4 .travel", 2, {
+        right: 800,
+        opacity: 1,
+        ease: Linear.easeOut,
+      },'p4Label4')
+
+      tl4.to("#p4 .building", 2, {
+        transform: 'translateY(0)',
+        ease: Linear.easeOut,
+      },'p4Label4+=2')
+      
+      tl4.to("#p4 .floor", .5, {
+        transform: 'translateY(0)',
+        ease: Linear.easeOut,
+      },'p4Label4+=2')
+
+      tl4.to("#p4 .building1 ", 4, {
+        transform:'scale(40)',
+        ease: Linear.easeOut,
+      },'p4Label4+=2')
+      tl4.to("#p4 .line ", 2, {
+        opacity:0,
+        ease: Linear.easeOut,
+      },'p4Label4+=2')
+
       var scene4 = new ScrollMagic.Scene({
           duration: 2000
         })
@@ -844,14 +883,12 @@
       //   },
       //   ease: Linear.easeOut,
       // })
-      tl5.to("#p5 .p5-scroll", 0.1, {
+      tl5.to("#p5 .p5-scroll", .1, {
         opacity:1,
         ease: Linear.easeOut,
       })
-      tl5.to("#p5 span", 30, {
-        css: {
-          color: '#fff'
-        },
+      tl5.to("#p5 .liuyan", 10, {
+        transform: 'scale(1)',
         ease: Linear.easeOut,
       })
       var scene5 = new ScrollMagic.Scene({
