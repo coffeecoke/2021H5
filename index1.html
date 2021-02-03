@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/p4.css">
   <link rel="stylesheet" href="css/p5.css">
   <link rel="stylesheet" href="css/p6.css">
+  <link rel="stylesheet" href="css/p7.css">
+  <link rel="stylesheet" href="css/p8.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -223,6 +225,16 @@
     <div class="p6" id="p6">
       <div class="p6-scroll">
         <h2>第6个场景</h2>
+      </div>
+    </div>
+    <div class="p7" id="p7">
+      <div class="p7-scroll">
+        <h2>第7个场景</h2>
+      </div>
+    </div>
+    <div class="p8" id="p8">
+      <div class="p8-scroll">
+        <h2>第8个场景</h2>
       </div>
     </div>
   </div>
@@ -926,10 +938,7 @@
       var tl6 = new TimelineMax({
 
       })  
-      // tl6.to("#p6 .p6-scroll", .1, {
-      //   opacity:1,
-      //   ease: Linear.easeOut,
-      // })
+      
       var scene6 = new ScrollMagic.Scene({
         duration: 2000
       })
@@ -941,7 +950,44 @@
         name: "p6"
       })
       .addTo(controller6);
+
+      // 场景7
+      var controller7 = new ScrollMagic.Controller();
+      var tl7 = new TimelineMax({
+
+      })  
+      var scene7 = new ScrollMagic.Scene({
+        duration: 2000
+      })
+      .triggerHook(0)
+      .triggerElement('#p7')
+      .setPin("#p7")
+      .setTween(tl7)
+      .addIndicators({
+        name: "p7"
+      })
+      .addTo(controller7);
+
+      // 场景8
+      var controller8 = new ScrollMagic.Controller();
+      var tl8 = new TimelineMax({
+
+      })  
+      var scene8 = new ScrollMagic.Scene({
+        duration: 2000
+      })
+      .triggerHook(0)
+      .triggerElement('#p8')
+      .setPin("#p8")
+      .setTween(tl8)
+      .addIndicators({
+        name: "p8"
+      })
+      .addTo(controller8);
+
     }
+
+    
   </script>
 </body>
 

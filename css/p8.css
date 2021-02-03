@@ -1,12 +1,12 @@
-.p6 {
+.p8 {
   width:100%;
   height: 1px;
   position: relative;
 }
-.p6-scroll {
+.p8-scroll {
   width:100%;
   height: 100vh;
   transform: translateY(0);
-  background-color: orange;
+  background-color: lightgreen;
   position: relative;
 }
