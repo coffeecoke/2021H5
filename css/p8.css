@@ -1,12 +1,62 @@
 .p8 {
   width:100%;
-  height: 1px;
+  height: 100vh;
   position: relative;
 }
 .p8-scroll {
   width:100%;
   height: 100vh;
   transform: translateY(0);
-  background-color: lightgreen;
+  background:url(../h5imgs/page8/bg.png) 0 0 no-repeat;
   position: relative;
+}
+.graph{
+  position: relative;
+  top:0;
+  left:0;
+  /* transform: translateY(0); */
+  /* position: absolute; */
+}
+.graph img{
+  display: block;
+}
+.graph1{
+  position: absolute;
+  right:-400px;
+  top:100px;
+  z-index:2;
+}
+.graph2{
+  position: absolute;
+  left:-200px;
+  top:250px;
+  z-index:2;
+}
+.graph3{
+  position: absolute;
+  right:-400px;
+  top:350px;
+  z-index:2;
+}
+.liang{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:1;
+  opacity: 0;
+}
+.crowd{
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+.crowd1{
+  position: absolute;
+  left:-750px;
+  bottom:0;
+}
+.crowd2{
+  position: absolute;
+  right:-750px;
+  bottom:0;
 }

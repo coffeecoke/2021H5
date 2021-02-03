@@ -237,12 +237,28 @@
     </div>
     <div class="p7" id="p7">
       <div class="p7-scroll">
-        <h2>第7个场景</h2>
+        <div class="leafs">
+          <img src="./h5imgs/page7/shuzhi.png" alt="">
+        </div>
+        <div class="window">
+          <img src="./h5imgs/page7/window.png" alt="">
+        </div>
       </div>
     </div>
     <div class="p8" id="p8">
       <div class="p8-scroll">
-        <h2>第8个场景</h2>
+        <div class="graph">
+          <img class="graph1" src="./h5imgs/page8/graph1.png" alt="">
+          <img class="graph2" src="./h5imgs/page8/graph2.png" alt="">
+          <img class="graph3" src="./h5imgs/page8/graph3.png" alt="">
+        </div>
+        <div class="liang">
+          <img src="./h5imgs/page8/liangjie.png">
+        </div>
+        <div class="crowd">
+          <img class="crowd1" src="./h5imgs/page8/crowd.png" alt="">
+          <img class="crowd2" src="./h5imgs/page8/cheng.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -915,7 +931,7 @@
       var tl6 = new TimelineMax({
 
       }) 
-      tl6.to("#p6", 12, {
+      tl6.to(".p6-scroll", 12, {
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p6Label')
@@ -975,7 +991,19 @@
       var controller7 = new ScrollMagic.Controller();
       var tl7 = new TimelineMax({
 
-      })  
+      }) 
+      tl7.to(".p7-scroll", 3, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      },'p7Label') 
+      tl7.to(".leafs", 2, {
+        top:-1000,
+        ease: Linear.easeOut,
+      },'p7Label+=1') 
+      tl7.to(".window", 2, {
+        top:-1000,
+        ease: Linear.easeOut,
+      },'p7Label+=1') 
       var scene7 = new ScrollMagic.Scene({
         duration: 2000
       })
@@ -993,6 +1021,35 @@
       var tl8 = new TimelineMax({
 
       })  
+      tl8.to(".graph1", 2, {
+        right:0,
+        ease: Linear.easeOut,
+      },'0') 
+      tl8.to(".graph2", 2, {
+        left:100,
+        ease: Linear.easeOut,
+      },'0') 
+      tl8.to(".graph3", 2, {
+        right:100,
+        ease: Linear.easeOut,
+      },'0') 
+      tl8.to(".p8-scroll", 18, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      },'p8Label')
+      tl8.to(".graph", 2, {
+        top:-1000,
+        ease: Linear.easeOut,
+      },'p8Label+=1')  
+      tl8.to(".liang", 2, {
+        opacity:1,
+        top:-1000,
+        ease: Linear.easeOut,
+      },'p8Label+=1') 
+      tl8.to(".liang", 10, {
+        left:-1000,
+        ease: Linear.easeOut,
+      },'p8Label+=2') 
       var scene8 = new ScrollMagic.Scene({
         duration: 2000
       })
