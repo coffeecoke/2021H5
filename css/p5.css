@@ -12,43 +12,43 @@
   position: relative;
   opacity: 0;
 }
-.scenes {
+.p5 .scenes {
   display: flex;
   width:200%;
   height:100%;
   transform:translateX(-50%)
 }
-.scenes .scene {
+.p5 .scenes .scene {
   width:100%;
   height:100vh;
   position: relative;
 }
-.liuyan {
+.p5 .liuyan {
   height:100%;
   overflow: hidden;
   transform-origin: 544px 378px;
   transform: scale(6);
 }
-.lamp {
+.p5 .lamp {
   position: absolute;
   width:100%;
   top:0;
   z-index:1;
   transform: translateY(-100%);
 }
-.lamp .light {
+.p5 .lamp .light {
   position: absolute;
   width:100%;
   height:auto;
   top:0;
   opacity: 0;
 }
-.stairs {
+.p5 .stairs {
   position: absolute;
   right:150px;
   bottom:-160px;
 }
-.man {
+.p5 .man {
   position: absolute;
   left:-460px;
   bottom:0px;
