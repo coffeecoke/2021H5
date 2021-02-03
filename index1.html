@@ -224,7 +224,15 @@
     </div>
     <div class="p6" id="p6">
       <div class="p6-scroll">
-        <h2>第6个场景</h2>
+        <div class="shan">
+          <img class="shan1" src="./h5imgs/page6/shan1.png" alt="">
+          <img class="shan2" src="./h5imgs/page6/shan2.png" alt="">
+          <img class="shan3" src="./h5imgs/page6/shan3.png" alt="">
+          <img class="shan4" src="./h5imgs/page6/shan4.png" alt="">
+        </div>
+        <div class="zhai">
+          <img class="lijin" src="./h5imgs/page6/ren.png" alt="">
+        </div>
       </div>
     </div>
     <div class="p7" id="p7">
@@ -765,8 +773,6 @@
         right: -800,
         ease: Linear.easeOut,
       }, 'p4Label1')
-      // tl.to("#p4 .build-hr", 5, {xPercent: -60},18);
-
       tl4.to("#p4 .building1", 6, {
         css: {
           right: -1050
@@ -789,35 +795,6 @@
         right: -1800,
         ease: Linear.easeOut,
       }, 'p4Label2')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:180,
-      //     left:-1100,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:160,
-      //     left:-900,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:140,
-      //     left:-700,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-      // tl.from("#p4 .airplane", 1, {
-      //   css: {
-      //     top:100,
-      //     left:-500,
-      //   },
-      //   ease: Linear.easeOut,
-      // },'p4Label1')
-
       tl4.to("#p4 .window", 1, {
         left: -190,
         ease: Linear.easeOut,
@@ -937,8 +914,51 @@
       var controller6 = new ScrollMagic.Controller();
       var tl6 = new TimelineMax({
 
-      })  
-      
+      }) 
+      tl6.to("#p6", 18, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      },'p6Label')
+      tl6.to("#p6 .shan1", 2, {
+        css: {
+          left:0
+        },
+        ease: Linear.easeOut,
+      }, 'p6Label+=1')
+      tl6.to("#p6 .shan2", 2, {
+        css: {
+          right:0
+        },
+        ease: Linear.easeOut,
+      }, 'p6Label+=2')
+      tl6.to("#p6 .shan3", 2, {
+        css: {
+          right:0
+        },
+        ease: Linear.easeOut,
+      }, 'p6Label+=3')
+      tl6.to("#p6 .shan4", 2, {
+        css: {
+          right:0
+        },
+        ease: Linear.easeOut,
+      }, 'p6Label+=4')
+      tl6.to("#p6 .shan", 10, {
+        top:-300,
+        ease: Linear.easeOut,
+      },2)
+      tl6.to("#p6 .zhai", 2, {
+        css: {
+          left:0
+        },
+        ease: Linear.easeOut,
+      },  'p6Label+=5')
+      // tl6.to("#p6 .shan", 2, {
+      //   css: {
+      //     top:-1000
+      //   },
+      //   ease: Linear.easeOut,
+      // }, 0)
       var scene6 = new ScrollMagic.Scene({
         duration: 2000
       })
