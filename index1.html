@@ -213,6 +213,9 @@
     </div>
     <div class="p5" id="p5">
       <div class="p5-scroll">
+        <div class="line">
+          <img src="./h5imgs/page5/line.png" alt="">
+        </div>
         <div class="scenes">
           <div class="scene lixiguo">
             <img class="stairs" src="./h5imgs/page5/stairs.png" alt="">
@@ -917,6 +920,10 @@
         transform:'translateX(0)',
         ease: Linear.easeOut,
       },'p5Label')
+      tl5.to("#p5 .line", 2, {
+        top:-2320,
+        ease: Linear.easeOut,
+      },'p5Label+=6')
       tl5.to("#p5 .stairs", 8, {
         right:-650,
         ease: Linear.easeOut,
