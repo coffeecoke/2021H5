@@ -23,19 +23,19 @@
 .graph1{
   position: absolute;
   right:-400px;
-  top:10px;
+  top:0px;
   z-index:2;
 }
 .graph2{
   position: absolute;
   left:-200px;
-  top:150px;
+  top:350px;
   z-index:2;
 }
 .graph3{
   position: absolute;
   right:-400px;
-  top:250px;
+  top:350px;
   z-index:2;
 }
 .liang{

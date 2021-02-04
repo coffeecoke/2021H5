@@ -224,6 +224,9 @@
     </div>
     <div class="p6" id="p6">
       <div class="p6-scroll">
+        <div class="line">
+          <img src="./h5imgs/page6/line.png" alt="">
+        </div>
         <div class="shan">
           <img class="shan1" src="./h5imgs/page6/shan1.png" alt="">
           <img class="shan2" src="./h5imgs/page6/shan2.png" alt="">
@@ -237,6 +240,9 @@
     </div>
     <div class="p7" id="p7">
       <div class="p7-scroll">
+        <div class="line">
+          <img src="./h5imgs/page7/line.png" alt="">
+        </div>
         <div class="leafs">
           <img src="./h5imgs/page7/shuzhi.png" alt="">
         </div>
@@ -247,6 +253,9 @@
     </div>
     <div class="p8" id="p8">
       <div class="p8-scroll">
+        <div class="line">
+          <img src="./h5imgs/page8/line.png" alt="">
+        </div>
         <div class="graph">
           <img class="graph1" src="./h5imgs/page8/graph1.png" alt="">
           <img class="graph2" src="./h5imgs/page8/graph2.png" alt="">
@@ -1004,6 +1013,10 @@
         top:-1000,
         ease: Linear.easeOut,
       },'p7Label+=1') 
+      tl7.to(".p7 .line", 2, {
+        top:-1100,
+        ease: Linear.easeOut,
+      },'p7Label') 
       var scene7 = new ScrollMagic.Scene({
         duration: 2000
       })
@@ -1020,28 +1033,32 @@
       var controller8 = new ScrollMagic.Controller();
       var tl8 = new TimelineMax({
 
-      })  
-      tl8.to(".graph1", 2, {
-        right:0,
-        ease: Linear.easeOut,
-      },'0') 
-      tl8.to(".graph2", 2, {
-        left:100,
-        ease: Linear.easeOut,
-      },'0') 
-      tl8.to(".graph3", 2, {
-        right:100,
-        ease: Linear.easeOut,
-      },'0') 
-      tl8.to(".p8-scroll", 18, {
+      }) 
+      tl8.to(".p8-scroll", 8, {
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p8Label')
+      tl8.to(".p8 .line", 3, {
+        top:-4000,
+        ease: Linear.easeOut,
+      },'p8Label+=10')
+      tl8.to(".graph1", 2, {
+        right:0,
+        ease: Linear.easeOut,
+      },'p8Label+=1') 
+      tl8.to(".graph2", 2, {
+        left:100,
+        ease: Linear.easeOut,
+      },'p8Label+=2') 
+      tl8.to(".graph3", 2, {
+        right:100,
+        ease: Linear.easeOut,
+      },'p8Label+=3') 
       tl8.to(".graph", 2, {
         top:-1000,
         ease: Linear.easeOut,
-      },'p8Label+=1')  
-      tl8.to(".liang", 2, {
+      },'p8Label+=5')  
+      tl8.to(".liang", 6, {
         opacity:1,
         top:-300,
         ease: Linear.easeOut,
@@ -1049,23 +1066,27 @@
       tl8.to(".liang", 1, {
         left:-1000,
         ease: Linear.easeOut,
-      },'p8Label+=3') 
+      },'p8Label+=8') 
+      // tl8.to(".line2", 2, {
+      //   opacity:1,
+      //   ease: Linear.easeOut,
+      // },'p8Label+=7') 
       tl8.to(".crowd1", 2, {
         opacity:1,
         ease: Linear.easeOut,
-      },'p8Label+=5') 
+      },'p8Label+=9') 
       tl8.to(".crowd2", 2, {
         opacity:1,
         ease: Linear.easeOut,
-      },'p8Label+=6') 
+      },'p8Label+=10') 
       tl8.to(".crowd1", 2, {
         bottom:200,
         ease: Linear.easeOut,
-      },'p8Label+=7') 
+      },'p8Label+=11') 
       tl8.to(".crowd2", 2, {
         right:-750,
         ease: Linear.easeOut,
-      },'p8Label+=11') 
+      },'p8Label+=13') 
       var scene8 = new ScrollMagic.Scene({
         duration: 2000
       })
