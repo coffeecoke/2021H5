@@ -213,13 +213,22 @@
     </div>
     <div class="p5" id="p5">
       <div class="p5-scroll">
-        <div class="lamp">
-          <img src="./h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
-          <img class="light" src="./h5imgs/page5/liuyan-light.png" alt="">
+        <div class="scenes">
+          <div class="scene lixiguo">
+            <img class="stairs" src="./h5imgs/page5/stairs.png" alt="">
+            <img class="man" src="./h5imgs/page5/lixiguo.png" alt="">
+          </div>
+          <div class="scene liuyan">
+            <div class="lamp">
+              <img src="./h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
+              <img class="light" src="./h5imgs/page5/liuyan-light.png" alt="">
+            </div>
+            <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
+          </div>
+         
         </div>
-        <div class="liuyan scene">
-          <img src="./h5imgs/page5/liuyan.png" alt="" style="width:100%;">
-        </div>
+        
+
       </div>
     </div>
     <div class="p6" id="p6">
@@ -473,7 +482,7 @@
       var tl2 = new TimelineMax({
 
       })
-      tl2.to('.mask1', 2, {
+      tl2.to('.mask1', 4, {
         opacity: 0,
         ease: Linear.easeOut,
       }, 0)
@@ -483,23 +492,23 @@
       })
       tl2.to('#p2 .star1', 1, {
         opacity: 1,
-        top: 0,
+        // top: 0,
         ease: Linear.easeOut,
       })
       tl2.to('#p2 .star2', 1, {
         opacity: 1,
-        top: -100,
+        // top: -100,
         ease: Linear.easeOut,
       }, 2)
       tl2.to("#p2", 26, {
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       }, 'p2Label')
-      tl2.to('#p2 .star1', 3, {
+      tl2.to('#p2 .star1', 6, {
         top: -1500,
         ease: Linear.easeOut,
       }, 'p2Label')
-      tl2.to('#p2 .star2', 4, {
+      tl2.to('#p2 .star2', 6, {
         top: -2000,
         ease: Linear.easeOut
       }, 'p2Label')
@@ -575,15 +584,15 @@
         ease: Linear.easeOut
       })
       var scene2 = new ScrollMagic.Scene({
-          duration: 2000
+          duration: 4000
         })
         .triggerHook(-1)
         .triggerElement('#p2')
         .setPin("#p2")
         .setTween(tl2)
-        .addIndicators({
-          // name: "p2"
-        })
+        // .addIndicators({
+        //   name: "p2"
+        // })
         .addTo(controller2);
 
       // 场景3
@@ -616,7 +625,7 @@
         ease: Linear.easeOut,
       })
       tl3.to(".p3-scroll", 24, {
-        backgroundPosition: "0 100%",
+        backgroundPosition: "0 120%",
         ease: Linear.easeOut,
       }, 'p3Label1')
       tl3.to("#p3 .line", 20, {
@@ -645,21 +654,18 @@
 
       }, 'p3Label1+=5')
 
+      tl3.to("#p3 .leaf-move", 0, {
+        className:'+=leaf2',
+        ease: Linear.easeOut,
+      }, 'p3Label1+=6')
       tl3.to("#p3 .leaf-move", 1, {
         css: {
-          width: 241,
-          height: 125,
-          top: 550,
-          'background': 'url(h5imgs/page3/leaf2.png) no-repeat'
+          top: 550
         },
         ease: Linear.easeOut,
       }, 'p3Label1+=6')
       tl3.to("#p3 .leaf-move", 0, {
-        css: {
-          width: 220,
-          height: 180,
-          'background-image': 'url(h5imgs/page3/leaf3.png)'
-        },
+        className:'+=leaf3',
         ease: Linear.easeOut,
       }, 'p3Label1+=7')
       tl3.to("#p3 .leaf-move", 1, {
@@ -669,11 +675,7 @@
         ease: Linear.easeOut,
       }, 'p3Label1+=7')
       tl3.to("#p3 .leaf-move", 0, {
-        css: {
-          width: 193,
-          height: 240,
-          'background-image': 'url(h5imgs/page3/leaf4.png)'
-        },
+        className:'+=leaf4',
         ease: Linear.easeOut,
       }, 'p3Label1+=8')
       tl3.to("#p3 .leaf-move", 1, {
@@ -683,11 +685,7 @@
         ease: Linear.easeOut,
       }, 'p3Label1+=8')
       tl3.to("#p3 .leaf-move", 0, {
-        css: {
-          width: 246,
-          height: 340,
-          'background-image': 'url(h5imgs/page3/leaf5.png)'
-        },
+        className:'+=leaf5',
         ease: Linear.easeOut,
       }, 'p3Label1+=9')
       tl3.to("#p3 .leaf-move", 1, {
@@ -697,11 +695,7 @@
         ease: Linear.easeOut,
       }, 'p3Label1+=9')
       tl3.to("#p3 .leaf-move", 0, {
-        css: {
-          width: 305,
-          height: 229,
-          'background-image': 'url(h5imgs/page3/leaf6.png)'
-        },
+        className:'+=leaf6',
         ease: Linear.easeOut,
       }, 'p3Label1+=10')
       tl3.to("#p3 .leaf-move", 1, {
@@ -711,11 +705,7 @@
         ease: Linear.easeOut,
       }, 'p3Label1+=10')
       tl3.to("#p3 .leaf-move", 0, {
-        css: {
-          width: 470,
-          height: 385,
-          'background-image': 'url(h5imgs/page3/leaf7.png)'
-        },
+        className:'+=leaf7',
         ease: Linear.easeOut,
       }, 'p3Label1+=11')
       tl3.to("#p3 .leaf-move", 1, {
@@ -746,9 +736,9 @@
         .triggerElement('#p3')
         .setPin("#p3")
         .setTween(tl3)
-        .addIndicators({
-          // name: "p3"
-        })
+        // .addIndicators({
+        //   name: "p3"
+        // })
         .addTo(controller3);
 
 
@@ -804,23 +794,23 @@
         },
         ease: Linear.easeOut,
       }, 'p4Label2')
-      tl4.to("#p4 .people", 1, {
+      tl4.to("#p4 .people", 2, {
         left: 1800,
         ease: Linear.easeOut,
-      }, 'p4Label2')
-      tl4.to("#p4 .long", 1, {
+      }, 'p4Label2+=2')
+      tl4.to("#p4 .long", 2, {
         left: 1800,
         ease: Linear.easeOut,
-      }, 'p4Label2')
-      tl4.to("#p4 .long-left", 1, {
+      }, 'p4Label2+=2')
+      tl4.to("#p4 .long-left", 2, {
         left: 1800,
         ease: Linear.easeOut,
-      }, 'p4Label2')
-      tl4.to("#p4 .long-right", 1, {
+      }, 'p4Label2+=2')
+      tl4.to("#p4 .long-right", 2, {
         right: -1800,
         ease: Linear.easeOut,
-      }, 'p4Label2')
-      tl4.to("#p4 .window", 1, {
+      }, 'p4Label2+=2')
+      tl4.to("#p4 .window", 2, {
         left: -190,
         ease: Linear.easeOut,
       })
@@ -854,12 +844,12 @@
         ease: Linear.easeOut,
       })
       // 移除
-      tl4.to("#p4 .window", 2, {
+      tl4.to("#p4 .window", 4, {
         left: 750,
         opacity: 1,
         ease: Linear.easeOut,
       },'p4Label4')
-      tl4.to("#p4 .travel", 2, {
+      tl4.to("#p4 .travel", 4, {
         right: 800,
         opacity: 1,
         ease: Linear.easeOut,
@@ -868,32 +858,32 @@
       tl4.to("#p4 .building", 2, {
         transform: 'translateY(0)',
         ease: Linear.easeOut,
-      },'p4Label4+=2')
+      },'p4Label4+=4')
       
       tl4.to("#p4 .floor", .5, {
         transform: 'translateY(0)',
         ease: Linear.easeOut,
-      },'p4Label4+=2')
+      },'p4Label4+=4')
 
       tl4.to("#p4 .building1 ", 4, {
         transform:'scale(40)',
         ease: Linear.easeOut,
-      },'p4Label4+=2')
+      },'p4Label4+=4')
       tl4.to("#p4 .line ", 2, {
         opacity:0,
         ease: Linear.easeOut,
-      },'p4Label4+=2')
+      },'p4Label4+=4')
 
       var scene4 = new ScrollMagic.Scene({
-          duration: 2000
+          duration: 5000
         })
         .triggerHook(1)
         .triggerElement('#p4')
         .setPin("#p4")
         .setTween(tl4)
-        .addIndicators({
-          // name: "p4"
-        })
+        // .addIndicators({
+        //   name: "p4"
+        // })
         .addTo(controller4);
 
       // 场景5
@@ -915,24 +905,47 @@
         transform: 'scale(1)',
         ease: Linear.easeOut,
       })
-      tl5.to("#p5 .lamp", 1, {
+      tl5.to("#p5 .lamp", 3, {
         transform: 'translateY(0)',
         ease: Linear.easeOut,
       })
-      tl5.to("#p5 .light", 1, {
+      tl5.to("#p5 .light", 2, {
         opacity:1,
         ease: Linear.easeOut,
       })
+      tl5.to("#p5 .scenes", 8, {
+        transform:'translateX(0)',
+        ease: Linear.easeOut,
+      },'p5Label')
+      tl5.to("#p5 .stairs", 8, {
+        right:-650,
+        ease: Linear.easeOut,
+      },'p5Label+=8')
+      tl5.to("#p5 .man", 4, {
+        left:40,
+        ease: Linear.easeOut,
+      })
+      tl5.to("#p5 .stairs", 4, {
+        transform:'translateX(-400px)',
+        ease: Linear.easeOut,
+      },'p5Label1')
+      tl5.to("#p5 .man", 4, {
+        transform:'translateX(-400px)',
+        ease: Linear.easeOut,
+      },'p5Label1')
+
+      
+
       var scene5 = new ScrollMagic.Scene({
-        duration: 2000
+        duration: 4000
       })
       .triggerHook(1)
       .triggerElement('#p5')
       .setPin("#p5")
       .setTween(tl5)
-      .addIndicators({
-        // name: "p5"
-      })
+      // .addIndicators({
+      //   name: "p5"
+      // })
       .addTo(controller5);
 
       // 场景6
@@ -991,9 +1004,9 @@
       .triggerElement('#p6')
       .setPin("#p6")
       .setTween(tl6)
-      .addIndicators({
-        name: "p6"
-      })
+      // .addIndicators({
+      //   name: "p6"
+      // })
       .addTo(controller6);
 
       // 场景7
@@ -1009,7 +1022,7 @@
         top:-1000,
         ease: Linear.easeOut,
       },'p7Label+=1') 
-      tl7.to(".window", 2, {
+      tl7.to("#p7 .window", 2, {
         top:-1000,
         ease: Linear.easeOut,
       },'p7Label+=1') 
@@ -1024,9 +1037,9 @@
       .triggerElement('#p7')
       .setPin("#p7")
       .setTween(tl7)
-      .addIndicators({
-        name: "p7"
-      })
+      // .addIndicators({
+      //   name: "p7"
+      // })
       .addTo(controller7);
 
       // 场景8
@@ -1094,9 +1107,9 @@
       .triggerElement('#p8')
       .setPin("#p8")
       .setTween(tl8)
-      .addIndicators({
-        name: "p8"
-      })
+      // .addIndicators({
+      //   name: "p8"
+      // })
       .addTo(controller8);
 
     }

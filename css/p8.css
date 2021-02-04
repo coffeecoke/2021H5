@@ -10,53 +10,53 @@
   background:url(../h5imgs/page8/bg.png) 0 0 no-repeat;
   position: relative;
 }
-.graph{
+.p8 .graph{
   position: relative;
   top:0;
   left:0;
   /* transform: translateY(0); */
   /* position: absolute; */
 }
-.graph img{
+.p8 .graph img{
   display: block;
 }
-.graph1{
+.p8 .graph1{
   position: absolute;
   right:-400px;
   top:0px;
   z-index:2;
 }
-.graph2{
+.p8 .graph2{
   position: absolute;
   left:-200px;
   top:350px;
   z-index:2;
 }
-.graph3{
+.p8 .graph3{
   position: absolute;
   right:-400px;
   top:350px;
   z-index:2;
 }
-.liang{
+.p8 .liang{
   position: absolute;
   top:0;
   left:0;
   z-index:1;
   opacity: 0;
 }
-.crowd{
+.p8 .crowd{
   position: absolute;
   bottom:0;
   right:0;
 }
-.crowd1{
+.p8 .crowd1{
   position: absolute;
   right:0px;
   bottom:0;
   opacity: 0;
 }
-.crowd2{
+.p8 .crowd2{
   position: absolute;
   right:0px;
   bottom:0;

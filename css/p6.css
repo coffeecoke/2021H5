@@ -11,38 +11,39 @@
   position: relative;
 }
 .p6 .shan{
+  width:100%;
   position: absolute;
   bottom:-1200px;
   left:0;
 }
-.shan img{
+.p6 .shan img{
   display: block;
 }
-.shan1{
+.p6 .shan1{
   position: absolute;
   bottom:600px;
   left:0px;
   z-index: 1;
 }
-.shan2{
+.p6 .shan2{
   position: absolute;
   bottom:500px;
   right:0px;
   z-index: 2;
 }
-.shan3{
+.p6 .shan3{
   position: absolute;
   bottom:250px;
   right:0px;
   z-index: 3;
 }
-.shan4{
+.p6 .shan4{
   position: absolute;
   bottom:-100px;
   right:0px;
   z-index: 4;
 }
-.zhai{
+.p6 .zhai{
   position: absolute;
   bottom:300px;
   left:-750px;

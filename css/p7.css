@@ -10,7 +10,7 @@
   background:url(../h5imgs/page7/bg1.png) 0 0 no-repeat;
   position: relative;
 }
-.leafs{
+.p7 .leafs{
   position: absolute;
   top:130px;
   right:0;
@@ -28,7 +28,7 @@
     transform:rotate(0deg);
   }
 }
-.window{
+.p7 .window{
   position: absolute;
   top:0;
   left:0;

@@ -9,9 +9,9 @@
   width:100%;
   height: 100vh;
   transform: translateY(0);
-  background:url(../h5imgs/page3/p3-bg1.png) 0 0 no-repeat;
+  background:#ffedbf url(../h5imgs/page3/p3-bg1.png) 0 0 no-repeat;
 }
-.light {
+.p3 .light {
   width:750px;
   height:1700px;
   position: absolute;
@@ -20,24 +20,24 @@
   background:none;
   /* opacity: 0; */
 }
-.light.step1 {
+.p3 .light.step1 {
   background:url(../h5imgs/page3/light-1.png) 0 0 no-repeat;
 }
-.light.step2 {
+.p3 .light.step2 {
   background:url(../h5imgs/page3/light-2.png) 0 0 no-repeat;
 }
-.light.step3 {
+.p3 .light.step3 {
   background:url(../h5imgs/page3/light-3.png) 0 0 no-repeat;
 }
-.branch1 {
+.p3 .branch1 {
   position: absolute;
   top:618px;
 }
-.branch2 {
+.p3 .branch2 {
   position: absolute;
   top:614px;
 }
-.leaf-move {
+.p3 .leaf-move {
   position: absolute;
   width:215px;
   height:118px;
@@ -48,14 +48,44 @@
   transform-origin: 0 50%;
   transform:rotate(0);
 }
-.leaf-8 {
+.p3 .leaf2 {
+  width: 241px;
+  height:125px;
+  background: url(../h5imgs/page3/leaf2.png) no-repeat;
+}
+.p3 .leaf3 {
+  width: 220px;
+  height: 180px;
+  background: url(../h5imgs/page3/leaf3.png) no-repeat;
+}
+.p3 .leaf4 {
+  width: 193px;
+  height: 240px;
+  background: url(../h5imgs/page3/leaf4.png) no-repeat;
+}
+.p3 .leaf5 {
+  width: 246px;
+  height: 340px;
+  background: url(../h5imgs/page3/leaf5.png) no-repeat;
+}
+.p3 .leaf6 {
+  width: 305px;
+  height: 229px;
+  background: url(../h5imgs/page3/leaf6.png) no-repeat;
+}
+.p3 .leaf7 {
+  width: 470px;
+  height: 385px;
+  background: url(../h5imgs/page3/leaf7.png) no-repeat;
+}
+.p3 .leaf-8 {
   position: absolute;
   width:693px;
   height:749px;
   left:-1000px;
   background: url(../h5imgs/page3/leaf8.png) no-repeat;
 }
-.leaf-9 {
+.p3 .leaf-9 {
   position: absolute;
   width:702px;
   height:749px;

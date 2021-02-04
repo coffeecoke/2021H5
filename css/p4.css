@@ -16,21 +16,21 @@
   z-index:0;
  
 }
-.yun1 {
+.p4 .yun1 {
   position: absolute;
   top:160px;
 }
-.yun2 {
+.p4 .yun2 {
   position: absolute;
   top:44px;
   right:0;
 }
-.shan {
+.p4 .shan {
   position: absolute;
   top:400px;
   right:0;
 }
-.airplane{
+.p4 .airplane{
   width:1370px;
   height:680px;
   position: absolute;
@@ -39,7 +39,7 @@
   /* z-index:1; */
 }
 
-.building {
+.p4 .building {
   width:100%;
   position: absolute;
   bottom:-300px;
@@ -47,14 +47,14 @@
   height:1200px;
   transform: translateY(0);
 }
-.building1 {
+.p4 .building1 {
 
   position: absolute;
   bottom:0px;
   right:-200px;
   transform-origin: 654px 740px;
 }
-.window{
+.p4 .window{
   position: absolute;
   bottom:-30px;
   left:-1300px;
@@ -62,47 +62,47 @@
   opacity: .8;
   /* display: none; */
 }
-.window img{
+.p4 .window img{
   display: block;
 }
-.people {
+.p4 .people {
   position: absolute;
   bottom:0;
   left:50%;
   opacity: 0;
   transform:translateX(-50%);
 }
-.long {
+.p4 .long {
   position: absolute;
   left:50%;
   bottom:0;
   transform:translateX(-50%);
 }
-.long-left {
+.p4 .long-left {
   position: absolute;
   bottom:0;
   left:0;
 }
-.long-right {
+.p4 .long-right {
   position: absolute;
   bottom:0;
   right:0;
 }
 
 
-.floor{
+.p4 .floor{
   position: absolute;
   bottom:-1080px;
   transform: translateY(0);
 }
-.travel{
+.p4 .travel{
   position: absolute;
   bottom:30px;
   right:-750px;
   opacity: 0;
   z-index:1;
 }
-.window-mini {
+.p4 .window-mini {
   position: absolute;
   left: 640px;
   top: 709px;
