@@ -213,6 +213,9 @@
     </div>
     <div class="p5" id="p5">
       <div class="p5-scroll">
+        <div class="line">
+          <img src="./h5imgs/page5/line.png" alt="">
+        </div>
         <div class="scenes">
           <div class="scene lixiguo">
             <img class="stairs" src="./h5imgs/page5/stairs.png" alt="">
@@ -282,11 +285,55 @@
   </div>
   <script>
     window.onload = function () {
+      var videosArr = []
       var soundP1_1 = new Howl({
         src: ['audios/typing.mp3']
       })
+      videosArr.push(soundP1_1)
+      // 龙哥音频
+      var longAudio = new Howl({
+        src: ['audios/long.m4a']
+      })
+      videosArr.push(longAudio)
+      // 张苗
+      var zhangmiaoAudio = new Howl({
+        src: ['audios/zhangmiao.m4a']
+      })
+      videosArr.push(zhangmiaoAudio)
+      // 刘岩
+      var liuyanAudio = new Howl({
+        src: ['audios/liuyan.m4a']
+      })
+      videosArr.push(liuyanAudio)
+      // 希国
+      var xiguoAudio = new Howl({
+        src: ['audios/xiguo.m4a']
+      })
+      // 立建
+      var lijianAudio = new Howl({
+        src: ['audios/zhailijian.m4a']
+      })
+      // 沈慧
+      var shenhuiAudio = new Howl({
+        src: ['audios/shenhui.m4a']
+      })
+      videosArr.push(xiguoAudio)
+      // 梁姐
+      var liangAudio = new Howl({
+        src: ['audios/liang.m4a']
+      })
+      videosArr.push(liangAudio)
+      // 程总
+      var chengAudio = new Howl({
+        src: ['audios/cheng.m4a']
+      })
+      videosArr.push(chengAudio)
+      function stopAllAudio () {
+        for(var i=0;i<videosArr.length;i++) {
+          videosArr[i].pause()
+        }
+      }
       soundP1_1.playStatus = true
-
       var controller1 = new ScrollMagic.Controller();
       var tl = new TimelineMax({
         onUpdate: function () {
@@ -777,6 +824,10 @@
       })
   
       tl4.from("#p4 .long", 1, {
+        onStart:function () {
+          stopAllAudio()
+          longAudio.play()
+        },
         bottom: -1000,
         ease: Linear.easeOut,
       })
@@ -834,6 +885,10 @@
       },'p4Label3')
      
       tl4.to("#p4 .travel", 2, {
+        onStart:function () {
+          stopAllAudio()
+          zhangmiaoAudio.play()
+        },
         right: 50,
         opacity: 1,
         ease: Linear.easeOut,
@@ -902,10 +957,15 @@
         ease: Linear.easeOut,
       })
       tl5.to("#p5 .liuyan", 10, {
+        onStart:function () {
+          stopAllAudio()
+          liuyanAudio.play()
+        },
         transform: 'scale(1)',
         ease: Linear.easeOut,
       })
       tl5.to("#p5 .lamp", 3, {
+       
         transform: 'translateY(0)',
         ease: Linear.easeOut,
       })
@@ -917,14 +977,28 @@
         transform:'translateX(0)',
         ease: Linear.easeOut,
       },'p5Label')
+      tl5.to("#p5 .line", 18, {
+        top:-2320,
+        ease: Linear.easeOut,
+      },'p5Label')
+
       tl5.to("#p5 .stairs", 8, {
         right:-650,
         ease: Linear.easeOut,
       },'p5Label+=8')
       tl5.to("#p5 .man", 4, {
+        onStart:function () {
+          stopAllAudio()
+          xiguoAudio.play()
+        },
         left:40,
         ease: Linear.easeOut,
       })
+      // 站位
+      tl5.to("", 8, {
+        ease: Linear.easeOut,
+      })
+
       tl5.to("#p5 .stairs", 4, {
         transform:'translateX(-400px)',
         ease: Linear.easeOut,
@@ -986,11 +1060,22 @@
         ease: Linear.easeOut,
       }, 'p6Label+=4')
       tl6.to("#p6 .zhai", 5, {
+        onStart:function () {
+          stopAllAudio()
+          lijianAudio.play()
+        },
         css: {
           left:0
         },
         ease: Linear.easeOut,
       })
+
+      //  占位
+      tl6.to("#p6 .zhai", 4, {
+        
+        ease: Linear.easeOut,
+      })
+      
       // tl6.to("#p6 .shan", 2, {
       //   css: {
       //     top:-1000
@@ -1014,10 +1099,17 @@
       var tl7 = new TimelineMax({
 
       }) 
+      tl7.to("", 2, {
+        onStart:function() {
+          stopAllAudio()
+          shenhuiAudio.play()
+        }
+      }) 
       tl7.to(".p7-scroll", 3, {
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p7Label') 
+      
       tl7.to(".leafs", 2, {
         top:-1000,
         ease: Linear.easeOut,
@@ -1052,21 +1144,29 @@
         ease: Linear.easeOut,
       },'p8Label')
      
-      tl8.to(".graph1", 2, {
+      tl8.to(".graph1", 4, {
+        onStart:function() {
+          stopAllAudio()
+          liangAudio.play()
+        },
         right:0,
         ease: Linear.easeOut,
       },'p8Label+=3') 
-      tl8.to(".graph2", 2, {
+      tl8.to(".graph2", 4, {
         left:100,
         ease: Linear.easeOut,
       },'p8Label+=4') 
-      tl8.to(".graph3", 2, {
+      tl8.to(".graph3", 4, {
         right:100,
         ease: Linear.easeOut,
       },'p8Label+=4') 
-      tl8.to(".liang", 3, {
+      tl8.to(".liang", 4, {
         opacity:1,
         ease: Linear.easeOut,
+      }) 
+      // 占位
+      tl8.to("", 5, {
+        
       }) 
       // 图标移除
       tl8.to(".graph1", 2, {
@@ -1081,13 +1181,13 @@
         right:-400,
         ease: Linear.easeOut,
       },'p8Label1') 
-      // 梁姐移除
 
-      tl8.to(".liang", 6, {
+      // 梁姐移除
+      tl8.to(".liang", 8, {
         opacity:0,
         ease: Linear.easeOut,
       }) 
-      tl8.to(".p8-scroll", 6, {
+      tl8.to(".p8-scroll", 10, {
         backgroundPosition: "0 70%",
         ease: Linear.easeOut,
       },'p8Label2')
@@ -1096,24 +1196,38 @@
         ease: Linear.easeOut,
       },'p8Label2')
       // 人群显示
-      tl8.to(".crowd1", 2, {
+      tl8.to(".crowd1", 8, {
+        onStart:function() {
+          stopAllAudio()
+          chengAudio.play()
+        },
         opacity:1,
         ease: Linear.easeOut,
       }) 
       tl8.to(".crowd2", 4, {
-        right:0,
+        right:-120,
         ease: Linear.easeOut,
       }) 
-      // tl8.to(".crowd1", 2, {
-      //   bottom:200,
-      //   ease: Linear.easeOut,
-      // },'p8Label+=11') 
+
+      // 站位时间
+      tl8.to("", 10, {
+        ease: Linear.easeOut,
+      }) 
+      tl8.to(".p8-scroll", 8, {
+        backgroundPosition: "0 80%",
+        ease: Linear.easeOut,
+      },'p8Label2')
+      tl8.to(".crowd", 8, {
+        transform:'translateY(-600px)',
+        ease: Linear.easeOut,
+      })
       // tl8.to(".crowd2", 2, {
       //   right:-750,
       //   ease: Linear.easeOut,
       // },'p8Label+=13') 
+
       var scene8 = new ScrollMagic.Scene({
-        duration: 2000
+        duration: 4000
       })
       .triggerHook(0)
       .triggerElement('#p8')

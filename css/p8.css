@@ -55,11 +55,12 @@
 .p8 .crowd1{
   position: absolute;
   right:0px;
-  bottom:0;
+  bottom:-64px;
   opacity: 0;
 }
 .p8 .crowd2{
   position: absolute;
-  right:-100%;
-  bottom:0;
+  right:-1000px;
+  bottom:-500px;
+
 }
