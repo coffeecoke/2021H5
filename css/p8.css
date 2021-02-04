@@ -23,29 +23,31 @@
 .p8 .graph1{
   position: absolute;
   right:-400px;
-  top:10px;
+  top:0px;
   z-index:2;
 }
 .p8 .graph2{
   position: absolute;
   left:-200px;
-  top:150px;
+  top:350px;
   z-index:2;
 }
 .p8 .graph3{
   position: absolute;
   right:-400px;
-  top:250px;
+  top:350px;
   z-index:2;
+  opacity: 1;
 }
 .p8 .liang{
   position: absolute;
-  top:0;
   left:0;
-  z-index:1;
+  z-index:10;
   opacity: 0;
+  bottom:0;
 }
 .p8 .crowd{
+  width:100%;
   position: absolute;
   bottom:0;
   right:0;
@@ -58,7 +60,6 @@
 }
 .p8 .crowd2{
   position: absolute;
-  right:0px;
+  right:-100%;
   bottom:0;
-  opacity: 0;
 }
