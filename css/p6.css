@@ -10,6 +10,12 @@
   background:url(../h5imgs/page6/bg.png) 0 0 no-repeat;
   position: relative;
 }
+.p6 .line{
+  /* top:-1580px; */
+}
+.p6 .line img{
+  padding-left:87px;
+}
 .p6 .shan{
   width:100%;
   position: absolute;

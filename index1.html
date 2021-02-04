@@ -977,11 +977,10 @@
         transform:'translateX(0)',
         ease: Linear.easeOut,
       },'p5Label')
-      tl5.to("#p5 .line", 18, {
+      tl5.to("#p5 .line", 2, {
         top:-2320,
         ease: Linear.easeOut,
-      },'p5Label')
-
+      },'p5Label+=6')
       tl5.to("#p5 .stairs", 8, {
         right:-650,
         ease: Linear.easeOut,
@@ -1076,6 +1075,10 @@
         ease: Linear.easeOut,
       })
       
+      tl6.to(".p6 .line", 5, {
+        top:-1580,
+        ease: Linear.easeOut,
+      }, 'p6Label+=20') 
       // tl6.to("#p6 .shan", 2, {
       //   css: {
       //     top:-1000

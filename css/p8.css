@@ -42,7 +42,7 @@
 .p8 .liang{
   position: absolute;
   left:0;
-  z-index:10;
+  z-index:9;
   opacity: 0;
   bottom:0;
 }
