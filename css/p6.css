@@ -11,6 +11,7 @@
   position: relative;
 }
 .p6 .shan{
+  width:100%;
   position: absolute;
   bottom:-1200px;
   left:0;
