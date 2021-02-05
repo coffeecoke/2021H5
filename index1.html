@@ -296,9 +296,19 @@
     </div>
     <div class="p10" id="p10">
       <div class="p10-scroll">
-        <!-- <div class="time-banner">
-          <img src="./h5imgs/page10/time-banner.png" alt="">
-        </div> -->
+        <div class="p10-inner">
+          <div class="time-banner">
+            <img src="./h5imgs/page10/time-banner.png" alt="">
+          </div>
+          <div class="clock">
+            <div class="playground" id="mySprite"></div>
+            <div class="playground1" id="mySprite1"></div>
+            <div class="playground2" id="mySprite2"></div>
+            <div class="playground3" id="mySprite3"></div>
+            <div class="playground4" id="mySprite4"></div>
+          </div>
+          <img src="./h5imgs/page11/bg.png" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -1292,6 +1302,50 @@
         transform:'scale(1)',
         ease: Linear.easeOut,
       })
+      tl10.to(".p10-scroll .clock", 1, {
+        opacity:1,
+        ease: Linear.easeOut,
+      })
+      tl10.to(".p10-scroll .time-banner img", 11, {
+        transform:'scale(.1)',
+        opacity:0,
+        ease: Linear.easeOut,
+      },'10Label')
+      tl10.to(".p10-scroll .clock .playground", 5, {
+        top: '0%',
+        left: '0%',
+        transform:'scale(.1)',
+        opacity:0,
+        ease: Linear.easeOut,
+      },'10Label+=3')
+      tl10.to(".p10-scroll .clock .playground1", 2, {
+        top: '0%',
+        left: '0%',
+        transform:'scale(.1)',
+        opacity:0,
+        ease: Linear.easeOut,
+      },'10Label+=5')
+      tl10.to(".p10-scroll .clock .playground2", 4, {
+        top: '0%',
+        right: '0%',
+        transform:'scale(.1)',
+        opacity:0,
+        ease: Linear.easeOut,
+      },'10Label+=6')
+      tl10.to(".p10-scroll .clock .playground3", 3, {
+        top: '0%',
+        right: '0%',
+        transform:'scale(.1)',
+        opacity:0,
+        ease: Linear.easeOut,
+      },'10Label+=6')
+      tl10.to(".p10-scroll .clock .playground4", 4, {
+        top: '0%',
+        right: '0%',
+        transform:'scale(.1)',
+        opacity:0,
+        ease: Linear.easeOut,
+      },'10Label+=7')
       var scene10 = new ScrollMagic.Scene({
         duration: 3000
       })
