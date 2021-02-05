@@ -14,6 +14,7 @@
   position: relative;
   top:0;
   left:0;
+  transform:scale(.8)
   /* transform: translateY(0); */
   /* position: absolute; */
 }
@@ -28,7 +29,7 @@
 }
 .p8 .graph2{
   position: absolute;
-  left:-200px;
+  left:-400px;
   top:350px;
   z-index:2;
 }
@@ -38,6 +39,7 @@
   top:350px;
   z-index:2;
   opacity: 1;
+  
 }
 .p8 .liang{
   position: absolute;
@@ -45,6 +47,8 @@
   z-index:9;
   opacity: 0;
   bottom:0;
+  transform: scale(.8);
+  bottom:-300px;
 }
 .p8 .crowd{
   width:100%;

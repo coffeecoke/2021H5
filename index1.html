@@ -290,6 +290,7 @@
   </div>
   <script>
     window.onload = function () {
+      var winHeight = $(window).height()
       var videosArr = []
       var soundP1_1 = new Howl({
         src: ['audios/typing.mp3']
@@ -681,7 +682,7 @@
         ease: Linear.easeOut,
       }, 'p3Label1')
       tl3.to("#p3 .line", 20, {
-        top: -4666,
+        top: -($('#p3 .line').height()- winHeight),
         ease: Linear.easeOut,
       }, 'p3Label1')
       tl3.to("#p3 .branch1", 3, {
@@ -982,10 +983,11 @@
         transform:'translateX(0)',
         ease: Linear.easeOut,
       },'p5Label')
-      tl5.to("#p5 .line", 2, {
-        top:-2320,
+      tl5.to("#p5 .line", 16, {
+        // top:-2320,
+        top: -($('#p5 .line').height()- winHeight),
         ease: Linear.easeOut,
-      },'p5Label+=6')
+      },'p5Label')
       tl5.to("#p5 .stairs", 8, {
         right:-650,
         ease: Linear.easeOut,
@@ -1081,7 +1083,8 @@
       })
       
       tl6.to(".p6 .line", 5, {
-        top:-1580,
+        // top:-1580,
+        top: -($('#p6 .line').height()- winHeight),
         ease: Linear.easeOut,
       }, 'p6Label+=20') 
       // tl6.to("#p6 .shan", 2, {
@@ -1127,7 +1130,8 @@
         ease: Linear.easeOut,
       },'p7Label+=1') 
       tl7.to(".p7 .line", 2, {
-        top:-1100,
+        // top:-1100,
+        top: -($('#p7 .line').height()- winHeight),
         ease: Linear.easeOut,
       },'p7Label') 
       var scene7 = new ScrollMagic.Scene({
@@ -1165,7 +1169,7 @@
         ease: Linear.easeOut,
       },'p8Label+=4') 
       tl8.to(".graph3", 4, {
-        right:100,
+        right:50,
         ease: Linear.easeOut,
       },'p8Label+=4') 
       tl8.to(".liang", 4, {
@@ -1182,7 +1186,7 @@
         ease: Linear.easeOut,
       },'p8Label1') 
       tl8.to(".graph2", 2, {
-        left:-200,
+        left:-300,
         ease: Linear.easeOut,
       },'p8Label1') 
       tl8.to(".graph3", 4, {
@@ -1200,7 +1204,8 @@
         ease: Linear.easeOut,
       },'p8Label2')
       tl8.to(".p8 .line", 6, {
-        top:-3000,
+        // top:-3000,
+        top: -($('#p8 .line').height()- winHeight),
         ease: Linear.easeOut,
       },'p8Label2')
       // 人群显示
