@@ -16,6 +16,9 @@
   z-index:0;
  
 }
+.p4 .line img {
+  padding-left:148px;
+}
 .p4 .yun1 {
   position: absolute;
   top:160px;

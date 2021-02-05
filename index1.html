@@ -291,14 +291,76 @@
     </div>
     <div class="p9" id="p9">
       <div class="p9-scroll">
-
+        <div class="line">
+          <img src="./h5imgs/page9/line.png" alt="">
+        </div>
+        <div class="p9-inner">
+          <img src="./h5imgs/page9/p9-bg.png" alt="" style="width:100%;">
+          <div class="yun-left">
+            <div class="yun-left1">
+              <img src="./h5imgs/page9/yun-left1.png" alt="">
+            </div>
+            <div class="yun-left2">
+              <img src="./h5imgs/page9/yun-left2.png" alt="">
+            </div>
+            <div class="yun-left3">
+              <img src="./h5imgs/page9/yun-left3.png" alt="">
+            </div>
+            <div class="yun-left4">
+              <img src="./h5imgs/page9/yun-left4.png" alt="">
+            </div>
+          </div>
+          <div class="yun-right">
+            <div class="yun-right1">
+              <img src="./h5imgs/page9/yun-right1.png" alt="">
+            </div>
+            <div class="yun-right2">
+              <img src="./h5imgs/page9/yun-right2.png" alt="">
+            </div>
+            <div class="yun-right3">
+              <img src="./h5imgs/page9/yun-right3.png" alt="">
+            </div>
+            <div class="yun-right4">
+              <img src="./h5imgs/page9/yun-right4.png" alt="">
+            </div>
+            <div class="yun-right5">
+              <img src="./h5imgs/page9/yun-right5.png" alt="">
+            </div>
+          </div>
+          <div class="text1">
+            <p>坚持做“我认为对”的事</p>
+            <p>把我听的变成可见的</p>
+            <p>把我说的变成可做的</p>
+            <p>把计划的变成现实的</p>
+          </div>
+          <div class="text2">
+            <p style="text-indent: 80px;">2020年</p>
+            <p><b class="text-bold">700</b>余份合同</p>
+          </div>
+          <div class="text3">
+            <p style="text-indent: 120px;">近<b class="text-bold">400</b>家合作</p>
+            <p>全员<b class="text-bold">1231155</b>小时</p>
+          </div>
+        </div>
+        <div class="wang-wrap">
+          <img src="./h5imgs/page9/tian.png" alt="">
+          <div class="wz">
+            <img src="./h5imgs/page9/wz.png" alt="">
+          </div>
+          <div class="shan">
+            <img src="./h5imgs/page9/shan.png" alt="">
+          </div>
+          <div class="floor">
+            <img src="./h5imgs/page9/floor.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
     <div class="p10" id="p10">
       <div class="p10-scroll">
-        <!-- <div class="time-banner">
+        <div class="time-banner">
           <img src="./h5imgs/page10/time-banner.png" alt="">
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -312,40 +374,40 @@
       videosArr.push(soundP1_1)
       // 龙哥音频
       var longAudio = new Howl({
-        src: ['audios/long.m4a']
+        src: ['audios/long.mp3']
       })
       videosArr.push(longAudio)
       // 张苗
       var zhangmiaoAudio = new Howl({
-        src: ['audios/zhangmiao.m4a']
+        src: ['audios/zhangmiao.mp3']
       })
       videosArr.push(zhangmiaoAudio)
       // 刘岩
       var liuyanAudio = new Howl({
-        src: ['audios/liuyan.m4a']
+        src: ['audios/liuyan.mp3']
       })
       videosArr.push(liuyanAudio)
       // 希国
       var xiguoAudio = new Howl({
-        src: ['audios/xiguo.m4a']
+        src: ['audios/xiguo.mp3']
       })
       // 立建
       var lijianAudio = new Howl({
-        src: ['audios/zhailijian.m4a']
+        src: ['audios/zhailijian.mp3']
       })
       // 沈慧
       var shenhuiAudio = new Howl({
-        src: ['audios/shenhui.m4a']
+        src: ['audios/shenhui.mp3']
       })
       videosArr.push(xiguoAudio)
       // 梁姐
       var liangAudio = new Howl({
-        src: ['audios/liang.m4a']
+        src: ['audios/liang.mp3']
       })
       videosArr.push(liangAudio)
       // 程总
       var chengAudio = new Howl({
-        src: ['audios/cheng.m4a']
+        src: ['audios/cheng.mp3']
       })
       videosArr.push(chengAudio)
       function stopAllAudio () {
@@ -1267,12 +1329,50 @@
       var tl9 = new TimelineMax({
 
       }) 
-      tl9.to(".p9-scroll", 10, {
-        backgroundPosition: "0 100%",
+      tl9.to(".p9-scroll .p9-inner", 10, {
+        top: -($('.p9-inner').height() - winHeight),
         ease: Linear.easeOut,
-      })
+      },'p9label')
+      tl9.to(".p9-scroll .text1", 2, {
+        opacity:1,
+        ease: Linear.easeOut,
+      },'p9label')
+      tl9.to(".p9-scroll .text2", 2, {
+        opacity:1,
+        ease: Linear.easeOut,
+      },'p9label+=2')
+      tl9.to(".p9-scroll .text3", 2, {
+        opacity:1,
+        ease: Linear.easeOut,
+      },'p9label+=3')
+      tl9.to(".p9-scroll .yun-right", 4, {
+        transform:'translateY(100px)',
+        ease: Linear.easeOut,
+      },'p9label+=3')
+
+      
+      tl9.to(".p9-scroll .wang-wrap", 10, {
+        transform:'scale(1)',
+        ease: Linear.easeOut,
+      },'p9llabel1')
+      tl9.to(".p9-scroll .p9-inner", 10, {
+        transform:'scale(0.8, 0.8)',
+        ease: Linear.easeOut
+      },'p9llabel1')
+      tl9.to(".p9-scroll .line", 14, {
+        top:-($('#p9 .line').height()- winHeight)-800,
+        ease: Linear.easeOut
+      },'p9llabel1')
+      tl9.to(".p9-scroll .wang-wrap", 14, {
+        left:-1505,
+        ease: Linear.easeOut
+      },'p9llabel2')
+      tl9.to(".p9-scroll .shan", 10, {
+        left:692,
+        ease: Linear.easeOut
+      },'p9llabel2')
       var scene9 = new ScrollMagic.Scene({
-        duration: 3000
+        duration: 6000
       })
       .triggerHook(0)
       .triggerElement('#p9')
