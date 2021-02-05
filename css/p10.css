@@ -2,6 +2,7 @@
   width:100%;
   height: 0;
   position: relative;
+  opacity: 1;
 }
 .p10-scroll {
   width:100%;
@@ -10,6 +11,12 @@
   background:url(../h5imgs/page10/bg.png) 0 0 no-repeat;
   position: relative;
   opacity: 0;
+}
+.p10-scroll .p10-inner {
+  position: absolute;
+  top:0;
+  transform:scale(1);
+  transform-origin:0px 3506px;
 }
 .time-banner {
   width:100%;
@@ -22,4 +29,243 @@
   width: 100%;
   transform: scale(44);
   transform-origin: 52% 822px;
+  opacity: 1;
+}
+.clock{
+  width:100%;
+  height:3000px;
+  background:url(../h5imgs/page10/bg.png) 0 0 no-repeat;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity: 0;
+}
+.clock img{
+  position: absolute;
+  top:-200px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.playground{
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1,1);
+}
+#mySprite {
+   background-image: url('./../h5imgs/page10/clock.png');
+   width: 750px;
+   height: 1920px;
+   -webkit-animation: myAnimation 13.91s steps(1) infinite;
+   -moz-animation: myAnimation 13.91s steps(1) infinite;
+   -ms-animation: myAnimation 13.91s steps(1) infinite;
+   -o-animation: myAnimation 13.91s steps(1) infinite;
+   animation: myAnimation 13.91s steps(1) infinite;
+}
+.playground1{
+	position: absolute;
+	top: -10%;
+	left: -30%;
+	transform: translate(-50%, -50%) scale(1,1);
+}
+#mySprite1 {
+   background-image: url('./../h5imgs/page10/clock.png');
+   width: 750px;
+   height: 1920px;
+   -webkit-animation: myAnimation 15.91s steps(1) infinite;
+   -moz-animation: myAnimation 15.91s steps(1) infinite;
+   -ms-animation: myAnimation 15.91s steps(1) infinite;
+   -o-animation: myAnimation 15.91s steps(1) infinite;
+   animation: myAnimation 15.91s steps(1) infinite;
+}
+.playground2{
+	position: absolute;
+	top: -10%;
+	right: -120%;
+	transform: translate(-50%, -50%) scale(1,1);
+}
+#mySprite2 {
+   background-image: url('./../h5imgs/page10/clock.png');
+   width: 750px;
+   height: 1920px;
+   -webkit-animation: myAnimation 9.91s steps(1) infinite;
+   -moz-animation: myAnimation 9.91s steps(1) infinite;
+   -ms-animation: myAnimation 9.91s steps(1) infinite;
+   -o-animation: myAnimation 9.91s steps(1) infinite;
+   animation: myAnimation 9.91s steps(1) infinite;
+}
+.playground3{
+	position: absolute;
+	top: 68%;
+	left: -30%;
+	transform: translate(-50%, -50%) scale(1,1);
+}
+#mySprite3 {
+   background-image: url('./../h5imgs/page10/clock.png');
+   width: 750px;
+   height: 1920px;
+   -webkit-animation: myAnimation 15.91s steps(1) infinite;
+   -moz-animation: myAnimation 15.91s steps(1) infinite;
+   -ms-animation: myAnimation 15.91s steps(1) infinite;
+   -o-animation: myAnimation 15.91s steps(1) infinite;
+   animation: myAnimation 15.91s steps(1) infinite;
+}
+.playground4{
+	position: absolute;
+	top: 88%;
+	right: -120%;
+	transform: translate(-50%, -50%) scale(.8,.8);
+}
+#mySprite4 {
+   background-image: url('./../h5imgs/page10/clock.png');
+   width: 750px;
+   height: 1920px;
+   -webkit-animation: myAnimation 8.91s steps(1) infinite;
+   -moz-animation: myAnimation 8.91s steps(1) infinite;
+   -ms-animation: myAnimation 8.91s steps(1) infinite;
+   -o-animation: myAnimation 8.91s steps(1) infinite;
+   animation: myAnimation 8.91s steps(1) infinite;
+}
+@-webkit-keyframes myAnimation {
+	0% { -webkit-background-position: 0px 0px; }
+	10.00% { -webkit-background-position: -750px 0px; }
+	20.00% { -webkit-background-position: -1500px 0px; }
+	30.00% { -webkit-background-position: -2250px 0px; }
+	40.00% { -webkit-background-position: -3000px 0px; }
+	50.00% { -webkit-background-position: -3750px 0px; }
+	60.00% { -webkit-background-position: -4500px 0px; }
+	70.00% { -webkit-background-position: -5250px 0px; }
+	80.00% { -webkit-background-position: -6000px 0px; }
+	90.00% { -webkit-background-position: -6750px 0px; }
+	100.00% { -webkit-background-position: -7500px 0px; }
+}
+@-moz-keyframes myAnimation {
+	0% { -moz-background-position: 0px 0px; }
+	10.00% { -moz-background-position: -750px 0px; }
+	20.00% { -moz-background-position: -1500px 0px; }
+	30.00% { -moz-background-position: -2250px 0px; }
+	40.00% { -moz-background-position: -3000px 0px; }
+	50.00% { -moz-background-position: -3750px 0px; }
+	60.00% { -moz-background-position: -4500px 0px; }
+	70.00% { -moz-background-position: -5250px 0px; }
+	80.00% { -moz-background-position: -6000px 0px; }
+	90.00% { -moz-background-position: -6750px 0px; }
+	100.00% { -moz-background-position: -7500px 0px; }
+}
+@-ms-keyframes myAnimation {
+	0% { -ms-background-position: 0px 0px; }
+	10.00% { -ms-background-position: -750px 0px; }
+	20.00% { -ms-background-position: -1500px 0px; }
+	30.00% { -ms-background-position: -2250px 0px; }
+	40.00% { -ms-background-position: -3000px 0px; }
+	50.00% { -ms-background-position: -3750px 0px; }
+	60.00% { -ms-background-position: -4500px 0px; }
+	70.00% { -ms-background-position: -5250px 0px; }
+	80.00% { -ms-background-position: -6000px 0px; }
+	90.00% { -ms-background-position: -6750px 0px; }
+	100.00% { -ms-background-position: -7500px 0px; }
+}
+@-o-keyframes myAnimation {
+	0% { -o-background-position: 0px 0px; }
+	10.00% { -o-background-position: -750px 0px; }
+	20.00% { -o-background-position: -1500px 0px; }
+	30.00% { -o-background-position: -2250px 0px; }
+	40.00% { -o-background-position: -3000px 0px; }
+	50.00% { -o-background-position: -3750px 0px; }
+	60.00% { -o-background-position: -4500px 0px; }
+	70.00% { -o-background-position: -5250px 0px; }
+	80.00% { -o-background-position: -6000px 0px; }
+	90.00% { -o-background-position: -6750px 0px; }
+	100.00% { -o-background-position: -7500px 0px; }
+}
+@keyframes myAnimation {
+	0% { background-position: 0px 0px; }
+	10.00% { background-position: -750px 0px; }
+	20.00% { background-position: -1500px 0px; }
+	30.00% { background-position: -2250px 0px; }
+	40.00% { background-position: -3000px 0px; }
+	50.00% { background-position: -3750px 0px; }
+	60.00% { background-position: -4500px 0px; }
+	70.00% { background-position: -5250px 0px; }
+	80.00% { background-position: -6000px 0px; }
+	90.00% { background-position: -6750px 0px; }
+	100.00% { background-position: -7500px 0px; }
+}
+
+.cloud{
+  position: absolute;
+  top:2500px;
+  left:0;
+}
+.cloud img{
+  display: block;
+}
+.p10-inner .cloud1{
+  position: absolute;
+  top:500px;
+  left:0;
+  z-index: 10;
+  opacity: 0;
+  animation:line .5s linear  infinite;
+  -webkit-animation:line .5s linear infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+.p10-inner .cloud2{
+  position: absolute;
+  top:500px;
+  left:0;
+  opacity: 0;
+  z-index: 10;
+  animation:line .5s linear .5s infinite;
+  -webkit-animation:line .5s linear .5s infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+@keyframes line{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.p10-inner .cloud3{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.mountain{
+  position: absolute;
+  top:3580px;
+  left:0px;
+  right:0px;
+}
+.p10-inner .mountain1{
+  position: absolute;
+  top:80px;
+  right:0px;
+  z-index: 1;
+}
+.p10-inner .mountain2{
+  position: absolute;
+  top:0px;
+  left:0;
+  z-index: 2;
+}
+ .p10-inner .mountain3{
+  position: absolute;
+  top:400px;
+  right:0;
+  z-index: 3;
+}
+.p10-inner .mountain4{
+  position: absolute;
+  top:550px;
+  left:0;
+  z-index: 4;
+}
+.mountain img{
+  display: block;
 }
