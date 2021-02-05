@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/p6.css">
   <link rel="stylesheet" href="css/p7.css">
   <link rel="stylesheet" href="css/p8.css">
+  <link rel="stylesheet" href="css/p9.css">
+  <link rel="stylesheet" href="css/p10.css">
   <!-- js -->
   <script type="text/javascript" src="./js/util.js"></script>
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -284,6 +286,18 @@
         <div class="crowd">
           <img class="crowd1" src="./h5imgs/page8/crowd.png" alt="">
           <img class="crowd2" src="./h5imgs/page8/cheng.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="p9" id="p9">
+      <div class="p9-scroll">
+
+      </div>
+    </div>
+    <div class="p10" id="p10">
+      <div class="p10-scroll">
+        <div class="time-banner">
+          <img src="./h5imgs/page10/time-banner.png" alt="">
         </div>
       </div>
     </div>
@@ -1244,6 +1258,48 @@
       //   name: "p8"
       // })
       .addTo(controller8);
+
+       // 场景9
+      var controller9 = new ScrollMagic.Controller();
+      var tl9 = new TimelineMax({
+
+      }) 
+      tl9.to(".p9-scroll", 10, {
+        backgroundPosition: "0 100%",
+        ease: Linear.easeOut,
+      })
+      var scene9 = new ScrollMagic.Scene({
+        duration: 3000
+      })
+      .triggerHook(0)
+      .triggerElement('#p9')
+      .setPin("#p9")
+      .setTween(tl9)
+      // .addIndicators({
+      //   name: "p9"
+      // })
+      .addTo(controller9);
+
+      // 场景10
+      var controller10 = new ScrollMagic.Controller();
+      var tl10 = new TimelineMax({
+
+      }) 
+      tl10.to(".p10-scroll h3", 10, {
+        color:'#fff',
+        ease: Linear.easeOut,
+      })
+      var scene10 = new ScrollMagic.Scene({
+        duration: 3000
+      })
+      .triggerHook(1)
+      .triggerElement('#p10')
+      .setPin("#p10")
+      .setTween(tl10)
+      // .addIndicators({
+      //   name: "p9"
+      // })
+      .addTo(controller10);
 
     }
 

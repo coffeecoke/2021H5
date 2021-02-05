@@ -1,0 +1,12 @@
+.p9 {
+  width:100%;
+  height: 100vh;
+  position: relative;
+}
+.p9-scroll {
+  width:100%;
+  height: 100vh;
+  transform: translateY(0);
+  background:#3f0c01 url(../h5imgs/page9/p9-bg.png) 0 0 no-repeat;
+  position: relative;
+}
