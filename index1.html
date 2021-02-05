@@ -1005,7 +1005,7 @@
         ease: Linear.easeOut,
       },'p4Label4+=4')
 
-      tl4.to("#p4 .building1 ", 4, {
+      tl4.to("#p4 .building1 ", 8, {
         transform:'scale(40)',
         ease: Linear.easeOut,
       },'p4Label4+=4')
@@ -1235,10 +1235,6 @@
       },'p8Label')
      
       tl8.to(".graph1", 4, {
-        onStart:function() {
-          stopAllAudio()
-          liangAudio.play()
-        },
         right:0,
         ease: Linear.easeOut,
       },'p8Label+=3') 
@@ -1251,6 +1247,10 @@
         ease: Linear.easeOut,
       },'p8Label+=4') 
       tl8.to(".liang", 4, {
+        onStart:function() {
+          stopAllAudio()
+          liangAudio.play()
+        },
         opacity:1,
         ease: Linear.easeOut,
       }) 
@@ -1287,14 +1287,14 @@
       },'p8Label2')
       // 人群显示
       tl8.to(".crowd1", 8, {
-        onStart:function() {
-          stopAllAudio()
-          chengAudio.play()
-        },
         opacity:1,
         ease: Linear.easeOut,
       },'p8Label2+=6') 
       tl8.to(".crowd2", 4, {
+        onStart:function() {
+          stopAllAudio()
+          chengAudio.play()
+        },
         right:-120,
         ease: Linear.easeOut,
       }) 
@@ -1359,10 +1359,14 @@
         transform:'scale(0.8, 0.8)',
         ease: Linear.easeOut
       },'p9llabel1')
-      tl9.to(".p9-scroll .line", 14, {
+      tl9.to(".p9-scroll .line", 10, {
         top:-($('#p9 .line').height()- winHeight)-800,
         ease: Linear.easeOut
       },'p9llabel1')
+      tl9.to(".p9-scroll .line", 4, {
+        top:-($('#p9 .line').height()- winHeight)-1500,
+        ease: Linear.easeOut
+      })
       tl9.to(".p9-scroll .wang-wrap", 14, {
         left:-1505,
         ease: Linear.easeOut
@@ -1388,12 +1392,20 @@
       var tl10 = new TimelineMax({
 
       }) 
-      tl10.to(".p10-scroll .time-banner img", 10, {
+      $('.time-banner').height(winHeight)
+      tl10.to("#p10 .p10-scroll", 0.01, {
+        transform: "translateY(-100%)",
+        opacity:1,
+        ease: Linear.easeOut,
+        // opacity:1,
+        // ease: Linear.easeOut,
+      })
+      tl10.to(".p10-scroll .time-banner img", 4, {
         transform:'scale(1)',
         ease: Linear.easeOut,
       })
       var scene10 = new ScrollMagic.Scene({
-        duration: 3000
+        duration: 1000
       })
       .triggerHook(1)
       .triggerElement('#p10')
