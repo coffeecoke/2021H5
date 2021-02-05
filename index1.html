@@ -358,7 +358,6 @@
     </div>
     <div class="p10" id="p10">
       <div class="p10-scroll">
-<<<<<<< HEAD
         <div class="p10-inner">
           <div class="time-banner">
             <img src="./h5imgs/page10/time-banner.png" alt="">
@@ -370,11 +369,18 @@
             <div class="playground3" id="mySprite3"></div>
             <div class="playground4" id="mySprite4"></div>
           </div>
-          <img src="./h5imgs/page11/bg.png" alt="">
-=======
-        <div class="time-banner">
-          <img src="./h5imgs/page10/time-banner.png" alt="">
->>>>>>> 300f3ed13a120362b2259c1c94964f88716f53ea
+          <img src="./h5imgs/page11/bg.png" style="width:100%;" alt="">
+          <div class="cloud">
+            <img class="cloud1" src="./h5imgs/page11/bird1.png" alt="">
+            <img class="cloud2" src="./h5imgs/page11/bird2.png" alt="">
+            <img class="cloud3" src="./h5imgs/page11/cloud1.png" alt="">
+          </div>
+          <div class="mountain">
+            <img class="mountain1" src="./h5imgs/page11/mountain1.png" alt="">
+            <img class="mountain2" src="./h5imgs/page11/mountain2.png" alt="">
+            <img class="mountain3" src="./h5imgs/page11/mountain3.png" alt="">
+            <img class="mountain4" src="./h5imgs/page11/mountain5.png" alt="">
+          </div>
         </div>
       </div>
     </div>
@@ -1451,6 +1457,10 @@
         opacity:0,
         ease: Linear.easeOut,
       },'10Label+=7')
+      tl10.to(".p10-scroll .p10-inner", 10, {
+        top: -($('.p10-inner').height() - winHeight),
+        ease: Linear.easeOut,
+      },'10Label+=12')
       var scene10 = new ScrollMagic.Scene({
         duration: 3000
       })

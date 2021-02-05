@@ -2,7 +2,7 @@
   width:100%;
   height: 0;
   position: relative;
-  opacity: 0;
+  opacity: 1;
 }
 .p10-scroll {
   width:100%;
@@ -10,6 +10,12 @@
   transform: translateY(-102%);
   background:url(../h5imgs/page10/bg.png) 0 0 no-repeat;
   position: relative;
+}
+.p10-scroll .p10-inner {
+  position: absolute;
+  top:0;
+  transform:scale(1);
+  transform-origin:0px 3506px;
 }
 .time-banner {
   width:100%;
@@ -184,4 +190,81 @@
 	80.00% { background-position: -6000px 0px; }
 	90.00% { background-position: -6750px 0px; }
 	100.00% { background-position: -7500px 0px; }
+}
+
+.cloud{
+  position: absolute;
+  top:2500px;
+  left:0;
+}
+.cloud img{
+  display: block;
+}
+.p10-inner .cloud1{
+  position: absolute;
+  top:500px;
+  left:0;
+  z-index: 10;
+  opacity: 0;
+  animation:line .5s linear  infinite;
+  -webkit-animation:line .5s linear infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+.p10-inner .cloud2{
+  position: absolute;
+  top:500px;
+  left:0;
+  opacity: 0;
+  z-index: 10;
+  animation:line .5s linear .5s infinite;
+  -webkit-animation:line .5s linear .5s infinite;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+}
+@keyframes line{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.p10-inner .cloud3{
+  position: absolute;
+  top:0;
+  left:0;
+}
+.mountain{
+  position: absolute;
+  top:3580px;
+  left:0px;
+  right:0px;
+}
+.p10-inner .mountain1{
+  position: absolute;
+  top:80px;
+  right:0px;
+  z-index: 1;
+}
+.p10-inner .mountain2{
+  position: absolute;
+  top:0px;
+  left:0;
+  z-index: 2;
+}
+ .p10-inner .mountain3{
+  position: absolute;
+  top:400px;
+  right:0;
+  z-index: 3;
+}
+.p10-inner .mountain4{
+  position: absolute;
+  top:550px;
+  left:0;
+  z-index: 4;
+}
+.mountain img{
+  display: block;
 }
