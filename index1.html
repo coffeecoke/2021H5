@@ -211,15 +211,15 @@
         <div class="travel">
           <img src="./h5imgs/page4/travel.png" alt="">
         </div>
-      </div>
-    </div>
-    <div class="p5" id="p5">
-      <div class="p5-scroll">
         <div class="text">
           <p><span>454</span>次登机，<span>1664</span>次候车</p>
           <p>他们在百余座城市间奔走</p>
           <p>行驶总里程<span>1953808</span>公里</p>
         </div>
+      </div>
+    </div>
+    <div class="p5" id="p5">
+      <div class="p5-scroll">
         <div class="line">
           <img src="./h5imgs/page5/line.png" alt="">
         </div>
@@ -913,9 +913,12 @@
         opacity: 1,
         ease: Linear.easeOut,
       })
+      tl4.to("#p4 .text", 4, {
+        opacity:1,
+        ease: Linear.easeOut,
+      })
       // 人物停留
       tl4.to("#p4 .travel", 4, {
-        
         ease: Linear.easeOut,
       })
       // 移除

@@ -107,3 +107,16 @@
   left: 640px;
   top: 709px;
 }
+.p4 .text{
+  position: absolute;
+  right:20px;
+  top:30px;
+  color: #3a080d;
+  opacity: 0;
+}
+.p4 .text p{
+  font-size:32px;
+}
+.p4 .text p span{
+  font-size:48px;
+}
