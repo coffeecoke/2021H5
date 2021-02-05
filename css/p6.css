@@ -55,3 +55,11 @@
   left:-750px;
   z-index:5;
 }
+.p6 .text {
+  position: absolute;
+  right:10px;
+  top:40%;
+  color:#fff;
+  font-size:32px;
+  z-index:10;
+}

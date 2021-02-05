@@ -49,12 +49,12 @@
 
 .playground{
 	position: absolute;
-	top: 38%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(1,1);
 }
 #mySprite {
-   background-image: url('./../h5imgs/page10/clock.png');
+   background: url('./../h5imgs/page10/clock.png') center no-repeat;
+   top:750px;
    width: 750px;
    height: 1920px;
    -webkit-animation: myAnimation 13.91s steps(1) infinite;

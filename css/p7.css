@@ -36,3 +36,10 @@
 .p7 .line img{
   margin-left:-13px;
 }
+.p7 .text {
+  position: absolute;
+  right:30px;
+  top:40%;
+  color:#fff;
+  font-size:32px;
+}

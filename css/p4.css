@@ -113,9 +113,9 @@
 .p4 .text{
   position: absolute;
   right:20px;
-  top:30px;
-  color: #3a080d;
-  opacity: 0;
+  bottom:500px;
+  color: #fff;
+  z-index:1;
 }
 .p4 .text p{
   font-size:32px;
