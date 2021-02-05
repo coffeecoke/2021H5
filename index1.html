@@ -358,6 +358,9 @@
     </div>
     <div class="p10" id="p10">
       <div class="p10-scroll">
+        <div class="line">
+          <img src="./h5imgs/page10/line.png" alt="">
+        </div>
         <div class="p10-inner">
           <div class="time-banner">
             <img src="./h5imgs/page10/time-banner.png" alt="">
@@ -381,6 +384,7 @@
             <img class="mountain3" src="./h5imgs/page11/mountain3.png" alt="">
             <img class="mountain4" src="./h5imgs/page11/mountain5.png" alt="">
           </div>
+          <div class="video"></div>
         </div>
       </div>
     </div>
@@ -1469,10 +1473,34 @@
         opacity:0,
         ease: Linear.easeOut,
       },'10Label+=7')
+      tl10.to("#p10 .line", 10, {
+        top:-2000,
+        ease: Linear.easeOut,
+      },'10Label+=10')
       tl10.to(".p10-scroll .p10-inner", 10, {
         top: -($('.p10-inner').height() - winHeight),
         ease: Linear.easeOut,
-      },'10Label+=12')
+      },'10Label+=16')
+      tl10.to(".p10-scroll .cloud3", 2, {
+        opacity:1,
+        ease: Linear.easeOut,
+      },'10Label+=18')
+      tl10.to(".p10-scroll .mountain1", 3, {
+        right:0,
+        ease: Linear.easeOut,
+      },'10Label+=19')
+      tl10.to(".p10-scroll .mountain2", 3, {
+        left:0,
+        ease: Linear.easeOut,
+      },'10Label+=20')
+      tl10.to(".p10-scroll .mountain3", 3, {
+        right:0,
+        ease: Linear.easeOut,
+      },'10Label+=21')
+      tl10.to(".p10-scroll .mountain4", 2, {
+        left:0,
+        ease: Linear.easeOut,
+      },'10Label+=22')
       var scene10 = new ScrollMagic.Scene({
         duration: 3000
       })
