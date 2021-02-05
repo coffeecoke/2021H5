@@ -2,6 +2,7 @@
   width:100%;
   height: 0;
   position: relative;
+  opacity: 0;
 }
 .p10-scroll {
   width:100%;
@@ -14,6 +15,7 @@
   width:100%;
   height:2000px;
   overflow: hidden;
+  /* opacity: 0; */
   background:url(../h5imgs/page10/time-banner-bg.png) 0 0 no-repeat;
 }
 .time-banner img{
