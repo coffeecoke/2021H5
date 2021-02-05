@@ -1032,6 +1032,7 @@
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p6Label')
+     
       tl6.to("#p6 .shan", 10, {
         bottom:100,
         ease: Linear.easeOut,
@@ -1072,16 +1073,17 @@
       })
 
       //  占位
-      tl6.to("#p6 .zhai", 4, {
+      tl6.to("#p6 .zhai", 5, {
         
         ease: Linear.easeOut,
-      })
-      
+      },'p6Label')
       tl6.to(".p6 .line", 5, {
         // top:-1580,
         top: -($('#p6 .line').height()- winHeight),
         ease: Linear.easeOut,
-      }, 'p6Label+=20') 
+      }, 'p6Label1') 
+      
+      
       // tl6.to("#p6 .shan", 2, {
       //   css: {
       //     top:-1000
@@ -1105,32 +1107,29 @@
       var tl7 = new TimelineMax({
 
       }) 
-      tl7.to("", 2, {
-        onStart:function() {
+      tl7.to(".p7-scroll", 10, {
+        onStart:function () {
           stopAllAudio()
           shenhuiAudio.play()
-        }
-      }) 
-      tl7.to(".p7-scroll", 3, {
+        },
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p7Label') 
-      
-      tl7.to(".leafs", 2, {
-        top:-1000,
-        ease: Linear.easeOut,
-      },'p7Label+=1') 
-      tl7.to("#p7 .window", 2, {
-        top:-1000,
-        ease: Linear.easeOut,
-      },'p7Label+=1') 
-      tl7.to(".p7 .line", 2, {
+      tl7.to(".p7 .line", 8, {
         // top:-1100,
         top: -($('#p7 .line').height()- winHeight),
         ease: Linear.easeOut,
       },'p7Label') 
+      // tl7.to(".leafs", 8, {
+      //   top:-1000,
+      //   ease: Linear.easeOut,
+      // },'p7Label1') 
+      // tl7.to("#p7 .window", 8, {
+      //   top:-1000,
+      //   ease: Linear.easeOut,
+      // },'p7Label1') 
       var scene7 = new ScrollMagic.Scene({
-        duration: 2000
+        duration: 800
       })
       .triggerHook(0)
       .triggerElement('#p7')
@@ -1195,12 +1194,11 @@
         ease: Linear.easeOut,
       }) 
       tl8.to(".p8-scroll", 10, {
-        backgroundPosition: "0 70%",
+        backgroundPosition: "0 80%",
         ease: Linear.easeOut,
       },'p8Label2')
-      tl8.to(".p8 .line", 6, {
-        // top:-3000,
-        top: -($('#p8 .line').height()- winHeight),
+      tl8.to(".p8 .line", 14, {
+        top:-2719,
         ease: Linear.easeOut,
       },'p8Label2')
       // 人群显示
@@ -1211,29 +1209,25 @@
         },
         opacity:1,
         ease: Linear.easeOut,
-      }) 
+      },'p8Label2+=6') 
       tl8.to(".crowd2", 4, {
         right:-120,
         ease: Linear.easeOut,
       }) 
 
       // 站位时间
-      tl8.to("", 10, {
+      tl8.to("", 8, {
         ease: Linear.easeOut,
-      }) 
-      tl8.to(".p8-scroll", 8, {
-        backgroundPosition: "0 80%",
+      },'p8Label3') 
+
+      tl8.to(".p8 .line", 8, {
+        top: -($('#p8 .line').height()- winHeight),
         ease: Linear.easeOut,
-      },'p8Label2')
+      },'p8Label3')
       tl8.to(".crowd", 8, {
         transform:'translateY(-600px)',
         ease: Linear.easeOut,
       })
-      // tl8.to(".crowd2", 2, {
-      //   right:-750,
-      //   ease: Linear.easeOut,
-      // },'p8Label+=13') 
-
       var scene8 = new ScrollMagic.Scene({
         duration: 4000
       })
