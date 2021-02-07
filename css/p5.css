@@ -15,13 +15,13 @@
 }
 .p5 .liuyan .text{
   position: absolute;
-  font-size:24px;
+  font-size:32px;
   top:0;
   left:0;
 }
 .p5 .lixiguo .text{ 
   position: absolute;
-  font-size: 24px;
+  font-size: 32px;
   bottom: 500px;
   left: 300px;
   z-index: 1;

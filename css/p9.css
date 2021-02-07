@@ -85,6 +85,7 @@
   top:1000px;
   color:#fff;
   font-size:32px;
+  line-height: 60px;
   opacity: 0;
 }
 .p9 .text2 p,
@@ -95,14 +96,14 @@
 .p9 .text2 {
   position: absolute;
   top:1800px;
-  font-size:40px;
+  font-size:32px;
   left:30%;
   opacity: 0;
 }
 .p9 .text3 {
   position: absolute;
   top:1950px;
-  font-size:40px;
+  font-size:32px;
   left:30%;
   opacity: 0;
 }

@@ -34,3 +34,19 @@ b.text-bold {
   z-index:10;
   opacity: 0;
 } */
+.text{
+  position: absolute;
+  right:20px;
+  bottom:500px;
+  color: #fff;
+  z-index:1;
+}
+.black-text{
+  color: #000;
+}
+.text p{
+  font-size:32px;
+}
+.text p span{
+  font-size:48px;
+}
