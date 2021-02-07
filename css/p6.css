@@ -11,7 +11,7 @@
   position: relative;
 }
 .p6 .line{
-  /* top:-1580px; */
+  transform: translateX(0);
 }
 .p6 .line img{
   /* padding-left:87px; */
@@ -53,13 +53,17 @@
   position: absolute;
   bottom:300px;
   left:-750px;
-  z-index:5;
+  z-index:10;
 }
 .p6 .text {
   position: absolute;
   right:10px;
+<<<<<<< HEAD
   bottom:10%;
+=======
+  bottom:300px;
+>>>>>>> 56d9724636431819036ab526b86cbe9420f513e3
   color:#fff;
   font-size:32px;
-  z-index:10;
+  z-index:30;
 }

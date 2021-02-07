@@ -8,8 +8,10 @@
 .p3-scroll {
   width:100%;
   height: 100vh;
-  transform: translateY(0);
+  transform: translateY(-100%);
   background:#ffedbf url(../h5imgs/page3/p3-bg1.png) 0 0 no-repeat;
+  opacity: 0;
+  z-index:2;
 }
 .p3 .light {
   width:750px;
