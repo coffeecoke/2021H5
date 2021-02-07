@@ -2,11 +2,34 @@
 body {
   width:100%;
   /* overflow-x: hidden; */
+  height: 100%;
+  overflow: hidden;
+}
+body.scroll {
+  height: auto;
+  overflow: visible;
 }
 .wrap { 
   min-height:100%;
   background-color:#ffeec2;
   overflow: hidden;
+}
+.progress-mask {
+  position: fixed;
+  z-index:10000;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  color:#fff;
+  font-size:60px;
+  background-color:rgba(0,0,0,.3)
+}
+.progress-mask .num {
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
 }
 img {
   display: block;

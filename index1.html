@@ -44,6 +44,9 @@
   <audio class="audio" muted src="./audios/dida.mp3" style="display:none"></audio>
   <!-- wrap -->
   <div class="wrap">
+    <div class="progress-mask">
+      <span class="num">0 %</span>
+    </div>
     <div class="p1" id="p1">
       <div class="p1-scroll">
         <div class="tips">
@@ -465,7 +468,20 @@
     </div>
   </div>
   <script>
+    var num = 0;
+    var timer = setInterval(function () {
+      num += 1
+      $('.progress-mask span').html(num +' %')
+      if(num>96) {
+        clearInterval(timer)
+        return false;
+      }
+    },50)
+    
     window.onload = function () {
+      num = 99
+      $('body').addClass('scroll')
+      $('.progress-mask').remove()
       // alert(1)
       // return false;
       var winHeight = $(window).height()
