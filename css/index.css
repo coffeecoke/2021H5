@@ -237,14 +237,14 @@ img {
   height:100px;
   position: absolute;
   left:-30px;
-  top:500px;
+  top:700px;
   opacity: 0;
-  animation:up 2s linear .5s infinite;
-  -webkit-animation:up 2s linear .5s infinite;
+  animation:up 1.5s linear infinite;
+  -webkit-animation:up 1.5s linear infinite;
 }
 @keyframes up{
   0% {
-    top:350px;
+    top:500px;
     opacity: 1;
   }
   100% {
