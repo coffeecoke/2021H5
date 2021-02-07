@@ -58,7 +58,7 @@
 .p6 .text {
   position: absolute;
   right:10px;
-  top:40%;
+  bottom:10%;
   color:#fff;
   font-size:32px;
   z-index:10;

@@ -197,6 +197,23 @@ img {
   position: relative;
   left:0;
 }
+.tips{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+}
+.noise{
+  position: absolute;
+  right:40px;
+  top:40px;
+}
+.slideUp{
+  position: absolute;
+  left:-30%;
+  transform: translateX(-50%);
+  transform: rotate(-90deg);
+}
 .trees {
   float:left;
   width:100vw;
