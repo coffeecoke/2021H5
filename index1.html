@@ -225,10 +225,31 @@
         </div>
         <div class="scenes">
           <div class="scene lixiguo">
+            <div class="text">
+              <p>
+                有影响力的 <b class="text-bold">7+4</b> 全业态监管平台
+              </p>
+              <p>
+                市场占有率 <b class="text-bold">70%</b> 以上
+              </p>
+            </div>
             <img class="stairs" src="./h5imgs/page5/stairs.png" alt="">
             <img class="man" src="./h5imgs/page5/lixiguo.png" alt="">
           </div>
           <div class="scene liuyan">
+            <div class="text">
+              <p>
+                <b class="text-bold">2020</b>年
+              </p>
+              <p>
+                <b class="text-bold">6</b> 个新产品，服务客户近百家
+              </p>
+              <p>
+                升级、维护产品 <b class="text-bold">100+</b>
+              </p>
+              
+
+            </div>
             <div class="lamp">
               <img src="./h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
               <img class="light" src="./h5imgs/page5/liuyan-light.png" alt="">
@@ -255,6 +276,14 @@
         <div class="zhai">
           <img class="lijin" src="./h5imgs/page6/ren.png" alt="">
         </div>
+        <div class="text">
+          <p>
+          拿下 <b class="text-bold">2020</b> 年
+          </p>
+          <p>
+            金融领域银行业试点 <b class="text-bold">10%</b> 的客户
+          </p>
+        </div>
       </div>
     </div>
     <div class="p7" id="p7">
@@ -267,6 +296,20 @@
         </div>
         <div class="window">
           <img src="./h5imgs/page7/window.png" alt="">
+        </div>
+        <div class="text">
+          <p>
+            <b class="text-bold">2020</b> 年
+          </p>
+          <p>
+            <b class="text-bold">4657</b> 个客户问题
+          </p>
+          <p>
+            <b class="text-bold">3438</b> 次远程协助
+          </p>
+          <p>
+            疫情阻断但融鑫服务不停
+          </p>
         </div>
       </div>
     </div>
@@ -372,7 +415,7 @@
             <div class="playground3" id="mySprite3"></div>
             <div class="playground4" id="mySprite4"></div>
           </div>
-          <img src="./h5imgs/page11/bg.png" style="width:100%;" alt="">
+          <img src="./h5imgs/page11/bg.png" style="width:100%;position: relative;z-index:1" alt="">
           <div class="cloud">
             <img class="cloud1" src="./h5imgs/page11/bird1.png" alt="">
             <img class="cloud2" src="./h5imgs/page11/bird2.png" alt="">
@@ -1000,7 +1043,11 @@
         opacity: 1,
         ease: Linear.easeOut,
       })
-      tl4.to("#p4 .text", 4, {
+      tl4.fromTo("#p4 .text", 2, {
+       
+       opacity:0,
+       ease: Linear.easeOut,
+      }, {
         opacity:1,
         ease: Linear.easeOut,
       })
@@ -1020,6 +1067,10 @@
         ease: Linear.easeOut,
       },'p4Label4')
 
+      tl4.to("#p4 .text", 2, {
+       opacity:0,
+       ease: Linear.easeOut,
+      },'p4Label4')
       tl4.to("#p4 .building", 2, {
         transform: 'translateY(0)',
         ease: Linear.easeOut,
@@ -1074,6 +1125,15 @@
         transform: 'scale(1)',
         ease: Linear.easeOut,
       })
+      // 研发大数据
+      tl5.fromTo("#p5 .liuyan .text", 1, {
+       
+       opacity:0,
+       ease: Linear.easeOut,
+     }, {
+       opacity:1,
+       ease: Linear.easeOut,
+     })
       tl5.to("#p5 .lamp", 3, {
        
         transform: 'translateY(0)',
@@ -1104,6 +1164,15 @@
         left:40,
         ease: Linear.easeOut,
       })
+      // 互联网金融大数据
+      tl5.fromTo("#p5 .lixiguo .text", 1, {
+       
+       opacity:0,
+       ease: Linear.easeOut,
+     }, {
+       opacity:1,
+       ease: Linear.easeOut,
+     })
       // 站位
       tl5.to("", 8, {
         ease: Linear.easeOut,
@@ -1180,6 +1249,15 @@
         },
         ease: Linear.easeOut,
       })
+      // 信创大数据
+      tl6.fromTo("#p6 .text", 1, {
+       
+       opacity:0,
+       ease: Linear.easeOut,
+     }, {
+       opacity:1,
+       ease: Linear.easeOut,
+     })
 
       //  占位
       tl6.to("#p6 .zhai", 5, {
@@ -1224,11 +1302,21 @@
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p7Label') 
-      tl7.to(".p7 .line", 8, {
+
+      // 售后大数据
+      tl7.fromTo("#p7 .text", 2, {
+       
+       opacity:0,
+       ease: Linear.easeOut,
+      }, {
+        opacity:1,
+        ease: Linear.easeOut,
+      })
+      tl7.to(".p7 .line", 2, {
         // top:-1100,
         top: -($('#p7 .line').height()- winHeight),
         ease: Linear.easeOut,
-      },'p7Label') 
+      }) 
       // tl7.to(".leafs", 8, {
       //   top:-1000,
       //   ease: Linear.easeOut,
@@ -1422,8 +1510,6 @@
         transform: "translateY(-100%)",
         opacity:1,
         ease: Linear.easeOut,
-        // opacity:1,
-        // ease: Linear.easeOut,
       })
       tl10.to(".p10-scroll .time-banner img", 8, {
         transform:'scale(1)',
@@ -1433,11 +1519,19 @@
         opacity:1,
         ease: Linear.easeOut,
       })
-      tl10.to(".p10-scroll .time-banner img", 11, {
-        transform:'scale(.1)',
+      tl10.to(".p10-scroll .time-banner", 0.01, {
+        // transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
       },'10Label')
+      tl10.to(".p10-scroll .p10-inner", 30, {
+        top: -($('.p10-inner').height() - winHeight),
+        ease: Linear.easeOut,
+      },'10Label')
+      // tl10.to(".p10-scroll .clock", 30, {
+      //   top: -($('.p10-inner').height() - winHeight),
+      //   ease: Linear.easeOut,
+      // },'10Label')
       tl10.to(".p10-scroll .clock .playground", 5, {
         top: '0%',
         left: '0%',
@@ -1445,64 +1539,61 @@
         opacity:0,
         ease: Linear.easeOut,
       },'10Label+=3')
-      tl10.to(".p10-scroll .clock .playground1", 2, {
+      tl10.to(".p10-scroll .clock .playground1", 4, {
         top: '0%',
         left: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
       },'10Label+=5')
-      tl10.to(".p10-scroll .clock .playground2", 4, {
+      tl10.to(".p10-scroll .clock .playground2", 5, {
         top: '0%',
         right: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
-      },'10Label+=6')
+      },'10Label+=5')
       tl10.to(".p10-scroll .clock .playground3", 3, {
         top: '0%',
         right: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
-      },'10Label+=6')
+      },'10Label+=7')
       tl10.to(".p10-scroll .clock .playground4", 4, {
         top: '0%',
         right: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
-      },'10Label+=7')
+      },'10Label+=8')
       tl10.to("#p10 .line", 10, {
         top:-2000,
         ease: Linear.easeOut,
       },'10Label+=10')
-      tl10.to(".p10-scroll .p10-inner", 10, {
-        top: -($('.p10-inner').height() - winHeight),
-        ease: Linear.easeOut,
-      },'10Label+=16')
+     
       tl10.to(".p10-scroll .cloud3", 2, {
         opacity:1,
         ease: Linear.easeOut,
-      },'10Label+=18')
+      },'10Label')
       tl10.to(".p10-scroll .mountain1", 3, {
         right:0,
         ease: Linear.easeOut,
-      },'10Label+=19')
+      },'10Label')
       tl10.to(".p10-scroll .mountain2", 3, {
         left:0,
         ease: Linear.easeOut,
-      },'10Label+=20')
+      },'10Label')
       tl10.to(".p10-scroll .mountain3", 3, {
         right:0,
         ease: Linear.easeOut,
-      },'10Label+=21')
+      },'10Label')
       tl10.to(".p10-scroll .mountain4", 2, {
         left:0,
         ease: Linear.easeOut,
-      },'10Label+=22')
+      },'10Label')
       var scene10 = new ScrollMagic.Scene({
-        duration: 3000
+        duration: 4000
       })
       .triggerHook(1)
       .triggerElement('#p10')
