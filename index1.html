@@ -50,8 +50,11 @@
     <div class="p1" id="p1">
       <div class="p1-scroll">
         <div class="tips">
-          <img class="noise" src="./h5imgs/noise.png" alt="">
-          <!-- <img class="slideUp" src="./h5imgs/up.png" alt=""> -->
+          <p class="noise">请打开声音</p>
+          <p class="slideUp">
+            向上滑动
+            <img src="./h5imgs/up1.png" alt="">
+          </p>
         </div>
         <div class="rain" id="rain">
           <img src="h5imgs/rain2.png" alt="">
@@ -561,10 +564,17 @@
         opacity: 1,
         ease: Linear.easeOut
       })
+      tl.to("#p1 .tips .slideUp", 1, {
+        opacity: 0,
+        ease: Linear.easeOut
+      })
+      tl.to("#p1 .tips .noise", 1, {
+        top:-300,
+        ease: Linear.easeOut
+      })
       tl.to("#p1 .mark-1", 5, {
         left: '100%',
         ease: Linear.easeOut,
-
       })
       tl.to("#p1 .line-2", .1, {
         opacity: 1,
