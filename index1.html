@@ -484,7 +484,13 @@
     window.onload = function () {
       num = 99
       $('body').addClass('scroll')
-      $('.progress-mask').remove()
+      var timer1 = setTimeout(function () {
+        clearTimeout(timer1)
+        $('.progress-mask').remove()
+        $('.tips').show()
+      },300)
+      
+      
       // alert(1)
       // return false;
       var winHeight = $(window).height()

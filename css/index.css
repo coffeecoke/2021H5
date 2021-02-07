@@ -234,6 +234,7 @@ img {
   top:0;
   left:0;
   right:0;
+  display: none;
 }
 .noise{
   width:20px;
@@ -247,6 +248,7 @@ img {
 .slideUp{
   position: absolute;
   left:50%;
+  transform: translateX(-50%);
   width:20px;
   height:200px;
   margin-top:500px;
