@@ -213,15 +213,44 @@ img {
   right:0;
 }
 .noise{
+  width:20px;
+  height:200px;
+  color: #b05330;
+  font-size:20px;
   position: absolute;
   right:40px;
   top:40px;
 }
 .slideUp{
   position: absolute;
-  left:-30%;
-  transform: translateX(-50%);
-  transform: rotate(-90deg);
+  left:50%;
+  width:20px;
+  height:200px;
+  margin-top:500px;
+  font-size:38px;
+  color: #b05330;
+  z-index:1000;
+  opacity: 1;
+}
+.slideUp img{
+  width:100px;
+  height:100px;
+  position: absolute;
+  left:-30px;
+  top:500px;
+  opacity: 0;
+  animation:up 2s linear .5s infinite;
+  -webkit-animation:up 2s linear .5s infinite;
+}
+@keyframes up{
+  0% {
+    top:350px;
+    opacity: 1;
+  }
+  100% {
+    top:220px;
+    opacity: 0;
+  }
 }
 .trees {
   float:left;
