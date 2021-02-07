@@ -1446,6 +1446,10 @@
         top: -($('.p9-inner').height() - winHeight),
         ease: Linear.easeOut,
       },'p9label')
+      tl9.to(".p9-scroll .line", 8, {
+        top:-($('#p9 .line').height()- winHeight)-800,
+        ease: Linear.easeOut
+      },'p9label+=2')
       tl9.to(".p9-scroll .text1", 2, {
         opacity:1,
         ease: Linear.easeOut,
@@ -1469,13 +1473,10 @@
         ease: Linear.easeOut,
       },'p9llabel1')
       tl9.to(".p9-scroll .p9-inner", 10, {
-        transform:'scale(0.8, 0.8)',
+        transform:'scale(1, 0.8)',
         ease: Linear.easeOut
       },'p9llabel1')
-      tl9.to(".p9-scroll .line", 10, {
-        top:-($('#p9 .line').height()- winHeight)-800,
-        ease: Linear.easeOut
-      },'p9llabel1')
+    
       tl9.to(".p9-scroll .line", 4, {
         top:-($('#p9 .line').height()- winHeight)-1500,
         ease: Linear.easeOut
@@ -1575,7 +1576,7 @@
       tl10.to(".p10-scroll .cloud3", 2, {
         opacity:1,
         ease: Linear.easeOut,
-      },'10Label+=16')
+      },'10Label+=18')
       tl10.to(".p10-scroll .mountain1", 3, {
         right:0,
         ease: Linear.easeOut,
