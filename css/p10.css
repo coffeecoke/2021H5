@@ -68,7 +68,7 @@
 }
 .playground1{
 	position: absolute;
-	top: -10%;
+	top: -20%;
 	left: -30%;
 	transform: translate(-50%, -50%) scale(1,1);
 }
@@ -116,9 +116,9 @@
 }
 .playground4{
 	position: absolute;
-	top: 88%;
-	right: -120%;
-	transform: translate(-50%, -50%) scale(.8,.8);
+	top: 58%;
+	right: -100%;
+	transform: translate(-50%, -50%) scale(.9,.9);
 }
 #mySprite4 {
    background-image: url('./../h5imgs/page10/clock.png');
