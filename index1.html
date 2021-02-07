@@ -31,90 +31,102 @@
 </head>
 
 <body>
+  <!-- 先让页面默认先把音频加载出来，防止后面播放卡顿 -->
   <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/cheng.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/liang.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/liuyan.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/long.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/shenhui.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/xiguo.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/zhailijian.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/zhangmiao.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/dida.mp3" style="display:none"></audio>
   <!-- wrap -->
   <div class="wrap">
     <div class="p1" id="p1">
-      <div class="tips">
-        <img class="noise" src="./h5imgs/noise.png" alt="">
-        <img class="slideUp" src="./h5imgs/up.png" alt="">
-      </div>
-      <div class="rain" id="rain">
-        <img src="h5imgs/rain2.png" alt="">
-      </div>
-      <div class="rain1" id="rain1">
-        <img src="h5imgs/rain2.png" alt="">
-      </div>
-      <div class="rain2" id="rain2">
-        <img src="h5imgs/rain2.png" alt="">
-      </div>
-      <div class="rain3" id="rain3">
-        <img src="h5imgs/rain2.png" alt="">
-      </div>
-      <div class="rain4" id="rain4">
-        <img src="h5imgs/rain2.png" alt="">
-      </div>
-      <div class="snow" id="snow">
-        <img src="h5imgs/snow3.png" alt="">
-      </div>
-      <div class="snow1" id="snow1">
-        <img src="h5imgs/snow3.png" alt="">
-      </div>
-      <div class="snow2" id="snow2">
-        <img src="h5imgs/snow3.png" alt="">
-      </div>
-      <div class="snow3" id="snow3">
-        <img src="h5imgs/snow3.png" alt="">
-      </div>
-      <div class="bird" id="bird"></div>
-      <div class="begin2020">
-        <div class="line-1">
-          <div class="mark mark-1"></div>
-          <p>2020年的开头并不顺利……</p>
+      <div class="p1-scroll">
+        <div class="tips">
+          <img class="noise" src="./h5imgs/noise.png" alt="">
+          <!-- <img class="slideUp" src="./h5imgs/up.png" alt=""> -->
         </div>
-        <div class="line-2">
-          <div class="mark mark-2"></div>
-          <p>突如其来的意外</p>
+        <div class="rain" id="rain">
+          <img src="h5imgs/rain2.png" alt="">
         </div>
-        <div class="line-3">
-          <div class="mark mark-3"></div>
-          <p>打乱了我们的生活</p>
+        <div class="rain1" id="rain1">
+          <img src="h5imgs/rain2.png" alt="">
         </div>
-        <div class="line-4">
-          <div class="mark mark-4"></div>
-          <p>隔离在家、视频会议
-          </p>
+        <div class="rain2" id="rain2">
+          <img src="h5imgs/rain2.png" alt="">
         </div>
-        <div class="line-5">
-          <div class="mark mark-5"></div>
-          <p>远程沟通……
-          </p>
+        <div class="rain3" id="rain3">
+          <img src="h5imgs/rain2.png" alt="">
         </div>
-        <div class="line-6">
-          <div class="mark mark-6"></div>
-          <p>我们在无限延长的假期中
-          </p>
+        <div class="rain4" id="rain4">
+          <img src="h5imgs/rain2.png" alt="">
         </div>
-        <div class="line-7">
-          <div class="mark mark-7"></div>
-          <p>……</p>
+        <div class="snow" id="snow">
+          <img src="h5imgs/snow3.png" alt="">
         </div>
-      </div>
-      <div class="ph">
-        <div class="ph-inner">
-          <div class="trees">
-            <img class="tree1" src="h5imgs/tree1.png" alt="">
-            <img class="tree2" src="h5imgs/tree2.png" alt="">
-            <img class="tree3" src="h5imgs/tree3.png" alt="">
-            <img class="tree4" src="h5imgs/tree4.png" alt="">
-            <img class="tree5" src="h5imgs/tree5.png" alt="">
-            <img class="tree6" src="h5imgs/tree6.png" alt="">
-            <!-- <img class="tree-front" src="h5imgs/tree-front.png" alt=""> -->
-            <!-- <img class="tree-back" src="h5imgs/tree-back.jpg" alt=""> -->
+        <div class="snow1" id="snow1">
+          <img src="h5imgs/snow3.png" alt="">
+        </div>
+        <div class="snow2" id="snow2">
+          <img src="h5imgs/snow3.png" alt="">
+        </div>
+        <div class="snow3" id="snow3">
+          <img src="h5imgs/snow3.png" alt="">
+        </div>
+        <div class="bird" id="bird"></div>
+        <div class="begin2020">
+          <div class="line-1">
+            <div class="mark mark-1"></div>
+            <p>2020年的开头并不顺利……</p>
           </div>
-          <div class="Building">
-            <img src="h5imgs/building-off.png" alt="">
-            <img src="h5imgs/building-on.png" class="on" alt="">
+          <div class="line-2">
+            <div class="mark mark-2"></div>
+            <p>突如其来的意外</p>
+          </div>
+          <div class="line-3">
+            <div class="mark mark-3"></div>
+            <p>打乱了我们的生活</p>
+          </div>
+          <div class="line-4">
+            <div class="mark mark-4"></div>
+            <p>隔离在家、视频会议
+            </p>
+          </div>
+          <div class="line-5">
+            <div class="mark mark-5"></div>
+            <p>远程沟通……
+            </p>
+          </div>
+          <div class="line-6">
+            <div class="mark mark-6"></div>
+            <p>我们在无限延长的假期中
+            </p>
+          </div>
+          <div class="line-7">
+            <div class="mark mark-7"></div>
+            <p>……</p>
+          </div>
+        </div>
+        <div class="ph">
+          <div class="ph-inner">
+            <div class="trees">
+              <img class="tree1" src="h5imgs/tree1.png" alt="">
+              <img class="tree2" src="h5imgs/tree2.png" alt="">
+              <img class="tree3" src="h5imgs/tree3.png" alt="">
+              <img class="tree4" src="h5imgs/tree4.png" alt="">
+              <img class="tree5" src="h5imgs/tree5.png" alt="">
+              <img class="tree6" src="h5imgs/tree6.png" alt="">
+              <!-- <img class="tree-front" src="h5imgs/tree-front.png" alt=""> -->
+              <!-- <img class="tree-back" src="h5imgs/tree-back.jpg" alt=""> -->
+            </div>
+            <div class="Building">
+              <img src="h5imgs/building-off.png" alt="">
+              <img src="h5imgs/building-on.png" class="on" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -125,33 +137,37 @@
       <div class="mask1-text">等待回归......</div>
     </div>
     <div class="p2" id="p2">
-      <div class="line">
-        <img src="./h5imgs/page2/line.png" alt="">
+      <div class="p2-scroll">
+        <div class="line">
+          <img src="./h5imgs/page2/line.png" alt="">
+        </div>
+        <div class="star1" id="star1">
+          <img src="./h5imgs/page2/star.png" alt="">
+        </div>
+        <div class="star2" id="star2">
+          <img src="./h5imgs/page2/bigStar.png" alt="">
+        </div>
+        <div class="hand">
+          <img class="hand1" src="./h5imgs/page2/hand1.png" alt="">
+          <img class="hand2" src="./h5imgs/page2/hand2.png" alt="">
+          <img class="hand3" src="./h5imgs/page2/hand3.png" alt="">
+          <img class="hand4" src="./h5imgs/page2/hand4.png" alt="">
+          <img class="hand5" src="./h5imgs/page2/hand5.png" alt="">
+          <img class="hand6" src="./h5imgs/page2/hand6.png" alt="">
+          <img class="hand7" src="./h5imgs/page2/hand7.png" alt="">
+          <img class="hand8" src="./h5imgs/page2/hand8.png" alt="">
+          <img class="hand9" src="./h5imgs/page2/hand9.png" alt="">
+        </div>
+        <div class="light">
+          <img class="light1" src="./h5imgs/page2/light.png" alt="">
+          <img class="light2" src="./h5imgs/page2/light2.png" alt="">
+          <img class="light3" src="./h5imgs/page2/light3.png" alt="">
+        </div>
+        
       </div>
-      <div class="star1" id="star1">
-        <img src="./h5imgs/page2/star.png" alt="">
-      </div>
-      <div class="star2" id="star2">
-        <img src="./h5imgs/page2/bigStar.png" alt="">
-      </div>
-      <div class="hand">
-        <img class="hand1" src="./h5imgs/page2/hand1.png" alt="">
-        <img class="hand2" src="./h5imgs/page2/hand2.png" alt="">
-        <img class="hand3" src="./h5imgs/page2/hand3.png" alt="">
-        <img class="hand4" src="./h5imgs/page2/hand4.png" alt="">
-        <img class="hand5" src="./h5imgs/page2/hand5.png" alt="">
-        <img class="hand6" src="./h5imgs/page2/hand6.png" alt="">
-        <img class="hand7" src="./h5imgs/page2/hand7.png" alt="">
-        <img class="hand8" src="./h5imgs/page2/hand8.png" alt="">
-        <img class="hand9" src="./h5imgs/page2/hand9.png" alt="">
-      </div>
-      <div class="light">
-        <img class="light1" src="./h5imgs/page2/light.png" alt="">
-        <img class="light2" src="./h5imgs/page2/light2.png" alt="">
-        <img class="light3" src="./h5imgs/page2/light3.png" alt="">
-      </div>
-      <div class="yeLight"></div>
+      
     </div>
+    <div class="yeLight"></div>
     <div class="p3" id="p3">
       <div class="p3-scroll">
         <div class="line">
@@ -203,6 +219,12 @@
         <div class="long">
           <img src="./h5imgs/page4/long.png" alt="">
         </div>
+        <div class="text text1">
+          <p><span>2020年</span></p>
+          <p>全国<span>111</span> 个城市，<span>597</span> 个项目</p>
+          <p>他们每天都在上演“异乡拼搏记</p>
+          <p style="text-align: right;">--工程团队</p>
+        </div>
         <div class="long-left">
           <img src="./h5imgs/page4/long-left.png" alt="">
         </div>
@@ -215,10 +237,11 @@
         <div class="travel">
           <img src="./h5imgs/page4/travel.png" alt="">
         </div>
-        <div class="text">
+        <div class="text text2">
           <p><span>454</span>次登机，<span>1664</span>次候车</p>
           <p>他们在百余座城市间奔走</p>
           <p>行驶总里程<span>1953808</span>公里</p>
+          <p style="text-align: right;">--销售团队</p>
         </div>
       </div>
     </div>
@@ -232,12 +255,14 @@
             <div class="text black-text">
               <p>有影响力的 <span>7+4</span> 全业态监管平台</p>
               <p>市场占有率 <span>70%</span> 以上</p>
+              <p style="text-align: right;">--互联网金融</p>
             </div>
             <img class="stairs" src="./h5imgs/page5/stairs.png" alt="">
             <img class="man" src="./h5imgs/page5/lixiguo.png" alt="">
           </div>
           <div class="scene liuyan">
             <div class="text">
+              
               <p>
                 <b class="text-bold">2020</b>年
               </p>
@@ -247,8 +272,7 @@
               <p>
                 升级、维护产品 <b class="text-bold">100+</b>
               </p>
-              
-
+              <p style="text-align: right;">--研发团队</p>
             </div>
             <div class="lamp">
               <img src="./h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
@@ -283,6 +307,7 @@
           <p>
             金融领域银行业试点 <b class="text-bold">10%</b> 的客户
           </p>
+          <p style="text-align: right;">--信创团队</p>
         </div>
       </div>
     </div>
@@ -310,6 +335,7 @@
           <p>
             疫情阻断但融鑫服务不停
           </p>
+          <p style="text-align: right;">--售后团队</p>
         </div>
       </div>
     </div>
@@ -427,6 +453,12 @@
             <img class="mountain3" src="./h5imgs/page11/mountain3.png" alt="">
             <img class="mountain4" src="./h5imgs/page11/mountain5.png" alt="">
           </div>
+          <div class="text">
+            <p>凡是过往、皆为序章</p>
+            <p>凝聚能量、再次起航</p>
+            <p><span>2021</span></p>
+            <p>我们来了！</p>
+          </div>
           <div class="video"></div>
         </div>
       </div>
@@ -434,10 +466,13 @@
   </div>
   <script>
     window.onload = function () {
+      // alert(1)
+      // return false;
       var winHeight = $(window).height()
       var videosArr = []
       var soundP1_1 = new Howl({
-        src: ['audios/typing.mp3']
+        src: ['audios/typing.mp3'],
+        volume:0.2
       })
       videosArr.push(soundP1_1)
       // 龙哥音频
@@ -476,6 +511,13 @@
       // 程总
       var chengAudio = new Howl({
         src: ['audios/cheng.mp3']
+      })
+      // 滴答声
+      var didaAudio = new Howl({
+        src: ['audios/dida.mp3'],
+        loop:true,
+        volume:0.3
+
       })
       videosArr.push(chengAudio)
       function stopAllAudio () {
@@ -559,7 +601,7 @@
         left: '100%',
         ease: Linear.easeOut
       })
-      tl.to("#p1", 12, {
+      tl.to("#p1 .p1-scroll", 12, {
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       }, 0)
@@ -594,14 +636,19 @@
       tl.from("#p1 .on", 8, {
         opacity: 1
       }, '-=8');
-      tl.to("#p1 #bird", 2, {
+      tl.fromTo("#p1 #bird", 2, {
         css: {
-          top: 0,
-          right: 0,
+          top: -100,
+          right: -400,
           background: 'url(h5imgs/bird-1.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
+      },{
+        css: {
+          top: 0,
+          right: 0,
+        },
       }, 1)
       tl.to("#p1 #bird", 2, {
         css: {
@@ -660,9 +707,16 @@
       tl.to('.mask1', 1, {
         opacity: 1,
         ease: Linear.easeOut,
-      })
+      },'l-last')
+      tl.fromTo('.mask1 .mask1-text', 1, {
+        opacity: 0,
+        ease: Linear.easeOut,
+      },{
+        opacity: 1,
+        ease: Linear.easeOut,
+      },'l-last+=1')
       var scene = new ScrollMagic.Scene({
-          duration: 10000
+          duration: 8000
         })
         .triggerHook(0)
         .triggerElement('#p1')
@@ -679,7 +733,12 @@
       var tl2 = new TimelineMax({
 
       })
-      tl2.to('.mask1', 4, {
+      tl2.to("#p2 .p2-scroll", 0.1, {
+        // transform: "translateY(-100%)",
+        opacity:1,
+        ease: Linear.easeOut,
+      })
+      tl2.to('.mask1', 2, {
         opacity: 0,
         ease: Linear.easeOut,
       }, 0)
@@ -697,7 +756,7 @@
         // top: -100,
         ease: Linear.easeOut,
       }, 2)
-      tl2.to("#p2", 26, {
+      tl2.to("#p2 .p2-scroll", 26, {
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       }, 'p2Label')
@@ -772,7 +831,7 @@
         opacity: .5,
         ease: Linear.easeOut
       }, 'handLabel+=21')
-      tl2.to('#p2 .yeLight', 1, {
+      tl2.to('.yeLight', 1, {
         opacity: 1,
         ease: Linear.easeOut
       })
@@ -783,7 +842,7 @@
       var scene2 = new ScrollMagic.Scene({
           duration: 8000
         })
-        .triggerHook(-1)
+        .triggerHook(1)
         .triggerElement('#p2')
         .setPin("#p2")
         .setTween(tl2)
@@ -797,15 +856,15 @@
       var tl3 = new TimelineMax({
 
       })
-      tl3.to("#p3 .p3-scroll", 0.1, {
-        transform: "translateY(-100%)",
+      tl3.to("#p3 .p3-scroll", 0.01, {
+        opacity:1,
         ease: Linear.easeOut,
       })
-      tl3.to('#p2 .yeLight', .5, {
+      tl3.to('.yeLight', 2, {
         opacity: 0,
         ease: Linear.easeOut
       })
-      tl3.to('#p2 .yeLight', 0, {
+      tl3.to('.yeLight', 0, {
         left: -10000,
         ease: Linear.easeOut,
       })
@@ -972,7 +1031,10 @@
         opacity: 1,
         ease: Linear.easeOut,
       })
-  
+      tl4.to("#p4 .text1", 1, {
+        opacity: 1,
+        ease: Linear.easeOut,
+      })
       tl4.from("#p4 .long", 1, {
         onStart:function () {
           stopAllAudio()
@@ -995,19 +1057,23 @@
         },
         ease: Linear.easeOut,
       }, 'p4Label2')
-      tl4.to("#p4 .people", 2, {
+      tl4.to("#p4 .people", 4, {
         left: 1800,
         ease: Linear.easeOut,
       }, 'p4Label2+=2')
-      tl4.to("#p4 .long", 2, {
+      tl4.to("#p4 .long", 4, {
         left: 1800,
         ease: Linear.easeOut,
       }, 'p4Label2+=2')
-      tl4.to("#p4 .long-left", 2, {
+      tl4.to("#p4 .long-left", 4, {
         left: 1800,
         ease: Linear.easeOut,
       }, 'p4Label2+=2')
-      tl4.to("#p4 .long-right", 2, {
+      tl4.to("#p4 .long-right", 4, {
+        right: -1800,
+        ease: Linear.easeOut,
+      }, 'p4Label2+=2')
+      tl4.to("#p4 .text1", 2, {
         right: -1800,
         ease: Linear.easeOut,
       }, 'p4Label2+=2')
@@ -1125,6 +1191,13 @@
         transform: 'scale(1)',
         ease: Linear.easeOut,
       })
+      tl5.fromTo("#p5 .line", 8, {
+        top: '100%',
+        ease: Linear.easeOut,
+      },{
+        top: 0,
+        ease: Linear.easeOut,
+      },1)
       // 研发大数据
       tl5.fromTo("#p5 .liuyan .text", 1, {
        
@@ -1210,7 +1283,10 @@
         backgroundPosition: "0 100%",
         ease: Linear.easeOut,
       },'p6Label')
-     
+      tl6.to(".p6-scroll .line", 8, {
+        transform: 'translateX(200px)',
+        ease: Linear.easeOut,
+      },'p6Label')
       tl6.to("#p6 .shan", 10, {
         bottom:100,
         ease: Linear.easeOut,
@@ -1266,6 +1342,7 @@
       },'p6Label')
       tl6.to(".p6 .line", 5, {
         // top:-1580,
+        transform:'translateX(0)',
         top: -($('#p6 .line').height()- winHeight),
         ease: Linear.easeOut,
       }, 'p6Label1') 
@@ -1304,14 +1381,14 @@
       },'p7Label') 
 
       // 售后大数据
-      tl7.fromTo("#p7 .text", 2, {
+      tl7.fromTo("#p7 .text", 4, {
        
        opacity:0,
        ease: Linear.easeOut,
       }, {
         opacity:1,
         ease: Linear.easeOut,
-      })
+      },'p7Label')
       tl7.to(".p7 .line", 2, {
         // top:-1100,
         top: -($('#p7 .line').height()- winHeight),
@@ -1368,7 +1445,7 @@
         ease: Linear.easeOut,
       }) 
       // 占位
-      tl8.to("", 5, {
+      tl8.to("", 6, {
         
       }) 
       // 图标移除
@@ -1387,7 +1464,7 @@
 
       // 梁姐移除
       tl8.to(".liang", 8, {
-        opacity:0,
+        left:'-100%',
         ease: Linear.easeOut,
       }) 
       tl8.to(".p8-scroll", 10, {
@@ -1446,6 +1523,10 @@
         top: -($('.p9-inner').height() - winHeight),
         ease: Linear.easeOut,
       },'p9label')
+      tl9.to(".p9-scroll .line", 8, {
+        top:-($('#p9 .line').height()- winHeight)-800,
+        ease: Linear.easeOut
+      },'p9label+=2.5')
       tl9.to(".p9-scroll .text1", 2, {
         opacity:1,
         ease: Linear.easeOut,
@@ -1469,13 +1550,10 @@
         ease: Linear.easeOut,
       },'p9llabel1')
       tl9.to(".p9-scroll .p9-inner", 10, {
-        transform:'scale(0.8, 0.8)',
+        transform:'scale(1, 0.8)',
         ease: Linear.easeOut
       },'p9llabel1')
-      tl9.to(".p9-scroll .line", 10, {
-        top:-($('#p9 .line').height()- winHeight)-800,
-        ease: Linear.easeOut
-      },'p9llabel1')
+    
       tl9.to(".p9-scroll .line", 4, {
         top:-($('#p9 .line').height()- winHeight)-1500,
         ease: Linear.easeOut
@@ -1516,6 +1594,10 @@
         ease: Linear.easeOut,
       })
       tl10.to(".p10-scroll .clock", 1, {
+        onStart:function () {
+          stopAllAudio()
+          didaAudio.play()
+        },
         opacity:1,
         ease: Linear.easeOut,
       })
@@ -1566,16 +1648,23 @@
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
+        
       },'10Label+=8')
       tl10.to("#p10 .line", 10, {
         top:-2000,
         ease: Linear.easeOut,
       },'10Label+=10')
-     
+      tl10.to("#p10 .text", 2, {
+        opacity:1,
+        ease: Linear.easeOut,
+      },'10Label+=19')
       tl10.to(".p10-scroll .cloud3", 2, {
         opacity:1,
         ease: Linear.easeOut,
-      },'10Label+=16')
+        onComplete:function () {
+          didaAudio.pause()
+        }
+      },'10Label+=18')
       tl10.to(".p10-scroll .mountain1", 3, {
         right:0,
         ease: Linear.easeOut,
@@ -1590,6 +1679,10 @@
       },'10Label+=21')
       tl10.to(".p10-scroll .mountain4", 2, {
         left:0,
+        ease: Linear.easeOut,
+      },'10Label+=22')
+      tl10.to("#p10 .line", 6, {
+        top:-4000,
         ease: Linear.easeOut,
       },'10Label+=22')
       var scene10 = new ScrollMagic.Scene({
