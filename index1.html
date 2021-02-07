@@ -401,6 +401,9 @@
     </div>
     <div class="p10" id="p10">
       <div class="p10-scroll">
+        <div class="line">
+          <img src="./h5imgs/page10/line.png" alt="">
+        </div>
         <div class="p10-inner">
           <div class="time-banner">
             <img src="./h5imgs/page10/time-banner.png" alt="">
@@ -412,7 +415,7 @@
             <div class="playground3" id="mySprite3"></div>
             <div class="playground4" id="mySprite4"></div>
           </div>
-          <img src="./h5imgs/page11/bg.png" style="width:100%;" alt="">
+          <img src="./h5imgs/page11/bg.png" style="width:100%;position: relative;z-index:1" alt="">
           <div class="cloud">
             <img class="cloud1" src="./h5imgs/page11/bird1.png" alt="">
             <img class="cloud2" src="./h5imgs/page11/bird2.png" alt="">
@@ -424,6 +427,7 @@
             <img class="mountain3" src="./h5imgs/page11/mountain3.png" alt="">
             <img class="mountain4" src="./h5imgs/page11/mountain5.png" alt="">
           </div>
+          <div class="video"></div>
         </div>
       </div>
     </div>
@@ -1506,8 +1510,6 @@
         transform: "translateY(-100%)",
         opacity:1,
         ease: Linear.easeOut,
-        // opacity:1,
-        // ease: Linear.easeOut,
       })
       tl10.to(".p10-scroll .time-banner img", 8, {
         transform:'scale(1)',
@@ -1517,11 +1519,19 @@
         opacity:1,
         ease: Linear.easeOut,
       })
-      tl10.to(".p10-scroll .time-banner img", 11, {
-        transform:'scale(.1)',
+      tl10.to(".p10-scroll .time-banner", 0.01, {
+        // transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
       },'10Label')
+      tl10.to(".p10-scroll .p10-inner", 30, {
+        top: -($('.p10-inner').height() - winHeight),
+        ease: Linear.easeOut,
+      },'10Label')
+      // tl10.to(".p10-scroll .clock", 30, {
+      //   top: -($('.p10-inner').height() - winHeight),
+      //   ease: Linear.easeOut,
+      // },'10Label')
       tl10.to(".p10-scroll .clock .playground", 5, {
         top: '0%',
         left: '0%',
@@ -1529,40 +1539,61 @@
         opacity:0,
         ease: Linear.easeOut,
       },'10Label+=3')
-      tl10.to(".p10-scroll .clock .playground1", 2, {
+      tl10.to(".p10-scroll .clock .playground1", 4, {
         top: '0%',
         left: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
       },'10Label+=5')
-      tl10.to(".p10-scroll .clock .playground2", 4, {
+      tl10.to(".p10-scroll .clock .playground2", 5, {
         top: '0%',
         right: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
-      },'10Label+=6')
+      },'10Label+=5')
       tl10.to(".p10-scroll .clock .playground3", 3, {
         top: '0%',
         right: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
-      },'10Label+=6')
+      },'10Label+=7')
       tl10.to(".p10-scroll .clock .playground4", 4, {
         top: '0%',
         right: '0%',
         transform:'scale(.1)',
         opacity:0,
         ease: Linear.easeOut,
-      },'10Label+=7')
-      tl10.to(".p10-scroll .p10-inner", 10, {
-        top: -($('.p10-inner').height() - winHeight),
+      },'10Label+=8')
+      tl10.to("#p10 .line", 10, {
+        top:-2000,
         ease: Linear.easeOut,
-      },'10Label+=12')
+      },'10Label+=10')
+     
+      tl10.to(".p10-scroll .cloud3", 2, {
+        opacity:1,
+        ease: Linear.easeOut,
+      },'10Label')
+      tl10.to(".p10-scroll .mountain1", 3, {
+        right:0,
+        ease: Linear.easeOut,
+      },'10Label')
+      tl10.to(".p10-scroll .mountain2", 3, {
+        left:0,
+        ease: Linear.easeOut,
+      },'10Label')
+      tl10.to(".p10-scroll .mountain3", 3, {
+        right:0,
+        ease: Linear.easeOut,
+      },'10Label')
+      tl10.to(".p10-scroll .mountain4", 2, {
+        left:0,
+        ease: Linear.easeOut,
+      },'10Label')
       var scene10 = new ScrollMagic.Scene({
-        duration: 3000
+        duration: 4000
       })
       .triggerHook(1)
       .triggerElement('#p10')
