@@ -14,12 +14,16 @@
   background: url(../h5imgs/page5/floor.png) 0 bottom no-repeat;
 }
 .p5 .liuyan .text{
+  width:500px;
   position: absolute;
   font-size:32px;
-  top:0;
-  left:0;
+  top:200px;
+  left:50px;
+  color:#000;
+  z-index:10;
 }
 .p5 .lixiguo .text{ 
+
   position: absolute;
   font-size: 32px;
   bottom: 500px;

@@ -289,3 +289,12 @@
   left:0;
   top:0;
 }
+.p10 .text {
+  position: fixed;
+  top:30%;
+  left:50%;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index:10;
+  opacity: 0;
+}

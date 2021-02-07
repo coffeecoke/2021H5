@@ -12,11 +12,20 @@ img {
   display: block;
 }
 .p1 {
+  width:100%;
   height:100vh;
   min-height: 100%;
   position: relative;
+  
+}
+.p1-scroll {
+  width:100%;
+  height: 100vh;
   overflow: hidden;
+  transform: translateY(0);
   background:url(../h5imgs/p1-bg1.jpg) 0 0 no-repeat;
+  position: relative;
+  /* z-index:10; */
 }
 .p1 .rain {
   /* display: none; */
@@ -113,8 +122,8 @@ img {
 .p1 .bird {
   width:300px;
   height:200px;
-  right:-200px;
-  top:0;
+  right:-400px;
+  top:-100px;
   position: absolute;
 }
 .p1 .bird-1 {

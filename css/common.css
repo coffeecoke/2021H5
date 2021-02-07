@@ -37,9 +37,10 @@ b.text-bold {
 .text{
   position: absolute;
   right:20px;
-  bottom:500px;
+  /* bottom:500px; */
   color: #fff;
   z-index:1;
+  line-height: 50px;
 }
 .black-text{
   color: #000;
