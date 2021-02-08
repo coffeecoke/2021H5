@@ -31,7 +31,6 @@
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
   <script src="http://weixin.chinaresoft.com/resoftwechat/pages/common/js/share.js"></script>
 </head>
-
 <body>
   <!-- 先让页面默认先把音频加载出来，防止后面播放卡顿 -->
   <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
@@ -44,6 +43,7 @@
   <audio class="audio" muted src="./audios/zhailijian.mp3" style="display:none"></audio>
   <audio class="audio" muted src="./audios/zhangmiao.mp3" style="display:none"></audio>
   <audio class="audio" muted src="./audios/dida.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/bg-audio.mp3" style="display:none"></audio>
   <!-- wrap -->
   <div class="wrap">
     <div class="progress-mask">
@@ -311,7 +311,7 @@
         </div>
         <div class="text">
           <p>
-          拿下 <b class="text-bold">2020</b> 年
+          拿下<b class="text-bold">2020</b>年
           </p>
           <p>
             金融领域银行业试点 <b class="text-bold">10%</b> 
@@ -530,15 +530,17 @@
       var xiguoAudio = new Howl({
         src: ['audios/xiguo.mp3']
       })
+      videosArr.push(xiguoAudio)
       // 立建
       var lijianAudio = new Howl({
         src: ['audios/zhailijian.mp3']
       })
+      videosArr.push(lijianAudio)
       // 沈慧
       var shenhuiAudio = new Howl({
         src: ['audios/shenhui.mp3']
       })
-      videosArr.push(xiguoAudio)
+      videosArr.push(shenhuiAudio)
       // 梁姐
       var liangAudio = new Howl({
         src: ['audios/liang.mp3']
@@ -548,10 +550,12 @@
       var chengAudio = new Howl({
         src: ['audios/cheng.mp3']
       })
+      videosArr.push(chengAudio)
       // 王总
       var wangAudio = new Howl({
         src: ['audios/wangzong.mp3']
       })
+      // videosArr.push(wangAudio)
       // 滴答声
       var didaAudio = new Howl({
         src: ['audios/dida.mp3'],
@@ -559,7 +563,14 @@
         volume:0.3
 
       })
-      videosArr.push(chengAudio)
+      videosArr.push(didaAudio)
+
+      // 背景音乐
+      var bgAudio = new Howl({
+        src: ['audios/bg-audio.mp3'],
+        loop:true,
+      })
+      bgAudio.play()
       function stopAllAudio () {
         for(var i=0;i<videosArr.length;i++) {
           videosArr[i].pause()
@@ -1239,7 +1250,7 @@
         transform: 'scale(1)',
         ease: Linear.easeOut,
       })
-      tl5.fromTo("#p5 .line", 8, {
+      tl5.fromTo("#p5 .line", 3, {
         top: '100%',
         ease: Linear.easeOut,
       },{
@@ -1255,7 +1266,7 @@
        opacity:1,
        ease: Linear.easeOut,
      })
-      tl5.to("#p5 .lamp", 3, {
+      tl5.to("#p5 .lamp", 5, {
        
         transform: 'translateY(0)',
         ease: Linear.easeOut,
@@ -1264,15 +1275,18 @@
         opacity:1,
         ease: Linear.easeOut,
       })
-      tl5.to("#p5 .scenes", 8, {
-        transform:'translateX(0)',
+      tl5.to("#p5 .light", 2, {
         ease: Linear.easeOut,
-      },'p5Label')
+      })
       tl5.to("#p5 .line", 16, {
         // top:-2320,
         top: -($('#p5 .line').height()- winHeight),
         ease: Linear.easeOut,
       },'p5Label')
+      tl5.to("#p5 .scenes", 8, {
+        transform:'translateX(0)',
+        ease: Linear.easeOut,
+      },'p5Label+=3')
       tl5.to("#p5 .stairs", 8, {
         right:-650,
         ease: Linear.easeOut,
@@ -1728,19 +1742,19 @@
           didaAudio.pause()
         }
       },'10Label+=18')
-      tl10.to(".p10-scroll .mountain1", 3, {
+      tl10.to(".p10-scroll .mountain1", 4, {
         right:0,
         ease: Linear.easeOut,
       },'10Label+=19')
-      tl10.to(".p10-scroll .mountain2", 3, {
+      tl10.to(".p10-scroll .mountain2", 4, {
         left:0,
         ease: Linear.easeOut,
       },'10Label+=20')
-      tl10.to(".p10-scroll .mountain3", 3, {
+      tl10.to(".p10-scroll .mountain3", 4, {
         right:0,
         ease: Linear.easeOut,
       },'10Label+=21')
-      tl10.to(".p10-scroll .mountain4", 2, {
+      tl10.to(".p10-scroll .mountain4", 4, {
         left:0,
         ease: Linear.easeOut,
       },'10Label+=22')
@@ -1749,7 +1763,7 @@
         ease: Linear.easeOut,
       },'10Label+=22')
       var scene10 = new ScrollMagic.Scene({
-        duration: 8000
+        duration: 12000
       })
       .triggerHook(1)
       .triggerElement('#p10')

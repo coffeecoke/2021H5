@@ -205,35 +205,52 @@
   display: block;
 }
 .p10-inner .cloud1{
+  /* display: none; */
   position: absolute;
   top:500px;
   left:0;
   z-index: 10;
   opacity: 0;
-  animation:bird .4s linear  infinite;
-  -webkit-animation:bird .4s linear infinite;
+  animation:bird1 2s linear  infinite;
+  -webkit-animation:bird1 2s linear infinite;
   animation-direction:alternate;
   -webkit-animation-direction:alternate;
 }
 .p10-inner .cloud2{
+  /* display: none; */
   position: absolute;
   top:500px;
   left:0;
-  opacity: 0;
+  opacity: 1;
   z-index: 10;
-  animation:bird .4s linear .4s infinite;
-  -webkit-animation:bird .4s linear .4s infinite;
+  animation:bird2 2s linear infinite;
+  -webkit-animation:bird2 2s linear infinite;
   animation-direction:alternate;
   -webkit-animation-direction:alternate;
 }
-@keyframes bird{
+@keyframes bird1{
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
 }
+@keyframes bird2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .p10-inner .cloud3{
   position: absolute;
   top:0;
