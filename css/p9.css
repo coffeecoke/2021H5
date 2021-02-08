@@ -18,7 +18,7 @@
   transform-origin:0px 4029px;
 }
 .p9 .line {
-  padding-left:12px;
+  padding-left:1px;
 }
 .p9 .yun-left {
   position: absolute;
@@ -97,15 +97,19 @@
   position: absolute;
   top:1800px;
   font-size:32px;
-  left:30%;
+  left:50%;
+  transform: translateX(-50%);
   opacity: 0;
+  text-align: center;
 }
 .p9 .text3 {
   position: absolute;
-  top:1950px;
+  top:1930px;
   font-size:32px;
-  left:30%;
+  left:50%;
+  transform: translateX(-50%);
   opacity: 0;
+  text-align: center;
 }
 .p9 .text2 span{
   font-size:48px;
