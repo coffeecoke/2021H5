@@ -46,7 +46,7 @@ img {
   height: 100vh;
   overflow: hidden;
   transform: translateY(0);
-  background:url(../h5imgs/p1-bg1.jpg) 0 0 no-repeat;
+  background:url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/p1-bg1.jpg) 0 0 no-repeat;
   position: relative;
   /* z-index:10; */
 }
@@ -283,7 +283,7 @@ img {
   height:100vh;
   position: relative;
   background-image: linear-gradient(to right,#595959,#9e9e9c);
-  /* background: url(../h5imgs/trees.png) 0 0 no-repeat; */
+  /* background: url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/trees.png) 0 0 no-repeat; */
 }
 .tree1{
   position: absolute;

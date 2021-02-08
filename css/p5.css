@@ -11,7 +11,7 @@
   background-color:#ffeec2;
   position: relative;
   opacity: 0;
-  background: url(../h5imgs/page5/floor.png) 0 bottom no-repeat;
+  background: url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/floor.png) 0 bottom no-repeat;
 }
 .p5 .liuyan .text{
   width:500px;

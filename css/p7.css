@@ -7,7 +7,7 @@
   width:100%;
   height: 100vh;
   transform: translateY(0%);
-  background:url(../h5imgs/page7/bg1.png) 0 0 no-repeat;
+  background:url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page7/bg1.png) 0 0 no-repeat;
   position: relative;
 }
 .p7 .leafs{
