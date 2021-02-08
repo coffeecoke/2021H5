@@ -261,7 +261,8 @@
         <div class="scenes">
           <div class="scene lixiguo">
             <div class="text black-text">
-              <p>有影响力的 <span>7+4</span> 全业态监管平台</p>
+              <p>有影响力的 <span>7+4</span></p>
+              <p>全业态监管平台</p>
               <p>市场占有率 <span>70%</span> 以上</p>
               <p style="text-align: right;">--互联网金融</p>
             </div>
@@ -476,8 +477,8 @@
     </div>
   </div>
   <script>
-    title='盘点2020'; // 分享标题
-    desc='这一年，融鑫人用数字记录经历，哪些数字？什么经历？点击查看！'; // 分享描述 
+    title='“鑫”春盘点-致不平凡'; // 分享标题
+    desc='1231155，1953808，4657，597，111'; // 分享描述 
     link = 'http://weixin.chinaresoft.com/resoftwechat/pages/2021H5/index1.html';
     imgUrl='http://weixin.chinaresoft.com/resoftwechat/pages/2021H5/h5imgs/share.png'; // // 分享图标
 
@@ -1291,7 +1292,15 @@
        ease: Linear.easeOut,
      })
       // 站位
-      tl5.to("", 8, {
+      // tl5.to("", 8, {
+      //   ease: Linear.easeOut,
+      // })
+      tl5.to("#p5 .line", 3, {
+        transform:'translateX(-300px)',
+        ease: Linear.easeOut,
+      })
+      tl5.to("#p5 .line", 3, {
+        transform:'translateX(0)',
         ease: Linear.easeOut,
       })
 
@@ -1562,7 +1571,7 @@
       var controller9 = new ScrollMagic.Controller();
       var tl9 = new TimelineMax({
 
-      }) 
+      })
       tl9.to(".p9-scroll .p9-inner", 10, {
         top: -($('.p9-inner').height() - winHeight),
         ease: Linear.easeOut,

@@ -210,8 +210,8 @@
   left:0;
   z-index: 10;
   opacity: 0;
-  animation:bird .5s linear  infinite;
-  -webkit-animation:bird .5s linear infinite;
+  animation:bird .4s linear  infinite;
+  -webkit-animation:bird .4s linear infinite;
   animation-direction:alternate;
   -webkit-animation-direction:alternate;
 }
@@ -221,8 +221,8 @@
   left:0;
   opacity: 0;
   z-index: 10;
-  animation:bird .5s linear .5s infinite;
-  -webkit-animation:bird .5s linear .5s infinite;
+  animation:bird .4s linear .4s infinite;
+  -webkit-animation:bird .4s linear .4s infinite;
   animation-direction:alternate;
   -webkit-animation-direction:alternate;
 }
