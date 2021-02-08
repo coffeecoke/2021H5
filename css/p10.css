@@ -280,11 +280,12 @@
   /* height:400px; */
   /* background: #fff; */
   position: absolute;
-  bottom:400px;
+  bottom:350px;
   left:50%;
   z-index:100;
   transform: translateX(-50%);
   overflow: hidden;
+  cursor: pointer;
 }
 .line{
   position: absolute;

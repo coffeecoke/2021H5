@@ -261,7 +261,8 @@
         <div class="scenes">
           <div class="scene lixiguo">
             <div class="text black-text">
-              <p>有影响力的 <span>7+4</span> 全业态监管平台</p>
+              <p>有影响力的 <span>7+4</span></p>
+              <p>全业态监管平台</p>
               <p>市场占有率 <span>70%</span> 以上</p>
               <p style="text-align: right;">--互联网金融</p>
             </div>
@@ -470,7 +471,7 @@
             <p><span>2021</span></p>
             <p>我们来了！</p>
           </div>
-          <a class="video" href="##">
+          <a class="video" href="./index2.html">
             <img src="./h5imgs/page11/juxing.png"/>
           </a>
         </div>
@@ -478,8 +479,8 @@
     </div>
   </div>
   <script>
-    title='盘点2020'; // 分享标题
-    desc='这一年，融鑫人用数字记录经历，哪些数字？什么经历？点击查看！'; // 分享描述 
+    title='“鑫”春盘点-致不平凡'; // 分享标题
+    desc='1231155，1953808，4657，597，111'; // 分享描述 
     link = 'http://weixin.chinaresoft.com/resoftwechat/pages/2021H5/index1.html';
     imgUrl='http://weixin.chinaresoft.com/resoftwechat/pages/2021H5/h5imgs/share.png'; // // 分享图标
 
@@ -501,8 +502,6 @@
         $('.progress-mask').remove()
         $('.tips').show()
       },300)
-      
-      
       // alert(1)
       // return false;
       var winHeight = $(window).height()
@@ -582,16 +581,17 @@
       })
       //文字
       tl.add("begin");
-      tl.to("#p1 .line-1", 0, {
-        opacity: 1,
-        ease: Linear.easeOut
-      })
+      
       tl.to("#p1 .tips .slideUp", 1, {
         opacity: 0,
         ease: Linear.easeOut
-      })
+      },0)
       tl.to("#p1 .tips .noise", 1, {
         top:-300,
+        ease: Linear.easeOut
+      },0)
+      tl.to("#p1 .line-1", 0.5, {
+        opacity: 1,
         ease: Linear.easeOut
       })
       tl.to("#p1 .mark-1", 5, {
@@ -1295,7 +1295,15 @@
        ease: Linear.easeOut,
      })
       // 站位
-      tl5.to("", 8, {
+      // tl5.to("", 8, {
+      //   ease: Linear.easeOut,
+      // })
+      tl5.to("#p5 .line", 3, {
+        transform:'translateX(-300px)',
+        ease: Linear.easeOut,
+      })
+      tl5.to("#p5 .line", 3, {
+        transform:'translateX(0)',
         ease: Linear.easeOut,
       })
 
