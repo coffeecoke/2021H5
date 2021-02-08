@@ -17,7 +17,7 @@
   }
 }
 b.text-bold {
-  font-size:50px;
+  font-size:48px;
   padding:0 10px;
 }
 /* .line1{
@@ -50,4 +50,5 @@ b.text-bold {
 }
 .text p span{
   font-size:48px;
+  font-weight: bold;
 }
