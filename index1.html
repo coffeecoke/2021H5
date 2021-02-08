@@ -31,7 +31,6 @@
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
   <script src="http://weixin.chinaresoft.com/resoftwechat/pages/common/js/share.js"></script>
 </head>
-
 <body>
   <!-- 先让页面默认先把音频加载出来，防止后面播放卡顿 -->
   <audio class="audio" muted src="./audios/typing.mp3" style="display:none"></audio>
@@ -44,6 +43,7 @@
   <audio class="audio" muted src="./audios/zhailijian.mp3" style="display:none"></audio>
   <audio class="audio" muted src="./audios/zhangmiao.mp3" style="display:none"></audio>
   <audio class="audio" muted src="./audios/dida.mp3" style="display:none"></audio>
+  <audio class="audio" muted src="./audios/bg-audio.mp3" style="display:none"></audio>
   <!-- wrap -->
   <div class="wrap">
     <div class="progress-mask">
@@ -55,35 +55,35 @@
           <p class="noise">请打开声音</p>
           <p class="slideUp">
             向上滑动
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/up1.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/up1.png" alt="">
           </p>
         </div>
         <div class="rain" id="rain">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/rain2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/rain2.png" alt="">
         </div>
         <div class="rain1" id="rain1">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/rain2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/rain2.png" alt="">
         </div>
         <div class="rain2" id="rain2">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/rain2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/rain2.png" alt="">
         </div>
         <div class="rain3" id="rain3">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/rain2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/rain2.png" alt="">
         </div>
         <div class="rain4" id="rain4">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/rain2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/rain2.png" alt="">
         </div>
         <div class="snow" id="snow">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/snow3.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/snow3.png" alt="">
         </div>
         <div class="snow1" id="snow1">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/snow3.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/snow3.png" alt="">
         </div>
         <div class="snow2" id="snow2">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/snow3.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/snow3.png" alt="">
         </div>
         <div class="snow3" id="snow3">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/snow3.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/snow3.png" alt="">
         </div>
         <div class="bird" id="bird"></div>
         <div class="begin2020">
@@ -122,18 +122,18 @@
         <div class="ph">
           <div class="ph-inner">
             <div class="trees">
-              <img class="tree1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree1.png" alt="">
-              <img class="tree2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree2.png" alt="">
-              <img class="tree3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree3.png" alt="">
-              <img class="tree4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree4.png" alt="">
-              <img class="tree5" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree5.png" alt="">
-              <img class="tree6" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree6.png" alt="">
-              <!-- <img class="tree-front" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree-front.png" alt=""> -->
-              <!-- <img class="tree-back" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/tree-back.jpg" alt=""> -->
+              <img class="tree1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree1.png" alt="">
+              <img class="tree2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree2.png" alt="">
+              <img class="tree3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree3.png" alt="">
+              <img class="tree4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree4.png" alt="">
+              <img class="tree5" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree5.png" alt="">
+              <img class="tree6" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree6.png" alt="">
+              <!-- <img class="tree-front" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree-front.png" alt=""> -->
+              <!-- <img class="tree-back" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/tree-back.jpg" alt=""> -->
             </div>
             <div class="Building">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/building-off.png" alt="">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/building-on.png" class="on" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/building-off.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/building-on.png" class="on" alt="">
             </div>
           </div>
         </div>
@@ -147,29 +147,29 @@
     <div class="p2" id="p2">
       <div class="p2-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/line.png" alt="">
         </div>
         <div class="star1" id="star1">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/star.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/star.png" alt="">
         </div>
         <div class="star2" id="star2">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/bigStar.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/bigStar.png" alt="">
         </div>
         <div class="hand">
-          <img class="hand1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand1.png" alt="">
-          <img class="hand2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand2.png" alt="">
-          <img class="hand3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand3.png" alt="">
-          <img class="hand4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand4.png" alt="">
-          <img class="hand5" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand5.png" alt="">
-          <img class="hand6" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand6.png" alt="">
-          <img class="hand7" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand7.png" alt="">
-          <img class="hand8" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand8.png" alt="">
-          <img class="hand9" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/hand9.png" alt="">
+          <img class="hand1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand1.png" alt="">
+          <img class="hand2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand2.png" alt="">
+          <img class="hand3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand3.png" alt="">
+          <img class="hand4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand4.png" alt="">
+          <img class="hand5" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand5.png" alt="">
+          <img class="hand6" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand6.png" alt="">
+          <img class="hand7" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand7.png" alt="">
+          <img class="hand8" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand8.png" alt="">
+          <img class="hand9" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/hand9.png" alt="">
         </div>
         <div class="light">
-          <img class="light1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/light.png" alt="">
-          <img class="light2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/light2.png" alt="">
-          <img class="light3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page2/light3.png" alt="">
+          <img class="light1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/light.png" alt="">
+          <img class="light2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/light2.png" alt="">
+          <img class="light3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page2/light3.png" alt="">
         </div>
         
       </div>
@@ -179,16 +179,17 @@
     <div class="p3" id="p3">
       <div class="p3-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page3/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page3/line.png" alt="">
+          <!-- <img src="./h5imgs/page3/line.png" alt=""> -->
         </div>
         <div class="light step1"></div>
         <div class="light step2"></div>
         <div class="light step3"></div>
         <div class='branch1'>
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page3/branch1.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page3/branch1.png" alt="">
         </div>
         <div class='branch2'>
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page3/branch2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page3/branch2.png" alt="">
           <div class="leaf-move"></div>
           <div class="leaf-8"></div>
           <div class="leaf-9"></div>
@@ -199,33 +200,33 @@
     <div class="p4" id="p4">
       <div class="p4-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/line.png" alt="">
         </div>
         <div class="yun1">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/yun-1.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/yun-1.png" alt="">
         </div>
         <div class="yun2">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/yun-2.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/yun-2.png" alt="">
         </div>
         <div class="shan">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/shan.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/shan.png" alt="">
         </div>
         <!-- <div class="airplane">
-          <img class="airplane1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/airplane.png" alt="">
+          <img class="airplane1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/airplane.png" alt="">
         </div> -->
         <div class="airplane"></div>
         <div class="building">
           <div class="building1">
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/floor.png" alt="">
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/window-mini.png" class="window-mini" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/floor.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/window-mini.png" class="window-mini" alt="">
           </div>
-          <img class="window" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/window.png" alt="">
+          <img class="window" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/window.png" alt="">
         </div>
         <div class="people">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/people.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/people.png" alt="">
         </div>
         <div class="long">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/long.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/long.png" alt="">
         </div>
         <div class="text text1">
           <p><span>2020年</span></p>
@@ -234,16 +235,16 @@
           <p style="text-align: right;">--工程团队</p>
         </div>
         <div class="long-left">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/long-left.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/long-left.png" alt="">
         </div>
         <div class="long-right">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/long-right.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/long-right.png" alt="">
         </div>
         <div class="floor">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/floor-board.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/floor-board.png" alt="">
         </div>
         <div class="travel">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/travel.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/travel.png" alt="">
         </div>
         <div class="text text2">
           <p><span>454</span>次登机，<span>1664</span>次候车</p>
@@ -256,7 +257,7 @@
     <div class="p5" id="p5">
       <div class="p5-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page5/line.png" alt="">
         </div>
         <div class="scenes">
           <div class="scene lixiguo">
@@ -266,8 +267,8 @@
               <p>市场占有率<span>70%</span>以上</p>
               <p style="text-align: right;">--互联网金融</p>
             </div>
-            <img class="stairs" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/stairs.png" alt="">
-            <img class="man" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/lixiguo.png" alt="">
+            <img class="stairs" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page5/stairs.png" alt="">
+            <img class="man" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page5/lixiguo.png" alt="">
           </div>
           <div class="scene liuyan">
             <div class="text">
@@ -277,10 +278,10 @@
               <p style="text-align: right;">--研发团队</p>
             </div>
             <div class="lamp">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
-              <img class="light" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/liuyan-light.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page5/liuyan-lamp.png" alt="" style="width:100%;">
+              <img class="light" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page5/liuyan-light.png" alt="">
             </div>
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page5/liuyan.png" alt="" style="width:100%;">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page5/liuyan.png" alt="" style="width:100%;">
           </div>
          
         </div>
@@ -291,16 +292,16 @@
     <div class="p6" id="p6">
       <div class="p6-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page6/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page6/line.png" alt="">
         </div>
         <div class="shan">
-          <img class="shan1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page6/shan1.png" alt="">
-          <img class="shan2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page6/shan2.png" alt="">
-          <img class="shan3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page6/shan3.png" alt="">
-          <img class="shan4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page6/shan4.png" alt="">
+          <img class="shan1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page6/shan1.png" alt="">
+          <img class="shan2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page6/shan2.png" alt="">
+          <img class="shan3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page6/shan3.png" alt="">
+          <img class="shan4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page6/shan4.png" alt="">
         </div>
         <div class="zhai">
-          <img class="lijin" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page6/ren.png" alt="">
+          <img class="lijin" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page6/ren.png" alt="">
         </div>
         <div class="text">
           <p>拿下<span>2020</span>年</p>
@@ -313,13 +314,13 @@
     <div class="p7" id="p7">
       <div class="p7-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page7/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page7/line.png" alt="">
         </div>
         <div class="leafs">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page7/shuzhi.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page7/shuzhi.png" alt="">
         </div>
         <div class="window">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page7/window.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page7/window.png" alt="">
         </div>
         <div class="text">
           <p><span>2020</span>年</p>
@@ -333,58 +334,58 @@
     <div class="p8" id="p8">
       <div class="p8-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/line.png" alt="">
         </div>
         <div class="graph">
-          <img class="graph1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/graph1.png" alt="">
-          <img class="graph2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/graph2.png" alt="">
-          <img class="graph3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/graph3.png" alt="">
+          <img class="graph1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/graph1.png" alt="">
+          <img class="graph2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/graph2.png" alt="">
+          <img class="graph3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/graph3.png" alt="">
         </div>
         <div class="liang">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/liangjie.png">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/liangjie.png">
         </div>
         <div class="crowd">
-          <img class="crowd1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/crowd.png" alt="">
-          <img class="crowd2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page8/cheng.png" alt="">
+          <img class="crowd1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/crowd.png" alt="">
+          <img class="crowd2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page8/cheng.png" alt="">
         </div>
       </div>
     </div>
     <div class="p9" id="p9">
       <div class="p9-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/line.png" alt="">
         </div>
         <div class="p9-inner">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/p9-bg.png" alt="" style="width:100%;">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/p9-bg.png" alt="" style="width:100%;">
           <div class="yun-left">
             <div class="yun-left1">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-left1.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-left1.png" alt="">
             </div>
             <div class="yun-left2">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-left2.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-left2.png" alt="">
             </div>
             <div class="yun-left3">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-left3.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-left3.png" alt="">
             </div>
             <div class="yun-left4">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-left4.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-left4.png" alt="">
             </div>
           </div>
           <div class="yun-right">
             <div class="yun-right1">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-right1.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-right1.png" alt="">
             </div>
             <div class="yun-right2">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-right2.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-right2.png" alt="">
             </div>
             <div class="yun-right3">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-right3.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-right3.png" alt="">
             </div>
             <div class="yun-right4">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-right4.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-right4.png" alt="">
             </div>
             <div class="yun-right5">
-              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/yun-right5.png" alt="">
+              <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/yun-right5.png" alt="">
             </div>
           </div>
           <div class="text1">
@@ -403,15 +404,15 @@
           </div>
         </div>
         <div class="wang-wrap">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/tian.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/tian.png" alt="">
           <div class="wz">
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/wz.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/wz.png" alt="">
           </div>
           <div class="shan">
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/shan.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/shan.png" alt="">
           </div>
           <div class="floor">
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page9/floor.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page9/floor.png" alt="">
           </div>
         </div>
       </div>
@@ -419,11 +420,11 @@
     <div class="p10" id="p10">
       <div class="p10-scroll">
         <div class="line">
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page10/line.png" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page10/line.png" alt="">
         </div>
         <div class="p10-inner">
           <div class="time-banner">
-            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page10/time-banner.png" alt="">
+            <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page10/time-banner.png" alt="">
           </div>
           <div class="clock">
             <div class="playground" id="mySprite"></div>
@@ -432,17 +433,17 @@
             <div class="playground3" id="mySprite3"></div>
             <div class="playground4" id="mySprite4"></div>
           </div>
-          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/bg.png" style="width:100%;position: relative;z-index:1" alt="">
+          <img src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/bg.png" style="width:100%;position: relative;z-index:1" alt="">
           <div class="cloud">
-            <img class="cloud1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/bird1.png" alt="">
-            <img class="cloud2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/bird2.png" alt="">
-            <img class="cloud3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/cloud1.png" alt="">
+            <img class="cloud1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/bird1.png" alt="">
+            <img class="cloud2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/bird2.png" alt="">
+            <img class="cloud3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/cloud1.png" alt="">
           </div>
           <div class="mountain">
-            <img class="mountain1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/mountain1.png" alt="">
-            <img class="mountain2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/mountain2.png" alt="">
-            <img class="mountain3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/mountain3.png" alt="">
-            <img class="mountain4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page11/mountain5.png" alt="">
+            <img class="mountain1" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/mountain1.png" alt="">
+            <img class="mountain2" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/mountain2.png" alt="">
+            <img class="mountain3" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/mountain3.png" alt="">
+            <img class="mountain4" src="https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page11/mountain5.png" alt="">
           </div>
           <div class="text">
             <p>凡是过往、皆为序章</p>
@@ -509,15 +510,17 @@
       var xiguoAudio = new Howl({
         src: ['audios/xiguo.mp3']
       })
+      videosArr.push(xiguoAudio)
       // 立建
       var lijianAudio = new Howl({
         src: ['audios/zhailijian.mp3']
       })
+      videosArr.push(lijianAudio)
       // 沈慧
       var shenhuiAudio = new Howl({
         src: ['audios/shenhui.mp3']
       })
-      videosArr.push(xiguoAudio)
+      videosArr.push(shenhuiAudio)
       // 梁姐
       var liangAudio = new Howl({
         src: ['audios/liang.mp3']
@@ -527,10 +530,12 @@
       var chengAudio = new Howl({
         src: ['audios/cheng.mp3']
       })
+      videosArr.push(chengAudio)
       // 王总
       var wangAudio = new Howl({
         src: ['audios/wangzong.mp3']
       })
+      // videosArr.push(wangAudio)
       // 滴答声
       var didaAudio = new Howl({
         src: ['audios/dida.mp3'],
@@ -538,7 +543,14 @@
         volume:0.3
 
       })
-      videosArr.push(chengAudio)
+      videosArr.push(didaAudio)
+
+      // 背景音乐
+      var bgAudio = new Howl({
+        src: ['audios/bg-audio.mp3'],
+        loop:true,
+      })
+      bgAudio.play()
       function stopAllAudio () {
         for(var i=0;i<videosArr.length;i++) {
           videosArr[i].pause()
@@ -667,7 +679,7 @@
         css: {
           top: -100,
           right: -400,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/bird-1.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/bird-1.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
@@ -681,7 +693,7 @@
         css: {
           top: 150,
           right: 200,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/bird-2.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/bird-2.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
@@ -690,7 +702,7 @@
         css: {
           top: 260,
           right: 330,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/bird-3.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/bird-3.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
@@ -699,7 +711,7 @@
         css: {
           top: 460,
           right: 466,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/bird-4.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/bird-4.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
@@ -708,7 +720,7 @@
         css: {
           top: 770,
           right: 490,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/bird-5.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/bird-5.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
@@ -717,7 +729,7 @@
         css: {
           top: 1030,
           right: 290,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/bird-6.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/bird-6.png) center no-repeat'
         },
         ease: Linear.easeOut,
 
@@ -1112,7 +1124,7 @@
         css: {
           top:-580,
           left:1030,
-          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@main/h5imgs/page4/airplane.png) center no-repeat'
+          background: 'url(https://cdn.jsdelivr.net/gh/coffeecoke/2021H5@latest/h5imgs/page4/airplane.png) center no-repeat'
         },
         ease: Linear.easeOut,
       })
@@ -1218,7 +1230,7 @@
         transform: 'scale(1)',
         ease: Linear.easeOut,
       })
-      tl5.fromTo("#p5 .line", 8, {
+      tl5.fromTo("#p5 .line", 3, {
         top: '100%',
         ease: Linear.easeOut,
       },{
@@ -1234,7 +1246,7 @@
        opacity:1,
        ease: Linear.easeOut,
      })
-      tl5.to("#p5 .lamp", 3, {
+      tl5.to("#p5 .lamp", 5, {
        
         transform: 'translateY(0)',
         ease: Linear.easeOut,
@@ -1243,15 +1255,18 @@
         opacity:1,
         ease: Linear.easeOut,
       })
-      tl5.to("#p5 .scenes", 8, {
-        transform:'translateX(0)',
+      tl5.to("#p5 .light", 2, {
         ease: Linear.easeOut,
-      },'p5Label')
+      })
       tl5.to("#p5 .line", 16, {
         // top:-2320,
         top: -($('#p5 .line').height()- winHeight),
         ease: Linear.easeOut,
       },'p5Label')
+      tl5.to("#p5 .scenes", 8, {
+        transform:'translateX(0)',
+        ease: Linear.easeOut,
+      },'p5Label+=3')
       tl5.to("#p5 .stairs", 8, {
         right:-650,
         ease: Linear.easeOut,
@@ -1707,19 +1722,19 @@
           didaAudio.pause()
         }
       },'10Label+=18')
-      tl10.to(".p10-scroll .mountain1", 3, {
+      tl10.to(".p10-scroll .mountain1", 4, {
         right:0,
         ease: Linear.easeOut,
       },'10Label+=19')
-      tl10.to(".p10-scroll .mountain2", 3, {
+      tl10.to(".p10-scroll .mountain2", 4, {
         left:0,
         ease: Linear.easeOut,
       },'10Label+=20')
-      tl10.to(".p10-scroll .mountain3", 3, {
+      tl10.to(".p10-scroll .mountain3", 4, {
         right:0,
         ease: Linear.easeOut,
       },'10Label+=21')
-      tl10.to(".p10-scroll .mountain4", 2, {
+      tl10.to(".p10-scroll .mountain4", 4, {
         left:0,
         ease: Linear.easeOut,
       },'10Label+=22')
@@ -1728,7 +1743,7 @@
         ease: Linear.easeOut,
       },'10Label+=22')
       var scene10 = new ScrollMagic.Scene({
-        duration: 8000
+        duration: 12000
       })
       .triggerHook(1)
       .triggerElement('#p10')
