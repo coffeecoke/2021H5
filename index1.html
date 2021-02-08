@@ -471,7 +471,7 @@
             <p><span>2021</span></p>
             <p>我们来了！</p>
           </div>
-          <a class="video" href="##">
+          <a class="video" href="./index2.html">
             <img src="./h5imgs/page11/juxing.png"/>
           </a>
         </div>
@@ -581,16 +581,17 @@
       })
       //文字
       tl.add("begin");
-      tl.to("#p1 .line-1", 0, {
-        opacity: 1,
-        ease: Linear.easeOut
-      })
+      
       tl.to("#p1 .tips .slideUp", 1, {
         opacity: 0,
         ease: Linear.easeOut
-      })
+      },0)
       tl.to("#p1 .tips .noise", 1, {
         top:-300,
+        ease: Linear.easeOut
+      },0)
+      tl.to("#p1 .line-1", 0.5, {
+        opacity: 1,
         ease: Linear.easeOut
       })
       tl.to("#p1 .mark-1", 5, {
